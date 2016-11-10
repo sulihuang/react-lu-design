@@ -26,6 +26,6 @@ ReactDOM.render(
       <Button type="primary">Affix bottom</Button>
     </Affix>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

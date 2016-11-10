@@ -39,6 +39,6 @@ ReactDOM.render(
       </Button>
     </Dropdown>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

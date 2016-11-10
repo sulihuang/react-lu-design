@@ -55,6 +55,6 @@ const AsyncMention = React.createClass({
 
 ReactDOM.render(
   <AsyncMention />,
-  mountNode
+  mountNode,
 );
 ````

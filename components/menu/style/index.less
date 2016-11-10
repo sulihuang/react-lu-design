@@ -115,9 +115,16 @@
   }
 
   &-inline {
+    .@{menu-prefix-cls}-item {
+      border-left: .25rem solid transparent;
+      &:hover {
+        border-left-color: @primary-color;
+      }
+    }
     .@{menu-prefix-cls}-selected,
     .@{menu-prefix-cls}-item-selected {
-      border-right: 2px solid @primary-color;
+      border-left: .25rem solid @primary-color;
+      background-color: tint(@primary-color, 90%);
       transform: translateZ(0);
     }
   }

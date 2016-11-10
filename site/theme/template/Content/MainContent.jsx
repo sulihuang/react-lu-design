@@ -45,7 +45,7 @@ export default class MainContent extends React.Component {
     if (prevModule !== this.currentModule) {
       const moduleData = this.getModuleData(nextProps);
       const shouldOpenKeys = Object.keys(utils.getMenuItems(
-        moduleData, this.context.intl.locale
+        moduleData, this.context.intl.locale,
       ));
       this.setState({ openKeys: shouldOpenKeys });
     }
@@ -131,7 +131,7 @@ export default class MainContent extends React.Component {
   getMenuItems() {
     const moduleData = this.getModuleData(this.props);
     const menuItems = utils.getMenuItems(
-      moduleData, this.context.intl.locale
+      moduleData, this.context.intl.locale,
     );
     const topLevel = this.generateSubMenuItems(menuItems.topLevel);
     const subMenu = Object.keys(menuItems).filter(isNotTopLevel)

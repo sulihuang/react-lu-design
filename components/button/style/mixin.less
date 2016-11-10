@@ -110,7 +110,7 @@
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  line-height: @line-height-base;
+  line-height: 1;
   .button-size(@btn-padding-base; @font-size-base; @btn-border-radius-base);
   user-select: none;
   transition: all .3s @ease-in-out;
@@ -164,7 +164,9 @@
   &:focus,
   &:active,
   &.active {
-    background: #fff;
+    background: #e6e6e6;
+    color: @btn-default-color;
+    border-color: @btn-default-border;
   }
 }
 
@@ -177,6 +179,16 @@
 .btn-dashed() {
   .button-variant-other(@btn-ghost-color, @btn-ghost-bg, @btn-ghost-border);
   border-style: dashed;
+}
+
+// success button style
+.btn-success() {
+  .button-variant-primary(@btn-primary-color; @success-color);
+}
+
+// danger button style
+.btn-danger() {
+  .button-variant-primary(@btn-primary-color; @error-color);
 }
 
 // circle button: the content only contains icon

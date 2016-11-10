@@ -18,7 +18,7 @@ export function collect(nextProps, callback) {
 
   const pathname = nextProps.location.pathname;
   const demos = nextProps.utils.get(
-    nextProps.data, [...pathname.split('/'), 'demo']
+    nextProps.data, [...pathname.split('/'), 'demo'],
   );
   if (demos) {
     promises.push(demos());

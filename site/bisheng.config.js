@@ -19,8 +19,7 @@ module.exports = {
   source: [
     './components',
     './docs',
-    'CHANGELOG.zh-CN.md', // TODO: fix it in bisheng
-    'CHANGELOG.en-US.md',
+    'CHANGELOG.md', // TODO: fix it in bisheng
   ],
   lazyLoad(nodePath, nodeValue) {
     if (typeof nodeValue === 'string') {

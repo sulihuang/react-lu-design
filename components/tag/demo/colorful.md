@@ -16,6 +16,6 @@ ReactDOM.render(
     <Tag closable color="yellow"><a href="https://github.com/ant-design/ant-design/issues/1862">Yellow</a></Tag>
     <Tag closable color="red">Red</Tag>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

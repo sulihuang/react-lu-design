@@ -49,7 +49,7 @@ const App = React.createClass({
         {tags.map(tag =>
           <Tag key={tag.key} closable={tag.key !== 1} afterClose={() => this.handleClose(tag.key)}>
             {tag.name}
-          </Tag>
+          </Tag>,
         )}
         <Button size="small" type="dashed" onClick={this.addTag}>+ New tag</Button>
       </div>

@@ -65,7 +65,7 @@ const TimeRelatedForm = Form.create()(React.createClass({
           label="DatePicker"
         >
           {getFieldDecorator('date-picker', config)(
-            <DatePicker />
+            <DatePicker />,
           )}
         </FormItem>
         <FormItem
@@ -73,7 +73,7 @@ const TimeRelatedForm = Form.create()(React.createClass({
           label="DatePicker[showTime]"
         >
         {getFieldDecorator('date-time-picker', config)(
-            <DatePicker showTime format="YYYY-MM-DD HH:mm:ss" />
+            <DatePicker showTime format="YYYY-MM-DD HH:mm:ss" />,
           )}
         </FormItem>
         <FormItem
@@ -81,7 +81,7 @@ const TimeRelatedForm = Form.create()(React.createClass({
           label="MonthPicker"
         >
         {getFieldDecorator('month-picker', config)(
-            <MonthPicker />
+            <MonthPicker />,
           )}
         </FormItem>
         <FormItem
@@ -89,7 +89,7 @@ const TimeRelatedForm = Form.create()(React.createClass({
           label="RangePicker"
         >
         {getFieldDecorator('range-picker', rangeConfig)(
-            <RangePicker />
+            <RangePicker />,
           )}
         </FormItem>
         <FormItem
@@ -97,7 +97,7 @@ const TimeRelatedForm = Form.create()(React.createClass({
           label="RangePicker[showTime]"
         >
         {getFieldDecorator('range-time-picker', rangeConfig)(
-            <RangePicker showTime format="YYYY-MM-DD HH:mm:ss" />
+            <RangePicker showTime format="YYYY-MM-DD HH:mm:ss" />,
           )}
         </FormItem>
         <FormItem
@@ -105,7 +105,7 @@ const TimeRelatedForm = Form.create()(React.createClass({
           label="TimePicker"
         >
         {getFieldDecorator('time-picker', config)(
-            <TimePicker />
+            <TimePicker />,
           )}
         </FormItem>
         <FormItem wrapperCol={{ span: 16, offset: 8 }}>

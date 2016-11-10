@@ -8,69 +8,44 @@
 [![](https://img.shields.io/travis/ant-design/ant-design.svg?style=flat-square)](https://travis-ci.org/ant-design/ant-design)
 [![npm package](https://img.shields.io/npm/v/antd.svg?style=flat-square)](https://www.npmjs.org/package/antd)
 [![NPM downloads](http://img.shields.io/npm/dm/antd.svg?style=flat-square)](https://npmjs.org/package/antd)
+[![CDNJS](https://img.shields.io/cdnjs/v/antd.svg?style=flat-square)](https://cdnjs.com/libraries/antd)
 [![Dependency Status](https://david-dm.org/ant-design/ant-design.svg?style=flat-square)](https://david-dm.org/ant-design/ant-design)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ant-design/ant-design.svg)](http://isitmaintained.com/project/ant-design/ant-design "Average time to resolve an issue")
 [![Join the chat at https://gitter.im/ant-design/ant-design](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ant-design/ant-design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-An enterprise-class UI design language and React-based implementation.
+一套企业级的 UI 设计语言和 React 实现。
 
-## Features
+## 特性
 
-- An enterprise-class design language and high quality UI.
-- Graceful UI components out of the box, base on [React Component](http://react-component.github.io/badgeboard/).
-- Writen in TypeScript with complete define types.
-- A npm + webpack + babel + [dora](https://github.com/dora-js/dora) + [dva](https://github.com/dvajs/dva) development framework.
+- 提炼和服务企业级中后台产品的交互语言和视觉风格。
+- [React Component](http://react-component.github.io/badgeboard/) 基础上精心封装的高质量 UI 组件。
+- 使用 TypeScript 构建，提供完整的类型定义文件。
+- 基于 npm + webpack + babel + [dora](https://github.com/dora-js/dora) + [dva](https://github.com/dvajs/dva) 的企业级业务开发框架。
 
-## Install
+## 安装
 
 ```bash
 npm install antd
 ```
 
-## Usage
-
-### Use prebuilt bundle
+## 示例
 
 ```jsx
 import { DatePicker } from 'antd';
 ReactDOM.render(<DatePicker />, mountNode);
 ```
 
-And import style manually:
+引入样式：
 
 ```jsx
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 ```
 
-### Use modularized antd
-
-- Use [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) (Recommended)
-
-   ```js
-   // .babelrc
-   {
-     "plugins": [["import", { libraryName: "antd", style: "css" }]]
-   }
-   ```
-
-   Then you can import components from antd directly.
-
-   ```jsx
-   // import js and css modularly, parsed by babel-plugin-import
-   import { DatePicker } from 'antd';
-   ```
-
-- Manually import
-
-   ```jsx
-   import DatePicker from 'antd/lib/date-picker';  // just for js
-   import 'antd/lib/date-picker/style/css';  // with style
-   ```
+按需加载可通过此写法 `import DatePicker from 'antd/lib/date-picker'` 或使用插件 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)。
 
 
-## Browser Support
+## 浏览器支持
 
-Normal browsers and Internet Explorer 9+.
+现代浏览器和 IE9 及以上。
 
 > [IE8 issues](https://github.com/xcatliu/react-ie8)
 
@@ -88,24 +63,24 @@ tsconfig.json
 }
 ```
 
-## Links
+## 链接
 
-- [Home page](http://ant.design/)
-- [UI library](http://ant.design/docs/react/introduce)
-- [ChangeLog](CHANGELOG.en-US.md)
-- [Scaffold tool](https://github.com/ant-design/antd-init/)
-- [Development tool](http://ant-tool.github.io/)
-- [React components](http://react-component.github.io/)
-- [Mobile UI](http://mobile.ant.design)
-- [React style guide](https://github.com/react-component/react-component.github.io/blob/master/docs/zh-cn/component-code-style.md)
-- [React component design guide](https://github.com/react-component/react-component.github.io/blob/master/docs/zh-cn/component-design.md)
-- [Developer Instruction](https://github.com/ant-design/ant-design/wiki/Development)
-- [Versioning Release Note](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
-- [Boilerplates](https://github.com/ant-design/ant-design/issues/129)
-- [FAQ](https://github.com/ant-design/ant-design/wiki/FAQ)
-- [CodePen boilerplate](http://codepen.io/benjycui/pen/KgPZrE?editors=001) for bug reports
+- [首页](http://ant.design/)
+- [React 实现](http://ant.design/docs/react/introduce)
+- [修改记录](CHANGELOG.zh-CN.md)
+- [开发脚手架](https://github.com/ant-design/antd-init/)
+- [开发工具文档](http://ant-tool.github.io/)
+- [React 基础组件](http://react-component.github.io/)
+- [移动端组件](http://mobile.ant.design)
+- [React 代码规范](https://github.com/react-component/react-component.github.io/blob/master/docs/zh-cn/component-code-style.md)
+- [组件设计原则](https://github.com/react-component/react-component.github.io/blob/master/docs/zh-cn/component-design.md)
+- [网站和组件开发说明](https://github.com/ant-design/ant-design/wiki/%E7%BD%91%E7%AB%99%E5%92%8C%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E8%AF%B4%E6%98%8E)
+- [版本发布手册](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
+- [社区贡献脚手架和范例](https://github.com/ant-design/ant-design/issues/129)
+- [常见问题](https://github.com/ant-design/ant-design/wiki/FAQ)
+- [CodePen 模板](http://codepen.io/benjycui/pen/KgPZrE?editors=001)
 - [Awesome Ant Design](https://github.com/websemantics/awesome-ant-design)
 
-## Contributing
+## 如何贡献
 
-We welcome all contributions, please read our [CONTRIBUTING.md](https://github.com/ant-design/ant-design/blob/master/.github/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/ant-design/ant-design/pulls) or as a [GitHub issue](https://github.com/ant-design/ant-design/issues). If you'd like to improve code, check out the [Development Instruction](https://github.com/ant-design/ant-design/wiki/Development) and have a good time! :)
+我们欢迎任何形式的贡献，有任何建议或意见您可以进行 [Pull Request](https://github.com/ant-design/ant-design/pulls)，或者给我们 [提问](https://github.com/ant-design/ant-design/issues)。

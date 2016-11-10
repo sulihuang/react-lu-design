@@ -32,6 +32,6 @@ ReactDOM.render(
       <Col span={12} offset={6}>col-12 col-offset-6</Col>
     </Row>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

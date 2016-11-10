@@ -76,7 +76,7 @@ export default class Article extends React.Component {
           {
             !description ? null :
               props.utils.toReactComponent(
-                ['section', { className: 'markdown' }].concat(getChildren(description))
+                ['section', { className: 'markdown' }].concat(getChildren(description)),
               )
           }
           {
@@ -85,7 +85,7 @@ export default class Article extends React.Component {
           }
           {
             this.getArticle(props.utils.toReactComponent(
-              ['section', { className: 'markdown' }].concat(getChildren(content.content))
+              ['section', { className: 'markdown' }].concat(getChildren(content.content)),
             ))
           }
         </article>

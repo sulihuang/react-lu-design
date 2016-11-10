@@ -30,6 +30,6 @@ ReactDOM.render(
     <Button type="dashed">Dashed</Button>
     <Button type="dashed" disabled>Dashed(disabled)</Button>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

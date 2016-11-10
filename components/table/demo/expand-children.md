@@ -103,6 +103,6 @@ const rowSelection = {
 
 ReactDOM.render(
   <Table columns={columns} rowSelection={rowSelection} dataSource={data} />,
-  mountNode
+  mountNode,
 );
 ````

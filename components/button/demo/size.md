@@ -26,6 +26,6 @@ ReactDOM.render(
     <Button type="primary">Default</Button>
     <Button type="primary" size="small">Small</Button>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

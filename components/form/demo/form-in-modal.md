@@ -34,7 +34,7 @@ const CollectionCreateForm = Form.create()(
             {getFieldDecorator('title', {
               rules: [{ required: true, message: 'Please input the title of collection!' }],
             })(
-              <Input />
+              <Input />,
             )}
           </FormItem>
           <FormItem label="Description">
@@ -47,13 +47,13 @@ const CollectionCreateForm = Form.create()(
               <Radio.Group>
                 <Radio value="public">Public</Radio>
                 <Radio value="private">Private</Radio>
-              </Radio.Group>
+              </Radio.Group>,
             )}
           </FormItem>
         </Form>
       </Modal>
     );
-  }
+  },
 );
 
 const CollectionsPage = React.createClass({

@@ -92,7 +92,7 @@ const RegistrationForm = Form.create()(React.createClass({
     })(
       <Select className="icp-selector">
         <Option value="86">+86</Option>
-      </Select>
+      </Select>,
     );
     return (
       <Form horizontal onSubmit={this.handleSubmit}>
@@ -108,7 +108,7 @@ const RegistrationForm = Form.create()(React.createClass({
               required: true, message: 'Please input your E-mail!',
             }],
           })(
-            <Input />
+            <Input />,
           )}
         </FormItem>
         <FormItem
@@ -123,7 +123,7 @@ const RegistrationForm = Form.create()(React.createClass({
               validator: this.checkConfirm,
             }],
           })(
-            <Input type="password" onBlur={this.handlePasswordBlur} />
+            <Input type="password" onBlur={this.handlePasswordBlur} />,
           )}
         </FormItem>
         <FormItem
@@ -138,7 +138,7 @@ const RegistrationForm = Form.create()(React.createClass({
               validator: this.checkPassowrd,
             }],
           })(
-            <Input type="password" />
+            <Input type="password" />,
           )}
         </FormItem>
         <FormItem
@@ -156,7 +156,7 @@ const RegistrationForm = Form.create()(React.createClass({
           {getFieldDecorator('nickname', {
             rules: [{ required: true, message: 'Please input your nickname!' }],
           })(
-            <Input />
+            <Input />,
           )}
         </FormItem>
         <FormItem
@@ -167,7 +167,7 @@ const RegistrationForm = Form.create()(React.createClass({
             initialValue: ['zhejiang', 'hangzhou', 'xihu'],
             rules: [{ type: 'array', required: true, message: 'Please select your habitual residence!' }],
           })(
-            <Cascader options={residences} />
+            <Cascader options={residences} />,
           )}
         </FormItem>
         <FormItem
@@ -177,7 +177,7 @@ const RegistrationForm = Form.create()(React.createClass({
           {getFieldDecorator('phone', {
             rules: [{ required: true, message: 'Please input your phone number!' }],
           })(
-            <Input addonBefore={prefixSelector} />
+            <Input addonBefore={prefixSelector} />,
           )}
         </FormItem>
         <FormItem
@@ -189,7 +189,7 @@ const RegistrationForm = Form.create()(React.createClass({
               {getFieldDecorator('captcha', {
                 rules: [{ required: true, message: 'Please input the captcha you got!' }],
               })(
-                <Input size="large" />
+                <Input size="large" />,
               )}
             </Col>
             <Col span={12}>
@@ -201,7 +201,7 @@ const RegistrationForm = Form.create()(React.createClass({
           {getFieldDecorator('agreement', {
             valuePropName: 'checked',
           })(
-            <Checkbox>I had read the <a>agreement</a></Checkbox>
+            <Checkbox>I had read the <a>agreement</a></Checkbox>,
           )}
         </FormItem>
         <FormItem {...tailFormItemLayout}>

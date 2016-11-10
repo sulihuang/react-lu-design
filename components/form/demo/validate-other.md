@@ -60,7 +60,7 @@ const Demo = Form.create()(React.createClass({
             <Select placeholder="Please select a country">
               <Option value="china">China</Option>
               <Option value="use">U.S.A</Option>
-            </Select>
+            </Select>,
           )}
         </FormItem>
 
@@ -77,7 +77,7 @@ const Demo = Form.create()(React.createClass({
               <Option value="red">Red</Option>
               <Option value="green">Green</Option>
               <Option value="blue">Blue</Option>
-            </Select>
+            </Select>,
           )}
         </FormItem>
 
@@ -86,7 +86,7 @@ const Demo = Form.create()(React.createClass({
           label="InputNumber"
         >
           {getFieldDecorator('input-number', { initialValue: 3 })(
-            <InputNumber min={1} max={10} />
+            <InputNumber min={1} max={10} />,
           )}
           <span className="ant-form-text"> machines</span>
         </FormItem>
@@ -96,7 +96,7 @@ const Demo = Form.create()(React.createClass({
           label="Switch"
         >
           {getFieldDecorator('switch', { valuePropName: 'checked' })(
-            <Switch />
+            <Switch />,
           )}
         </FormItem>
 
@@ -105,7 +105,7 @@ const Demo = Form.create()(React.createClass({
           label="Slider"
         >
           {getFieldDecorator('slider')(
-            <Slider marks={{ 0: 'A', 20: 'B', 40: 'C', 60: 'D', 80: 'E', 100: 'F' }} />
+            <Slider marks={{ 0: 'A', 20: 'B', 40: 'C', 60: 'D', 80: 'E', 100: 'F' }} />,
           )}
         </FormItem>
 
@@ -118,7 +118,7 @@ const Demo = Form.create()(React.createClass({
               <RadioButton value="a">item 1</RadioButton>
               <RadioButton value="b">item 2</RadioButton>
               <RadioButton value="c">item 3</RadioButton>
-            </RadioGroup>
+            </RadioGroup>,
           )}
         </FormItem>
 
@@ -135,7 +135,7 @@ const Demo = Form.create()(React.createClass({
               <Button type="ghost">
                 <Icon type="upload" /> Click to upload
               </Button>
-            </Upload>
+            </Upload>,
           )}
         </FormItem>
 

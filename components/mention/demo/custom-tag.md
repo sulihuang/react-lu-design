@@ -39,7 +39,7 @@ const CustomNavMention = React.createClass({
   onSearchChange(value) {
     const searchValue = value.toLowerCase();
     const filtered = webFrameworks.filter(item =>
-      item.name.toLowerCase().indexOf(searchValue) !== -1
+      item.name.toLowerCase().indexOf(searchValue) !== -1,
     );
     const suggestions = filtered.map(suggestion =>
       <Nav value={suggestion.name} >
@@ -63,6 +63,6 @@ const CustomNavMention = React.createClass({
 
 ReactDOM.render(
   <CustomNavMention />,
-  mountNode
+  mountNode,
 );
 ````

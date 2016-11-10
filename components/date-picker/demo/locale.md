@@ -38,6 +38,6 @@ ReactDOM.render(
     showTime
     onChange={log}
   />,
-  mountNode
+  mountNode,
 );
 ````

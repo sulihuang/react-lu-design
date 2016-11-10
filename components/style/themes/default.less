@@ -2,33 +2,33 @@
 @ant-prefix             : ant;
 
 // Color
-@primary-color          : #2db7f5;
-@info-color             : #2db7f5;
-@success-color          : #87d068;
-@error-color            : #f50;
+@primary-color          : #1589ee;
+@info-color             : #54698d;
+@success-color          : #4bca81;
+@error-color            : #d4504c;
 @warning-color          : #fa0;
 @normal-color           : #d9d9d9;
 
 // ------ Base & Require ------
 @body-background        : #fff;
-@font-family            : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+@font-family            : "Avenir Next", Avenir, Roboto, "Segoe UI", "Helvetica Neue", "Helvetica", "PingFang SC", "Hiragino Sans GB", "Source Han Sans", "Microsoft YaHei", sans-serif;
 @code-family            : Consolas,Menlo,Courier,monospace;
-@text-color             : #666;
+@text-color             : #16325c;
 @heading-color          : #404040;
-@font-size-base         : 12px;
+@font-size-base         : 14px;
 @line-height-base       : 1.5;
 @line-height-computed   : floor((@font-size-base * @line-height-base));
-@border-radius-base     : 6px;
-@border-radius-sm       : 4px;
+@border-radius-base     : .25rem;
+@border-radius-sm       : .125rem;
 
 // ICONFONT
 @iconfont-css-prefix    : anticon;
 @icon-url               : "https://at.alicdn.com/t/font_uzv8nkw1nabgldi";
 
 // LINK
-@link-color             : #2db7f5;
-@link-hover-color       : tint(@link-color, 20%);
-@link-active-color      : shade(@link-color, 5%);
+@link-color             : #0070d2;
+@link-hover-color       : tint(@link-color, 10%);
+@link-active-color      : shade(@link-color, 10%);
 @link-hover-decoration  : none;
 
 // Disabled cursor for form controls and buttons.
@@ -70,17 +70,17 @@
 @shadow-2               : 0 2px 8px @shadow-color;
 
 // Buttons
-@btn-font-weight        : 500;
-@btn-border-radius-base : @border-radius-base;
+@btn-font-weight        : normal;
+@btn-border-radius-base : .1875rem;
 @btn-border-radius-sm   : @border-radius-sm;
 
 @btn-primary-color      : #fff;
 @btn-primary-bg         : @primary-color;
 @btn-group-border       : shade(@primary-color, 5%);
 
-@btn-default-color      : @text-color;
-@btn-default-bg         : @background-color-base;
-@btn-default-border     : @border-color-base;
+@btn-default-color      : @link-color;
+@btn-default-bg         : #fff;
+@btn-default-border     : #d8dde6;
 
 @btn-ghost-color        : @text-color;
 @btn-ghost-bg           : transparent;
@@ -90,12 +90,12 @@
 @btn-disable-bg         : @background-color-base;
 @btn-disable-border     : @border-color-base;
 
-@btn-padding-base       : 4px 15px;
+@btn-padding-base       : 0.625rem 1.4rem;
 
 @btn-font-size-lg       : 14px;
-@btn-padding-lg         : 4px 15px 5px 15px;
+@btn-padding-lg         : 0.75rem 1.68rem;
 
-@btn-padding-sm         : 1px 7px;
+@btn-padding-sm         : 0.319rem 0.638rem;
 
 @btn-circle-size        : 28px;
 @btn-circle-size-lg     : 32px;

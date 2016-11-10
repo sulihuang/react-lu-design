@@ -28,6 +28,6 @@ ReactDOM.render(
     <Button type="ghost" shape="circle-outline" icon="search" />
     <Button type="ghost" icon="search">Search</Button>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

@@ -55,10 +55,10 @@ const AdvancedSearchForm = Form.create()(React.createClass({
         <Col span={8} key={i}>
           <FormItem {...formItemLayout} label={`Field ${i}`}>
             {getFieldDecorator(`field-${i}`)(
-              <Input placeholder="placeholder" />
+              <Input placeholder="placeholder" />,
             )}
           </FormItem>
-        </Col>
+        </Col>,
       );
     }
 

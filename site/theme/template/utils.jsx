@@ -2,7 +2,7 @@ export function getMenuItems(moduleData, locale) {
   const menuMeta = moduleData.map(item => item.meta);
   const menuItems = {};
   menuMeta.sort(
-    (a, b) => (a.order || 0) - (b.order || 0)
+    (a, b) => (a.order || 0) - (b.order || 0),
   ).forEach((meta) => {
     const category = (meta.category && meta.category[locale]) || meta.category || 'topLevel';
     if (!menuItems[category]) {
@@ -20,18 +20,7 @@ export function getMenuItems(moduleData, locale) {
 }
 
 export function isZhCN() {
-  if (location.search.indexOf('locale=zh-CN') > -1) {
-    return true;
-  }
-  if (location.search.indexOf('locale=en-US') > -1) {
-    return false;
-  }
-
-  const language = (
-    typeof localStorage === 'undefined' ||
-      !localStorage.getItem('locale')
-  ) ? navigator.language : localStorage.getItem('locale');
-  return language === 'zh-CN';
+  return true;
 }
 
 export function ping(url, callback) {

@@ -34,14 +34,14 @@ const NormalLoginForm = Form.create()(React.createClass({
           {getFieldDecorator('userName', {
             rules: [{ required: true, message: 'Please input your username!' }],
           })(
-            <Input addonBefore={<Icon type="user" />} placeholder="Username" />
+            <Input addonBefore={<Icon type="user" />} placeholder="Username" />,
           )}
         </FormItem>
         <FormItem>
           {getFieldDecorator('password', {
             rules: [{ required: true, message: 'Please input your Password!' }],
           })(
-            <Input addonBefore={<Icon type="lock" />} type="password" placeholder="Password" />
+            <Input addonBefore={<Icon type="lock" />} type="password" placeholder="Password" />,
           )}
         </FormItem>
         <FormItem>
@@ -49,7 +49,7 @@ const NormalLoginForm = Form.create()(React.createClass({
             valuePropName: 'checked',
             initialValue: true,
           })(
-            <Checkbox>Remember me</Checkbox>
+            <Checkbox>Remember me</Checkbox>,
           )}
           <a className="login-form-forgot">Forgot password</a>
           <Button type="primary" htmlType="submit" className="login-form-button">

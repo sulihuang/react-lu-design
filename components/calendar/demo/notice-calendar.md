@@ -53,7 +53,7 @@ function dateCellRender(value) {
           <li key={index}>
             <span className={`event-${item.type}`}>●</span>
             {item.content}
-          </li>
+          </li>,
         )
       }
     </ul>

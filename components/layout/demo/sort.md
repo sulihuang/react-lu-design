@@ -25,6 +25,6 @@ ReactDOM.render(
       <Col span={6} pull={18}>col-6 col-pull-18</Col>
     </Row>
   </div>,
-  mountNode
+  mountNode,
 );
 ````

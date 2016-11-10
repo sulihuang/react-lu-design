@@ -1,10 +1,8 @@
 import React from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
-import { Select, Modal } from 'antd';
+import { Modal } from 'antd';
 import { version as antdVersion } from 'antd/package.json';
 import { docVersions } from '../../';
-
-const Option = Select.Option;
 
 function isLocalStorageNameSupported() {
   const testKey = 'test';
@@ -65,63 +63,10 @@ class Footer extends React.Component {
   }
 
   render() {
-    const options = Object.keys(docVersions).map(version => (
-      <Option value={docVersions[version]} key={version}>{version}</Option>
-    ));
     return (
       <footer id="footer">
         <ul>
-          <li>
-            <h2>GitHub</h2>
-            <div>
-              <a target="_blank " href="https://github.com/ant-design/ant-design">
-                <FormattedMessage id="app.footer.repo" />
-              </a>
-            </div>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/dvajs/dva">dva</a> - <FormattedMessage id="app.footer.dva" />
-            </div>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/dvajs/dva-cli">dva-cli</a> -
-              <FormattedMessage id="app.footer.scaffold" />
-            </div>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="http://ant-tool.github.io">ant-tool</a> - <FormattedMessage id="app.footer.dev-tools" />
-            </div>
-          </li>
-          <li>
-            <h2><FormattedMessage id="app.footer.links" /></h2>
-            <div>
-              <a href="http://mobile.ant.design">Ant Design Mobile</a>
-              <span> - </span>
-              <FormattedMessage id="app.footer.mobile" />
-            </div>
-            <div>
-              <a href="https://g2.alipay.com/">G2</a>
-              <span> - </span>
-              <FormattedMessage id="app.footer.data-vis" />
-            </div>
-            <div>
-              <a href="https://antv.alipay.com/">AntV</a>
-              <span> - </span>
-              <FormattedMessage id="app.footer.data-vis-spec" />
-            </div>
-            <div>
-              <a href="http://motion.ant.design">Ant Motion</a>
-              <span> - </span>
-              <FormattedMessage id="app.footer.motion" />
-            </div>
-            <div>
-              <a href="http://library.ant.design/">AntD Library</a>
-              <span> - </span>
-              <FormattedMessage id="app.footer.antd-library" />
-            </div>
-            <div>
-              <a href="http://ux.ant.design">Ant UX</a>
-              <span> - </span>
-              <FormattedMessage id="app.footer.material" />
-            </div>
-          </li>
+
           <li>
             <h2><FormattedMessage id="app.footer.community" /></h2>
             <div>
@@ -129,35 +74,13 @@ class Footer extends React.Component {
                 <FormattedMessage id="app.footer.change-log" />
               </a>
             </div>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/ant-design/ant-design/issues">
-                <FormattedMessage id="app.footer.feedback" />
-              </a>
-            </div>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://gitter.im/ant-design/ant-design">
-                <FormattedMessage id="app.footer.discuss" />
-              </a>
-            </div>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/ant-design/ant-design/issues/new">
-                <FormattedMessage id="app.footer.bug-report" />
-              </a>
-            </div>
+
           </li>
           <li>
-            <div>©2016 <FormattedMessage id="app.footer.author" /></div>
+            <div>©2016 ZhuluX Inc.</div>
             <div>Powered by <a href="https://github.com/benjycui/bisheng">BiSheng</a></div>
             <div style={{ marginTop: 10 }}>
-              <FormattedMessage id="app.footer.version" />
-              <Select
-                size="small"
-                dropdownMatchSelectWidth={false}
-                defaultValue={antdVersion}
-                onChange={this.handleVersionChange}
-              >
-                {options}
-              </Select>
+              <FormattedMessage id="app.footer.version" /> {antdVersion}
             </div>
           </li>
         </ul>

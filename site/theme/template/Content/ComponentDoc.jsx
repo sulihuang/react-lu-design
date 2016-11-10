@@ -46,14 +46,14 @@ export default class ComponentDoc extends React.Component {
             <Demo {...demoData}
               key={meta.filename + index} utils={props.utils}
               expand={expand} pathname={location.pathname}
-            />
+            />,
           );
         } else {
           rightChildren.push(
             <Demo {...demoData}
               key={meta.filename + index} utils={props.utils}
               expand={expand} pathname={location.pathname}
-            />
+            />,
           );
         }
       });
@@ -95,7 +95,7 @@ export default class ComponentDoc extends React.Component {
             {
               props.utils.toReactComponent(
                 ['section', { className: 'markdown' }]
-                  .concat(getChildren(content))
+                  .concat(getChildren(content)),
               )
             }
             <h2>
@@ -123,7 +123,7 @@ export default class ComponentDoc extends React.Component {
             props.utils.toReactComponent(
               ['section', {
                 className: 'markdown api-container',
-              }].concat(getChildren(doc.api || ['placeholder']))
+              }].concat(getChildren(doc.api || ['placeholder'])),
             )
           }
         </article>

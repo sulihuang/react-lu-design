@@ -67,7 +67,7 @@ let App = React.createClass({
           })(
             <Mention
               suggestions={['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご']}
-            />
+            />,
           )}
         </FormItem>
         <FormItem wrapperCol={{ span: 14, offset: 6 }}>

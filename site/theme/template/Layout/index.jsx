@@ -5,9 +5,7 @@ import { LocaleProvider } from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
 import Header from './Header';
 import Footer from './Footer';
-import enLocale from '../../en-US';
 import cnLocale from '../../zh-CN';
-import * as utils from '../utils';
 import '../../static/style';
 
 // Expose to iframe
@@ -15,7 +13,7 @@ window.react = React;
 window['react-dom'] = ReactDOM;
 window.antd = require('antd');
 
-const appLocale = utils.isZhCN() ? cnLocale : enLocale;
+const appLocale = cnLocale;
 addLocaleData(appLocale.data);
 
 export default class Layout extends React.Component {

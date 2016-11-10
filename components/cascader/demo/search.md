@@ -51,6 +51,6 @@ ReactDOM.render(
     placeholder="Please select"
     showSearch
   />,
-  mountNode
+  mountNode,
 );
 ````

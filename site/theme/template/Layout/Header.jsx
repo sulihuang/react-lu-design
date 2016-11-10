@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import enquire from 'enquire.js';
 import debounce from 'lodash.debounce';
 import classNames from 'classnames';
-import { Select, Menu, Row, Col, Icon, Button, Popover } from 'antd';
+import { Select, Menu, Row, Col, Icon, Popover } from 'antd';
 
 const Option = Select.Option;
 
@@ -58,14 +58,6 @@ export default class Header extends React.Component {
     return option.props['data-label'].indexOf(value.toLowerCase()) > -1;
   }
 
-  handleLangChange = () => {
-    if (typeof localStorage !== 'undefined') {
-      const locale = this.context.intl.locale === 'zh-CN' ? 'en-US' : 'zh-CN';
-      localStorage.setItem('locale', locale);
-      location.search = `?locale=${locale}`;
-    }
-  }
-
   render() {
     const { location, picked } = this.props;
     const components = picked.components;
@@ -77,10 +69,8 @@ export default class Header extends React.Component {
       activeMenuItem = 'docs/react';
     }
 
-    const locale = this.context.intl.locale;
-    const excludedSuffix = locale === 'zh-CN' ? 'en-US.md' : 'zh-CN.md';
     const options = components
-            .filter(({ meta }) => !meta.filename.endsWith(excludedSuffix))
+            .filter(({ meta }) => !meta.filename.endsWith('zh-CN.md'))
             .map(({ meta }) => {
               const pathSnippet = meta.filename.split('/')[1];
               const url = `/components/${pathSnippet}`;
@@ -101,9 +91,6 @@ export default class Header extends React.Component {
     const menuMode = this.state.menuMode;
     const query = location.query;
     const menu = [
-      <Button className="lang" type="ghost" size="small" onClick={this.handleLangChange} key="lang">
-        <FormattedMessage id="app.header.lang" />
-      </Button>,
       <Menu mode={menuMode} selectedKeys={[activeMenuItem]} id="nav" key="nav">
         <Menu.Item key="home">
           <Link to={{ query, pathname: '/' }}>
@@ -138,7 +125,7 @@ export default class Header extends React.Component {
       </Menu>,
     ];
 
-    const searchPlaceholder = locale === 'zh-CN' ? '搜索组件...' : 'Search Components...';
+    const searchPlaceholder = '搜索组件...';
     return (
       <header id="header" className={headerClassName}>
         <Popover
@@ -155,8 +142,7 @@ export default class Header extends React.Component {
         <Row>
           <Col lg={4} md={6} sm={7} xs={24}>
             <Link to={{ query, pathname: '/' }} id="logo">
-              <img alt="logo" src="https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg" />
-              <span>Ant Design</span>
+              LuDesign
             </Link>
           </Col>
           <Col lg={20} md={18} sm={17} xs={0} style={{ display: 'block' }}>

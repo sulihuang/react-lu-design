@@ -24,7 +24,7 @@ ReactDOM.render(
     </BackTop>
     Scroll down to see the bottom right <strong>blue</strong> button.
   </div>,
-  mountNode
+  mountNode,
 );
 ````
 

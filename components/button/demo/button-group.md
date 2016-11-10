@@ -68,7 +68,7 @@ ReactDOM.render(
       <Button type="ghost">Small</Button>
     </ButtonGroup>
   </div>,
-  mountNode
+  mountNode,
 );
 ````
 

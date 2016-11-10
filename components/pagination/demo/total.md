@@ -23,6 +23,6 @@ ReactDOM.render(
     showTotal={total => `Total ${total} items`}
     pageSize={20} defaultCurrent={1}
   />,
-  mountNode
+  mountNode,
 );
 ````

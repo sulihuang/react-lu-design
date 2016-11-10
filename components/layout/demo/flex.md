@@ -60,6 +60,6 @@ ReactDOM.render(
       <Col span={4}>col-4</Col>
     </Row>
   </div>,
-  mountNode
+  mountNode,
 );
 ````
