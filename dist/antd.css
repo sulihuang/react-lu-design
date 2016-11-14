@@ -13936,7 +13936,7 @@ textarea.ant-pagination-options-quick-jumper input {
   overflow: hidden;
 }
 .ant-table-thead > tr > th {
-  background: #E7EEF0;
+  background: #e7eef0;
   font-weight: bold;
   -webkit-transition: background .3s ease;
   transition: background .3s ease;
@@ -13975,7 +13975,7 @@ textarea.ant-pagination-options-quick-jumper input {
 }
 .ant-table-footer {
   padding: 16px 8px;
-  background: #E7EEF0;
+  background: #e7eef0;
   position: relative;
   z-index: 2;
   top: -1px;
@@ -14017,7 +14017,7 @@ textarea.ant-pagination-options-quick-jumper input {
   width: 60px;
 }
 .ant-table-header {
-  background: #E7EEF0;
+  background: #e7eef0;
   overflow: hidden;
 }
 .ant-table-header table {
