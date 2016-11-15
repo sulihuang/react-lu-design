@@ -19,7 +19,7 @@
   line-height: 18px;
   text-align: center;
   padding: 0 6px;
-  font-size: 12px;
+  font-size: 14px;
   white-space: nowrap;
   -webkit-transform-origin: -10% center;
       -ms-transform-origin: -10% center;
@@ -118,12 +118,6 @@
   50% {
     opacity: 0;
   }
-}
-a -count:hover {
-  background: #dd7370;
-}
-a -count:active {
-  background: #c94c48;
 }
 .ant-scroll-number {
   overflow: hidden;

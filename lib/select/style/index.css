@@ -2,7 +2,7 @@
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  color: #666;
+  color: #16325c;
   font-size: 14px;
 }
 .ant-select > ul > li > a {
@@ -26,9 +26,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -91,7 +91,7 @@
   z-index: 1;
   background: #fff;
   top: 50%;
-  font-size: 12px;
+  font-size: 14px;
   color: #ccc;
   width: 12px;
   height: 12px;
@@ -334,9 +334,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 8px \9;
-  -webkit-transform: scale(0.57142857) rotate(0deg);
-      -ms-transform: scale(0.57142857) rotate(0deg);
-          transform: scale(0.57142857) rotate(0deg);
+  -webkit-transform: scale(0.66666667) rotate(0deg);
+      -ms-transform: scale(0.66666667) rotate(0deg);
+          transform: scale(0.66666667) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -465,7 +465,7 @@
   display: block;
   padding: 7px 16px;
   font-weight: normal;
-  color: #666;
+  color: #16325c;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
@@ -489,7 +489,7 @@
 .ant-select-dropdown-menu-item-selected:hover {
   background-color: #f7f7f7;
   font-weight: bold;
-  color: #666;
+  color: #16325c;
 }
 .ant-select-dropdown-menu-item-divider {
   height: 1px;
@@ -508,9 +508,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 10px \9;
-  -webkit-transform: scale(0.71428571) rotate(0deg);
-      -ms-transform: scale(0.71428571) rotate(0deg);
-          transform: scale(0.71428571) rotate(0deg);
+  -webkit-transform: scale(0.83333333) rotate(0deg);
+      -ms-transform: scale(0.83333333) rotate(0deg);
+          transform: scale(0.83333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;

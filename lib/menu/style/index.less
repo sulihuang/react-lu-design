@@ -25,8 +25,8 @@
   }
 
   &-item-group-title {
-    color: #999;
-    font-size: 12px;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
     line-height: 1.5;
     padding: 8px 16px;
   }
@@ -115,16 +115,9 @@
   }
 
   &-inline {
-    .@{menu-prefix-cls}-item {
-      border-left: .25rem solid transparent;
-      &:hover {
-        border-left-color: @primary-color;
-      }
-    }
     .@{menu-prefix-cls}-selected,
     .@{menu-prefix-cls}-item-selected {
-      border-left: .25rem solid @primary-color;
-      background-color: tint(@primary-color, 90%);
+      border-right: 2px solid @primary-color;
       transform: translateZ(0);
     }
   }
@@ -162,11 +155,11 @@
     // Disabled state sets text to gray and nukes hover/tab effects
     &.@{menu-prefix-cls}-item-disabled,
     &.@{menu-prefix-cls}-submenu-disabled {
-      color: #999 !important;
+      color: @text-color-secondary !important;
       cursor: not-allowed;
       background: none;
       > a {
-        color: #999 !important;
+        color: @text-color-secondary !important;
         pointer-events: none;
       }
     }
@@ -282,9 +275,11 @@
     & > .@{menu-prefix-cls}-item,
     & > .@{menu-prefix-cls}-submenu > .@{menu-prefix-cls}-submenu-title {
       padding: 0px 16px 0 28px;
-      font-size: 12px;
+      font-size: @font-size-base;
       line-height: 42px;
       height: 42px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
@@ -326,7 +321,7 @@
 .@{menu-prefix-cls} {
   &-dark,
   &-dark &-sub {
-    color: #999;
+    color: @text-color-secondary;
     background: #404040;
   }
 
@@ -347,7 +342,7 @@
 
   &-dark &-item,
   &-dark &-item > a {
-    color: #999;
+    color: @text-color-secondary;
   }
 
   &-dark&-inline,

@@ -9,7 +9,7 @@
 .@{tree-prefix-cls} {
   margin: 0;
   padding: 5px;
-  font-size: 12px;
+  font-size: @font-size-base;
   li {
     padding: 0;
     margin: 7px 0;
@@ -42,7 +42,7 @@
     }
     &.filter-node {
       > a {
-        color: @error-color!important;
+        color: @highlight-color!important;
         font-weight: bold!important;
       }
     }
@@ -58,7 +58,7 @@
       cursor: pointer;
       text-decoration: none;
       vertical-align: top;
-      color: #666;
+      color: @text-color;
       transition: all 0.3s ease;
       &:hover {
         background-color: tint(@primary-color, 90%);

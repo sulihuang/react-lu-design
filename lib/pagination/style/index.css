@@ -35,7 +35,7 @@
 }
 .ant-pagination-item a {
   text-decoration: none;
-  color: #666;
+  color: #16325c;
   -webkit-transition: none;
   transition: none;
   margin: 0 6px;
@@ -70,9 +70,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 8px \9;
-  -webkit-transform: scale(0.57142857) rotate(0deg);
-      -ms-transform: scale(0.57142857) rotate(0deg);
-          transform: scale(0.57142857) rotate(0deg);
+  -webkit-transform: scale(0.66666667) rotate(0deg);
+      -ms-transform: scale(0.66666667) rotate(0deg);
+          transform: scale(0.66666667) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -105,7 +105,7 @@
 .ant-pagination-jump-next {
   font-family: Arial;
   cursor: pointer;
-  color: #666;
+  color: #16325c;
   border-radius: 0.25rem;
   list-style: none;
   min-width: 28px;
@@ -124,16 +124,16 @@
 }
 .ant-pagination-prev a,
 .ant-pagination-next a {
-  color: #666;
+  color: #16325c;
 }
 .ant-pagination-prev a:after,
 .ant-pagination-next a:after {
   display: inline-block;
   font-size: 14px;
   font-size: 8px \9;
-  -webkit-transform: scale(0.57142857) rotate(0deg);
-      -ms-transform: scale(0.57142857) rotate(0deg);
-          transform: scale(0.57142857) rotate(0deg);
+  -webkit-transform: scale(0.66666667) rotate(0deg);
+      -ms-transform: scale(0.66666667) rotate(0deg);
+          transform: scale(0.66666667) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;

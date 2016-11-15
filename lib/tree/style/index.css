@@ -10,7 +10,7 @@
 .ant-tree-checkbox-wrapper:hover .ant-tree-checkbox .ant-tree-checkbox-inner,
 .ant-tree-checkbox:hover .ant-tree-checkbox-inner,
 .ant-tree-checkbox-focused .ant-tree-checkbox-inner {
-  border-color: #bbb;
+  border-color: #1589ee;
 }
 .ant-tree-checkbox-inner {
   position: relative;
@@ -85,14 +85,7 @@
 }
 .ant-tree-checkbox-checked .ant-tree-checkbox-inner,
 .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner {
-  border-color: #1589ee;
   background-color: #1589ee;
-}
-.ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-checked .ant-tree-checkbox-inner,
-.ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner,
-.ant-tree-checkbox-checked:hover .ant-tree-checkbox-inner,
-.ant-tree-checkbox-indeterminate:hover .ant-tree-checkbox-inner {
-  border-color: #1589ee;
 }
 .ant-tree-checkbox-disabled.ant-tree-checkbox-checked .ant-tree-checkbox-inner:after {
   -webkit-animation-name: none;
@@ -151,7 +144,7 @@
 .ant-tree {
   margin: 0;
   padding: 5px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .ant-tree li {
   padding: 0;
@@ -197,7 +190,7 @@
   cursor: pointer;
   text-decoration: none;
   vertical-align: top;
-  color: #666;
+  color: #16325c;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -248,9 +241,9 @@
 .ant-tree li span.ant-tree-switcher.ant-tree-noline_open:after {
   font-size: 14px;
   font-size: 6px \9;
-  -webkit-transform: scale(0.42857143) rotate(0deg);
-      -ms-transform: scale(0.42857143) rotate(0deg);
-          transform: scale(0.42857143) rotate(0deg);
+  -webkit-transform: scale(0.5) rotate(0deg);
+      -ms-transform: scale(0.5) rotate(0deg);
+          transform: scale(0.5) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -264,7 +257,7 @@
   position: absolute;
   top: 0;
   right: 4px;
-  color: #666;
+  color: #16325c;
   -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
@@ -296,9 +289,9 @@
 .ant-tree li span.ant-tree-switcher.ant-tree-noline_close:after {
   font-size: 14px;
   font-size: 6px \9;
-  -webkit-transform: scale(0.42857143) rotate(0deg);
-      -ms-transform: scale(0.42857143) rotate(0deg);
-          transform: scale(0.42857143) rotate(0deg);
+  -webkit-transform: scale(0.5) rotate(0deg);
+      -ms-transform: scale(0.5) rotate(0deg);
+          transform: scale(0.5) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -312,7 +305,7 @@
   position: absolute;
   top: 0;
   right: 4px;
-  color: #666;
+  color: #16325c;
   -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;

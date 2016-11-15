@@ -8,9 +8,11 @@
   // 输入框的不同校验状态
   .@{ant-prefix}-input {
     &,
-    &:hover,
-    &:focus {
+    &:hover {
       border-color: @border-color;
+    }
+
+    &:focus {
       .active(@border-color);
     }
 
@@ -50,11 +52,11 @@
     width: 100%;
     padding: 0;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: @font-size-lg;
     line-height: inherit;
-    color: @legend-color;
+    color: @text-color-secondary;
     border: 0;
-    border-bottom: 1px solid @legend-border-color;
+    border-bottom: 1px solid @border-color-base;
   }
 
   label {

@@ -2,7 +2,7 @@
 @import "../../style/mixins/index";
 
 @table-prefix-cls: ~"@{ant-prefix}-table";
-@table-head-background-color: #e7eef0;
+@table-head-background-color: @background-color-base;
 
 .@{table-prefix-cls} {
   font-size: @font-size-base;
@@ -33,12 +33,12 @@
 
     .@{iconfont-css-prefix}-filter {
       margin-left: 4px;
-      font-size: 12px;
+      font-size: @font-size-base;
       cursor: pointer;
       color: #aaa;
       transition: all 0.3s ease;
       &:hover {
-        color: #666;
+        color: @text-color;
       }
     }
 
@@ -49,6 +49,7 @@
 
   &-tbody > tr > td {
     border-bottom: 1px solid @border-color-split;
+    position: relative;
   }
 
   &-thead > tr,
@@ -56,7 +57,7 @@
     transition: all .3s ease;
     &.@{table-prefix-cls}-row-hover,
     &:hover {
-      background: #f6fafe;
+      background: tint(@primary-color, 90%);
     }
   }
 
@@ -165,10 +166,6 @@
       padding: 0 8px;
     }
 
-    &.@{table-prefix-cls}-bordered .@{table-prefix-cls}-body > table {
-      border: 0;
-    }
-
     .@{table-prefix-cls}-thead > tr > th {
       padding: 10px 8px;
       background: #fff;
@@ -192,6 +189,11 @@
     .@{table-prefix-cls}-row:last-child td {
       border-bottom: 0;
     }
+
+    .@{table-prefix-cls}-title,
+    .@{table-prefix-cls}-footer {
+      top: 0;
+    }
   }
 
   &-column-sorter {
@@ -209,7 +211,7 @@
       width: 12px;
       cursor: pointer;
       &:hover .@{iconfont-css-prefix} {
-        color: #666;
+        color: @text-color;
       }
       &.on {
         .@{iconfont-css-prefix}-caret-up,
@@ -236,6 +238,8 @@
     .@{table-prefix-cls}-fixed-left table,
     .@{table-prefix-cls}-fixed-right table {
       border: 1px solid @border-color-split;
+      border-right: 0;
+      border-bottom: 0;
     }
 
     &.@{table-prefix-cls}-fixed-header {
@@ -266,21 +270,27 @@
       border-bottom: 0;
     }
 
-    .@{table-prefix-cls}-tbody tr:last-child {
-      > th,
-      > td {
-        border-bottom: 0;
-      }
-    }
-
     .@{table-prefix-cls}-thead > tr > th,
     .@{table-prefix-cls}-tbody > tr > td {
       border-right: 1px solid @border-color-split;
     }
-    .@{table-prefix-cls}-thead > tr:first-child > th,
-    .@{table-prefix-cls}-tbody > tr > td {
-      &:last-child {
-        border-right: 0;
+
+    &.@{table-prefix-cls}-small {
+      .@{table-prefix-cls}-header > table,
+      .@{table-prefix-cls}-body > table,
+      .@{table-prefix-cls}-fixed-left table,
+      .@{table-prefix-cls}-fixed-right table {
+        border: 0;
+      }
+
+      .@{table-prefix-cls}-title {
+        border: 0;
+        border-bottom: 1px solid @border-color-split;
+      }
+
+      .@{table-prefix-cls}-footer {
+        border: 0;
+        border-top: 1px solid @border-color-split;
       }
     }
   }
@@ -292,8 +302,8 @@
     text-align: center;
     position: relative;
     z-index: 2;
-    font-size: 12px;
-    color: #999;
+    font-size: @font-size-base;
+    color: @text-color-secondary;
     .@{iconfont-css-prefix} {
       margin-right: 4px;
     }

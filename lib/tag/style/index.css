@@ -12,7 +12,7 @@
   vertical-align: middle;
   opacity: 1;
   overflow: hidden;
-  margin: 2px 4px 2px 0;
+  margin: 4px 8px 4px 0;
   cursor: pointer;
 }
 .ant-tag:hover {
@@ -32,16 +32,16 @@
   display: inline-block;
   font-size: 14px;
   font-size: 10px \9;
-  -webkit-transform: scale(0.71428571) rotate(0deg);
-      -ms-transform: scale(0.71428571) rotate(0deg);
-          transform: scale(0.71428571) rotate(0deg);
+  -webkit-transform: scale(0.83333333) rotate(0deg);
+      -ms-transform: scale(0.83333333) rotate(0deg);
+          transform: scale(0.83333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
   cursor: pointer;
   font-weight: bold;
   margin-left: 3px;
-  color: #666;
+  color: #16325c;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.66;
@@ -59,26 +59,11 @@
 .ant-tag-has-color {
   border-color: transparent;
 }
-.ant-tag-blue,
-.ant-tag-green,
-.ant-tag-yellow,
-.ant-tag-red,
-.ant-tag-blue a,
-.ant-tag-green a,
-.ant-tag-yellow a,
-.ant-tag-red a,
-.ant-tag-blue a:hover,
-.ant-tag-green a:hover,
-.ant-tag-yellow a:hover,
-.ant-tag-red a:hover,
-.ant-tag-blue .anticon-cross,
-.ant-tag-green .anticon-cross,
-.ant-tag-yellow .anticon-cross,
-.ant-tag-red .anticon-cross,
-.ant-tag-blue .anticon-cross:hover,
-.ant-tag-green .anticon-cross:hover,
-.ant-tag-yellow .anticon-cross:hover,
-.ant-tag-red .anticon-cross:hover {
+.ant-tag-has-color,
+.ant-tag-has-color a,
+.ant-tag-has-color a:hover,
+.ant-tag-has-color .anticon-cross,
+.ant-tag-has-color .anticon-cross:hover {
   color: #fff;
 }
 .ant-tag-blue {
@@ -92,6 +77,22 @@
 }
 .ant-tag-red {
   background: #d4504c;
+}
+.ant-tag-checkable {
+  background-color: transparent;
+  border-color: transparent;
+}
+.ant-tag-checkable:hover,
+.ant-tag-checkable:active,
+.ant-tag-checkable-checked {
+  color: #fff;
+}
+.ant-tag-checkable:hover {
+  background-color: #44a1f1;
+}
+.ant-tag-checkable:active,
+.ant-tag-checkable-checked {
+  background-color: #1482e2;
 }
 .ant-tag-close {
   width: 0 !important;

@@ -4,7 +4,7 @@
   top: -9999px;
   z-index: 1050;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -15,9 +15,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -61,9 +61,9 @@
   padding: 7px 16px;
   margin: 0;
   clear: both;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
-  color: #666;
+  color: #16325c;
   white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s ease;
@@ -71,7 +71,7 @@
 }
 .ant-dropdown-menu-item > a,
 .ant-dropdown-menu-submenu-title > a {
-  color: #666;
+  color: #16325c;
   display: block;
   padding: 7px 16px;
   margin: -7px -16px;
@@ -120,9 +120,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -172,15 +172,15 @@
           animation-name: antSlideDownOut;
 }
 .ant-dropdown-link {
-  font-size: 12px;
+  font-size: 14px;
 }
 .ant-dropdown-link .anticon-down {
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -199,9 +199,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -217,9 +217,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;

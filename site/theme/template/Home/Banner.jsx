@@ -16,13 +16,13 @@ function typeFunc(a) {
   return 'left';
 }
 
-export default function Banner({ location }) {
+export default function Banner({ location, onEnterChange }) {
   const query = location.query;
   return (
-    <section id="banner">
-      <ScrollElement scrollName="banner" className="page">
-        <QueueAnim className="banner-text-wrapper" type={typeFunc} delay={300}>
-          <h2 key="h2">ANT <p>DESIGN</p></h2>
+    <section id="banner" className="page">
+      <ScrollElement id="banner" onChange={({ mode }) => onEnterChange(mode)}>
+        <QueueAnim className="banner-text-wrapper" type={typeFunc} delay={300} key="banner">
+          <h2 key="h2">LU <p>DESIGN</p></h2>
           <p key="content"><FormattedMessage id="app.home.slogan" /></p>
           <span className="line" key="line" />
           <div key="button1" className="start-button clearfix">

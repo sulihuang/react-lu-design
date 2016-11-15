@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 .ant-notification-notice-message {
-  font-size: 14px;
+  font-size: 16px;
   color: #404040;
   margin-bottom: 4px;
   white-space: nowrap;
@@ -30,7 +30,7 @@
   padding-right: 24px;
 }
 .ant-notification-notice-with-icon .ant-notification-notice-message {
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 48px;
   margin-bottom: 4px;
 }

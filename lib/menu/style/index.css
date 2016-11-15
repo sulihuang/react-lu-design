@@ -18,7 +18,7 @@
 }
 .ant-menu-item-group-title {
   color: #999;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   padding: 8px 16px;
 }
@@ -97,16 +97,9 @@
 .ant-menu-vertical .ant-menu-sub .ant-menu-item {
   border-right: 0;
 }
-.ant-menu-inline .ant-menu-item {
-  border-left: .25rem solid transparent;
-}
-.ant-menu-inline .ant-menu-item:hover {
-  border-left-color: #1589ee;
-}
 .ant-menu-inline .ant-menu-selected,
 .ant-menu-inline .ant-menu-item-selected {
-  border-left: 0.25rem solid #1589ee;
-  background-color: #e8f3fd;
+  border-right: 2px solid #1589ee;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
@@ -209,9 +202,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 8px \9;
-  -webkit-transform: scale(0.57142857) rotate(0deg);
-      -ms-transform: scale(0.57142857) rotate(0deg);
-          transform: scale(0.57142857) rotate(0deg);
+  -webkit-transform: scale(0.66666667) rotate(0deg);
+      -ms-transform: scale(0.66666667) rotate(0deg);
+          transform: scale(0.66666667) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -279,9 +272,11 @@
 .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title,
 .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title {
   padding: 0px 16px 0 28px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 42px;
   height: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ant-menu-vertical.ant-menu-sub {
   padding: 0;

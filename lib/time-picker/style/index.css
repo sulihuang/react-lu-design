@@ -8,7 +8,7 @@
   position: relative;
   outline: none;
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   background-color: #fff;
   border-radius: 0.25rem;
@@ -49,7 +49,7 @@
   margin: 0;
 }
 .ant-time-picker-panel-clear-btn:after {
-  font-size: 12px;
+  font-size: 14px;
   color: #ccc;
   display: inline-block;
   line-height: 1;
@@ -70,12 +70,13 @@
 }
 .ant-time-picker-panel-select {
   float: left;
-  font-size: 12px;
+  font-size: 14px;
   border-left: 1px solid #e9e9e9;
   box-sizing: border-box;
   width: 56px;
   overflow: hidden;
   position: relative;
+  max-height: 144px;
 }
 .ant-time-picker-panel-select:hover {
   overflow-y: auto;
@@ -87,13 +88,15 @@
 .ant-time-picker-panel-select:last-child {
   border-right: 0;
 }
+.ant-time-picker-panel-select:only-child {
+  width: 100%;
+}
 .ant-time-picker-panel-select ul {
   list-style: none;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 0 120px 0;
   width: 100%;
-  max-height: 144px;
 }
 .ant-time-picker-panel-select li {
   list-style: none;
@@ -111,11 +114,6 @@
           user-select: none;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
-}
-.ant-time-picker-panel-select li:last-child:after {
-  content: '';
-  height: 120px;
-  display: block;
 }
 .ant-time-picker-panel-select li:hover {
   background: #e8f3fd;
@@ -271,7 +269,7 @@ textarea.ant-time-picker-input {
 .ant-time-picker-icon:after {
   content: "\e641";
   font-family: "anticon";
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
   display: inline-block;
   line-height: 1;

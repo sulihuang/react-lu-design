@@ -33,7 +33,7 @@
 
   &-nav-container {
     overflow: hidden;
-    font-size: 14px;
+    font-size: @font-size-lg;
     line-height: @line-height-base;
     box-sizing: border-box;
     position: relative;
@@ -61,11 +61,11 @@
     background-color: transparent;
     position: absolute;
     text-align: center;
-    color: #999;
+    color: @text-color-secondary;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #666;
+      color: @text-color;
     }
 
     &-icon {
@@ -181,7 +181,7 @@
   }
 
   &-mini &-nav-container {
-    font-size: 12px;
+    font-size: @font-size-base;
   }
 
   &-mini &-tab {
@@ -339,7 +339,7 @@
   }
   &&-card > &-bar &-tab .@{iconfont-css-prefix}-close {
     margin-right: 0;
-    color: #999;
+    color: @text-color-secondary;
     transition: all 0.3s @ease-in-out;
     .iconfont-size-under-12px(9px);
     transform-origin: 100% 50%;
@@ -376,9 +376,9 @@
       cursor: pointer;
       border-radius: 3px;
       border: 1px solid @border-color-base;
-      font-size: 12px;
+      font-size: @font-size-base;
       .iconfont-size-under-12px(10px);
-      color: #999;
+      color: @text-color-secondary;
       transition: color 0.3s ease;
       &:hover {
         color: #404040;

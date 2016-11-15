@@ -41,7 +41,7 @@
 }
 .ant-tabs-nav-container {
   overflow: hidden;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   box-sizing: border-box;
   position: relative;
@@ -87,7 +87,7 @@
 }
 .ant-tabs-tab-prev:hover,
 .ant-tabs-tab-next:hover {
-  color: #666;
+  color: #16325c;
 }
 .ant-tabs-tab-prev-icon,
 .ant-tabs-tab-next-icon {
@@ -103,9 +103,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 10px \9;
-  -webkit-transform: scale(0.71428571) rotate(0deg);
-      -ms-transform: scale(0.71428571) rotate(0deg);
-          transform: scale(0.71428571) rotate(0deg);
+  -webkit-transform: scale(0.83333333) rotate(0deg);
+      -ms-transform: scale(0.83333333) rotate(0deg);
+          transform: scale(0.83333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -207,7 +207,7 @@
   color: #1589ee;
 }
 .ant-tabs-mini .ant-tabs-nav-container {
-  font-size: 12px;
+  font-size: 14px;
 }
 .ant-tabs-mini .ant-tabs-tab {
   margin-right: 0;
@@ -360,9 +360,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -407,13 +407,12 @@
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid #d9d9d9;
-  font-size: 12px;
   display: inline-block;
   font-size: 14px;
   font-size: 10px \9;
-  -webkit-transform: scale(0.71428571) rotate(0deg);
-      -ms-transform: scale(0.71428571) rotate(0deg);
-          transform: scale(0.71428571) rotate(0deg);
+  -webkit-transform: scale(0.83333333) rotate(0deg);
+      -ms-transform: scale(0.83333333) rotate(0deg);
+          transform: scale(0.83333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;

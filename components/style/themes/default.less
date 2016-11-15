@@ -6,6 +6,7 @@
 @info-color             : #54698d;
 @success-color          : #4bca81;
 @error-color            : #d4504c;
+@highlight-color        : @error-color;
 @warning-color          : #fa0;
 @normal-color           : #d9d9d9;
 
@@ -15,9 +16,10 @@
 @code-family            : Consolas,Menlo,Courier,monospace;
 @text-color             : #16325c;
 @heading-color          : #404040;
+@text-color-secondary   : #999;
 @font-size-base         : 14px;
+@font-size-lg           : @font-size-base + 2px;
 @line-height-base       : 1.5;
-@line-height-computed   : floor((@font-size-base * @line-height-base));
 @border-radius-base     : .25rem;
 @border-radius-sm       : .125rem;
 
@@ -30,9 +32,6 @@
 @link-hover-color       : tint(@link-color, 10%);
 @link-active-color      : shade(@link-color, 10%);
 @link-hover-decoration  : none;
-
-// Disabled cursor for form controls and buttons.
-@cursor-disabled        : not-allowed;
 
 // Animation
 @ease-out            : cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -150,9 +149,7 @@
 
 // Form
 // ---
-@legend-color                : #999;
-@legend-border-color         : @border-color-base;
-@label-required-color        : #f50;
+@label-required-color        : @highlight-color;
 @label-color                 : @text-color;
 @form-item-margin-bottom     : 24px;
 

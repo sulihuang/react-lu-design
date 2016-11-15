@@ -32,10 +32,10 @@
   color: #fff;
 }
 .ant-steps .ant-steps-item.ant-steps-status-process .ant-steps-title {
-  color: #666;
+  color: #16325c;
 }
 .ant-steps .ant-steps-item.ant-steps-status-process .ant-steps-description {
-  color: #666;
+  color: #16325c;
 }
 .ant-steps .ant-steps-item.ant-steps-status-process .ant-steps-tail > i {
   background-color: #e9e9e9;
@@ -109,22 +109,21 @@
   border: 1px solid #ccc;
   width: 26px;
   height: 26px;
-  line-height: 26px;
+  line-height: 23px;
   text-align: center;
   border-radius: 26px;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 8px;
   -webkit-transition: background-color 0.3s ease, border-color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .ant-steps .ant-steps-head-inner > .ant-steps-icon {
   line-height: 1;
-  top: -1.5px;
   color: #1589ee;
   position: relative;
 }
 .ant-steps .ant-steps-head-inner > .ant-steps-icon.anticon {
-  font-size: 12px;
+  font-size: 14px;
 }
 .ant-steps .ant-steps-head-inner > .ant-steps-icon.anticon-cross,
 .ant-steps .ant-steps-head-inner > .ant-steps-icon.anticon-check {
@@ -134,23 +133,23 @@
   margin-top: 2.5px;
 }
 .ant-steps .ant-steps-title {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 4px;
-  color: #666;
+  color: #16325c;
   font-weight: bold;
   background: #fff;
   display: inline-block;
   padding-right: 10px;
 }
 .ant-steps .ant-steps-title > a:first-child:last-child {
-  color: #666;
+  color: #16325c;
 }
 .ant-steps .ant-steps-item-last .ant-steps-title {
   padding-right: 0;
   width: 100%;
 }
 .ant-steps .ant-steps-description {
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
 }
 .ant-steps .ant-steps-tail {
@@ -182,19 +181,19 @@
   border: 1px solid #ccc;
   width: 18px;
   height: 18px;
-  line-height: 18px;
+  line-height: 15px;
   text-align: center;
   border-radius: 18px;
-  font-size: 12px;
+  font-size: 14px;
   margin-right: 10px;
 }
 .ant-steps.ant-steps-small .ant-steps-head-inner > .ant-steps-icon.anticon {
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -211,13 +210,13 @@
   margin-top: 0;
 }
 .ant-steps.ant-steps-small .ant-steps-title {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 4px;
-  color: #666;
+  color: #16325c;
   font-weight: bold;
 }
 .ant-steps.ant-steps-small .ant-steps-description {
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
 }
 .ant-steps.ant-steps-small .ant-steps-tail {

@@ -9,7 +9,7 @@
   top: -9999px;
   z-index: @zindex-dropdown;
   display: block;
-  font-size: 12px;
+  font-size: @font-size-base;
   font-weight: normal;
   line-height: 1.5;
 
@@ -53,15 +53,15 @@
       padding: 7px 16px;
       margin: 0;
       clear: both;
-      font-size: 12px;
+      font-size: @font-size-base;
       font-weight: normal;
-      color: #666;
+      color: @text-color;
       white-space: nowrap;
       cursor: pointer;
       transition: background 0.3s ease;
 
       > a {
-        color: #666;
+        color: @text-color;
         display: block;
         padding: 7px 16px;
         margin: -7px -16px;
@@ -108,7 +108,7 @@
       position: absolute;
       content: "\e61f";
       right: 16px;
-      color: #999;
+      color: @text-color-secondary;
       .iconfont-size-under-12px(9px);
     }
 
@@ -154,7 +154,7 @@
 }
 
 .@{dropdown-prefix-cls}-link {
-  font-size: 12px;
+  font-size: @font-size-base;
   .@{iconfont-css-prefix}-down {
     .iconfont-size-under-12px(9px);
   }

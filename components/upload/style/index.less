@@ -91,22 +91,22 @@
       margin-bottom: 24px;
     }
     p.@{upload-prefix-cls}-text {
-      font-size: 14px;
+      font-size: @font-size-lg;
     }
     p.@{upload-prefix-cls}-hint {
-      font-size: 12px;
-      color: #999;
+      font-size: @font-size-base;
+      color: @text-color-secondary;
     }
     .@{iconfont-css-prefix}-plus {
       font-size: 30px;
       transition: all 0.3s ease;
       color: #ccc;
       &:hover {
-        color: #999;
+        color: @text-color-secondary;
       }
     }
     &:hover .@{iconfont-css-prefix}-plus {
-      color: #999;
+      color: @text-color-secondary;
     }
   }
 }
@@ -116,7 +116,7 @@
   &-item {
     overflow: hidden;
     margin-top: 8px;
-    font-size: 12px;
+    font-size: @font-size-base;
 
     &-info {
       height: 22px;
@@ -126,8 +126,8 @@
 
       .@{iconfont-css-prefix}-paper-clip {
         margin-right: 4px;
-        font-size: 12px;
-        color: #999;
+        font-size: @font-size-base;
+        color: @text-color-secondary;
       }
       .@{iconfont-css-prefix}-cross {
         .iconfont-size-under-12px(10px);
@@ -135,10 +135,10 @@
         opacity: 0;
         cursor: pointer;
         float: right;
-        color: #999;
+        color: @text-color-secondary;
         line-height: 22px;
         &:hover {
-          color: #666;
+          color: @text-color;
         }
       }
     }
@@ -164,7 +164,7 @@
       padding: 0 8px 0 20px;
       margin-top: -2px;
       margin-bottom: 1px;
-      font-size: 12px;
+      font-size: @font-size-base;
       .@{ant-prefix}-progress-line-inner {
         vertical-align: middle;
       }
@@ -213,7 +213,7 @@
     .@{upload-item}-thumbnail.@{iconfont-css-prefix}:before {
       line-height: 48px;
       font-size: 24px;
-      color: #999;
+      color: @text-color-secondary;
     }
 
     .@{upload-item}-name {
@@ -338,7 +338,7 @@
 
       &-text {
         margin-top: 18px;
-        color: #999;
+        color: @text-color-secondary;
       }
     }
 

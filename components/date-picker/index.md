@@ -1,11 +1,14 @@
 ---
 category: Components
-type: Form Controls
+type: Data Entry
 title: DatePicker
 subtitle: 日期选择框
 ---
 
-输入或选择日期的控件。
+输入或选择日期的控件，包括以下三种形式。
+* DatePicker
+* MonthPicker
+* RangePicker
 
 ## 何时使用
 
@@ -13,7 +16,7 @@ subtitle: 日期选择框
 
 ## API
 
-注意：DatePicker、MonthPicker、RangePicker 部分 locale 是从 value 中读取，所以请先正确设置 moment 的 locale。
+**注意：**DatePicker、MonthPicker、RangePicker 部分 locale 是从 value 中读取，所以请先正确设置 moment 的 locale。
 
 ```jsx
 import moment from 'moment';
@@ -51,6 +54,7 @@ moment.locale('zh-cn');
 | open | 控制弹层是否展开 | bool | - |
 | onOpenChange   | 弹出日历和关闭日历的回调 | function(status) | 无 |
 | showTime     | 增加时间选择功能  | Object or Boolean | [TimePicker Options](/components/time-picker/#api) |
+| disabledTime | 不可选择的时间 | function(date) | 无 |
 
 ### MonthPicker
 

@@ -108,21 +108,25 @@ $ npm run build
 
 ## 兼容性
 
-Ant Design React 支持所有的现代浏览器和 IE9+。
+React Lu Design 支持所有的现代浏览器。
 
-对于 IE 系列浏览器，需要提供 [es5-shim](https://github.com/es-shims/es5-shim) 和 [es6-shim](https://github.com/paulmillr/es6-shim) 等 Polyfills 的支持。如果你使用了 babel，强烈推荐使用 [babel-polyfill](https://babeljs.io/docs/usage/polyfill/) 和 [babel-plugin-transform-runtime](https://babeljs.io/docs/plugins/transform-runtime/)。
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
   <head>
-    <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta name="browsermode" content="application">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 引入样式 -->
     <link rel="stylesheet" href="/index.css">
     <!-- Polyfills -->
-    <!--[if lt IE 10]>
-    <script src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,es5-shim/4.5.7/es5-shim.min.js,es5-shim/4.5.7/es5-sham.min.js,es6-shim/0.35.1/es6-sham.min.js,es6-shim/0.35.1/es6-shim.min.js,html5shiv/3.7.2/html5shiv.min.js,media-match/2.0.2/media.match.min.js"></script>
-    <![endif]-->
++    <!--[if lte IE 11]>
++    <script src="https://as.alipayobjects.com/g/component/??es6-shim/0.35.1/es6-sham.min.js,es6-shim/0.35.1/es6-shim.min.js></script>
++    <![endif]-->
   </head>
   <body>
   </body>
@@ -132,23 +136,6 @@ Ant Design React 支持所有的现代浏览器和 IE9+。
   <script src="/index.js"></script>
 </html>
 ```
-
-#### IE8 note
-
-> `antd@2.0` 之后将不再支持 IE8。
-
-IE8 需要配合使用 [react@0.14.x](https://facebook.github.io/react/blog/2016/01/12/discontinuing-ie8-support.html) 版本。
-
-另外，由于 `babel@6.x` 对 IE8 的支持不佳，你可能会遇到类似 [#28](https://github.com/ant-tool/atool-build/issues/28) 和 [#858](https://github.com/ant-design/ant-design/issues/858) 的 default 报错的问题，你也可以参照这个 [webpack 配置](https://github.com/ant-design/antd-init/blob/f5fb9479ca973fade51fd6754e50f8b3fafbb1df/boilerplate/webpack.config.js#L4-L8) 来解决。
-
-> 更多 IE8 下使用 React 的相关问题可以参考：https://github.com/xcatliu/react-ie8
-
-## 自行构建
-
-如果想自己维护工作流，我们推荐使用 [webpack](http://webpack.github.io/) 进行构建和调试。理论上你可以利用 React 生态圈中的 [各种脚手架](https://github.com/enaqx/awesome-react#boilerplates) 进行开发，如果遇到问题可参考我们所使用的 [webpack 配置](https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js) 进行 [定制](http://ant-tool.github.io/webpack-config.html)。
-
-目前社区也有很多基于 antd 定制的 [脚手架](https://github.com/ant-design/ant-design/issues/129)，欢迎进行试用和贡献。
-
 ## 按需加载
 
 通过 `import { Button } from 'antd';` 引入会加载 antd 下所有的模块，如果要按需加载可以通过以下的写法来引用。
@@ -164,11 +151,6 @@ import { Button } from 'antd';
 ```
 
 插件会帮你转换成上面的写法。另外此插件配合 [style](https://github.com/ant-design/babel-plugin-import#usage) 属性可以做到模块样式的按需自动加载。
-
-## 配置主题和字体
-
-- [改变主题](https://github.com/ant-design/antd-init/tree/master/examples/customize-antd-theme)
-- [使用本地字体](https://github.com/ant-design/antd-init/tree/master/examples/local-iconfont)
 
 ## 小甜点
 

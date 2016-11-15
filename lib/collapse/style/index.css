@@ -13,16 +13,16 @@
   height: 38px;
   line-height: 38px;
   padding-left: 32px;
-  color: #666;
+  color: #16325c;
   cursor: pointer;
   position: relative;
 }
 .ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
   font-size: 14px;
   font-size: 7px \9;
-  -webkit-transform: scale(0.5) rotate(270deg);
-      -ms-transform: scale(0.5) rotate(270deg);
-          transform: scale(0.5) rotate(270deg);
+  -webkit-transform: scale(0.58333333) rotate(270deg);
+      -ms-transform: scale(0.58333333) rotate(270deg);
+          transform: scale(0.58333333) rotate(270deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=-0.0000000000000001837, M12=1, M21=-1, M22=-0.0000000000000001837)";
   zoom: 1;
@@ -36,7 +36,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
-  color: #666;
+  color: #16325c;
   display: inline-block;
   margin-right: 8px;
   line-height: 40px;
@@ -89,9 +89,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 7px \9;
-  -webkit-transform: scale(0.5) rotate(360deg);
-      -ms-transform: scale(0.5) rotate(360deg);
-          transform: scale(0.5) rotate(360deg);
+  -webkit-transform: scale(0.58333333) rotate(360deg);
+      -ms-transform: scale(0.58333333) rotate(360deg);
+          transform: scale(0.58333333) rotate(360deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0.00000000000000024493, M21=-0.00000000000000024493, M22=1)";
   zoom: 1;

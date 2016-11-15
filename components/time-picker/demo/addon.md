@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 6
 title:
   zh-CN: 附加内容
   en-US: Addon
@@ -13,7 +13,6 @@ title:
 
 Render addon contents to timepicker panel's bottom.
 
-
 ````jsx
 import { TimePicker, Button } from 'antd';
 
@@ -24,6 +23,7 @@ ReactDOM.render(
         Ok
       </Button>
     )}
-  />
-, mountNode);
+  />,
+ mountNode
+);
 ````

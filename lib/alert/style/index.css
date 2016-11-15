@@ -11,7 +11,7 @@
   padding: 8px 48px 8px 16px;
 }
 .ant-alert-icon {
-  font-size: 14px;
+  font-size: 16px;
   top: 9px;
   left: 16px;
   position: absolute;
@@ -96,7 +96,7 @@
   font-size: 14px;
 }
 .ant-alert-with-description .ant-alert-message {
-  font-size: 14px;
+  font-size: 16px;
   color: #404040;
   display: block;
   margin-bottom: 4px;

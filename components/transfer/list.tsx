@@ -124,7 +124,7 @@ export default class TransferList extends React.Component<TransferListProps, any
 
   render() {
     const { prefixCls, dataSource, titleText, filter, checkedKeys, lazy, filterOption,
-            body = noop, footer = noop, showSearch, render = noop, style } = this.props;
+      body = noop, footer = noop, showSearch, render = noop, style } = this.props;
 
     let { searchPlaceholder, notFoundContent } = this.props;
 
@@ -159,7 +159,7 @@ export default class TransferList extends React.Component<TransferListProps, any
       );
     });
 
-    let unit = '条';
+    let unit = '';
     const antLocale = this.context.antLocale;
     if (antLocale && antLocale.Transfer) {
       const transferLocale = antLocale.Transfer;
@@ -192,26 +192,26 @@ export default class TransferList extends React.Component<TransferListProps, any
           </span>
         </div>
         {bodyDom ||
-          <div className={showSearch ? `${prefixCls}-body ${prefixCls}-body-with-search` : `${prefixCls}-body`}>
-            {showSearch ? <div className={`${prefixCls}-body-search-wrapper`}>
-              <Search prefixCls={`${prefixCls}-search`}
-                onChange={this.handleFilter}
-                handleClear={this.handleClear}
-                placeholder={searchPlaceholder || '请输入搜索内容'}
-                value={filter}
-              />
-            </div> : null}
-            <Animate
-              component="ul"
-              className={`${prefixCls}-content`}
-              transitionName={this.state.mounted ? `${prefixCls}-content-item-highlight` : ''}
-              transitionLeave={false}
-            >
-              {showItems.length > 0
-                ? showItems
-                : <div key="not-found" className={`${prefixCls}-body-not-found`}>{notFoundContent || '列表为空'}</div>}
-            </Animate>
-          </div>}
+        <div className={showSearch ? `${prefixCls}-body ${prefixCls}-body-with-search` : `${prefixCls}-body`}>
+          {showSearch ? <div className={`${prefixCls}-body-search-wrapper`}>
+            <Search prefixCls={`${prefixCls}-search`}
+                    onChange={this.handleFilter}
+                    handleClear={this.handleClear}
+                    placeholder={searchPlaceholder || 'Search'}
+                    value={filter}
+            />
+          </div> : null}
+          <Animate
+            component="ul"
+            className={`${prefixCls}-content`}
+            transitionName={this.state.mounted ? `${prefixCls}-content-item-highlight` : ''}
+            transitionLeave={false}
+          >
+            {showItems.length > 0
+              ? showItems
+              : <div key="not-found" className={`${prefixCls}-body-not-found`}>{notFoundContent || 'Not Found'}</div>}
+          </Animate>
+        </div>}
         {footerDom ? <div className={`${prefixCls}-footer`}>
           {footerDom}
         </div> : null}

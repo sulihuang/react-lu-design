@@ -57,16 +57,22 @@ export default function createPicker(TheCalendar) {
       this.setState({ tempValue });
     },
 
-    // Clear temp value when hide picker panel
+    // Clear temp value and trigger onChange when hide DatePicker[showTime] panel
     handleOpenChange(open) {
       const { showTime, onOpenChange } = this.props;
-      const { tempValue } = this.state;
       if (!open) {
-        if (showTime && tempValue) {
-          this.handleChange(tempValue);
-        }
-        this.setState({
-          tempValue: undefined,
+        // tricky code to avoid triggering onChange multiple times
+        // when click `Now` button
+        let tempValue;
+        this.setState(prevState => {
+          tempValue = prevState.tempValue;
+          return {
+            tempValue: undefined,
+          };
+        }, () => {
+          if (showTime && tempValue) {
+            this.handleChange(tempValue);
+          }
         });
       }
       if (onOpenChange) {
@@ -123,8 +129,8 @@ export default function createPicker(TheCalendar) {
 
       const clearIcon = (!props.disabled && props.allowClear && this.state.value) ?
         <Icon type="cross-circle"
-          className={`${prefixCls}-picker-clear`}
-          onClick={this.clearSelection}
+              className={`${prefixCls}-picker-clear`}
+              onClick={this.clearSelection}
         /> : null;
       return (
         <span className={props.pickerClass} style={props.style}>
@@ -159,6 +165,5 @@ export default function createPicker(TheCalendar) {
       );
     },
   });
-
   return CalenderWrapper;
 }

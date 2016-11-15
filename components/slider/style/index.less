@@ -6,7 +6,7 @@
 @slider-disabled-color: #ccc;
 // tooltip
 @slider-tooltip-color: #fff;
-@slider-tooltip-bg: tint(#666, 4%);
+@slider-tooltip-bg: tint(@text-color, 4%);
 @slider-tooltip-arrow-width: 4px;
 @slider-tooltip-distance: @slider-tooltip-arrow-width + 4;
 @slider-tooltip-arrow-color: @slider-tooltip-bg;
@@ -72,7 +72,7 @@
     top: 10px;
     left: 0;
     width: 100%;
-    font-size: 12px;
+    font-size: @font-size-base;
     z-index: 3;
   }
 
@@ -82,10 +82,10 @@
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
-    color: #999;
+    color: @text-color-secondary;
 
     &-active {
-      color: #666;
+      color: @text-color;
     }
   }
 

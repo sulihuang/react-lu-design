@@ -46,7 +46,7 @@
   z-index: 2;
   background: #fff;
   top: 50%;
-  font-size: 12px;
+  font-size: 14px;
   color: #ccc;
   width: 12px;
   height: 12px;
@@ -75,9 +75,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.64285714) rotate(0deg);
-      -ms-transform: scale(0.64285714) rotate(0deg);
-          transform: scale(0.64285714) rotate(0deg);
+  -webkit-transform: scale(0.75) rotate(0deg);
+      -ms-transform: scale(0.75) rotate(0deg);
+          transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -104,7 +104,7 @@
           transform: rotate(180deg);
 }
 .ant-cascader-menus {
-  font-size: 12px;
+  font-size: 14px;
   background: #fff;
   position: absolute;
   z-index: 1050;
@@ -190,9 +190,9 @@
   display: inline-block;
   font-size: 14px;
   font-size: 8px \9;
-  -webkit-transform: scale(0.57142857) rotate(0deg);
-      -ms-transform: scale(0.57142857) rotate(0deg);
-          transform: scale(0.57142857) rotate(0deg);
+  -webkit-transform: scale(0.66666667) rotate(0deg);
+      -ms-transform: scale(0.66666667) rotate(0deg);
+          transform: scale(0.66666667) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;

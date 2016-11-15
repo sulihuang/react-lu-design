@@ -1,38 +1,26 @@
 ---
-order: 6
-title: 
-  zh-CN: 只显示部分选项
-  en-US: Show part of options.
+order: 4
+title:
+  zh-CN: 隐藏某列
+  en-US: Hide Column
 ---
 
 ## zh-CN
 
-通过 hideDisabledOptions 将不可选的选项隐藏。
+TimePicker 浮层中的列会随着 `format` 变化，当略去 `format` 中的某部分时，浮层中对应的列也会消失。
 
 ## en-US
 
-use `hideDisabledOptions` to hide the disabled options.
+While part of `format` is omitted, the corresponding column in panel will disappear, too.
 
 ````jsx
 import { TimePicker } from 'antd';
+import moment from 'moment';
 
-function newArray(start, end) {
-  const result = [];
-  for (let i = start; i < end; i++) {
-    result.push(i);
-  }
-  return result;
-}
-
-function disabledMinutes() {
-  return newArray(0, 60).filter(value => value % 10 !== 0);
-}
-
-function disabledSeconds() {
-  return newArray(0, 60).filter(value => value % 30 !== 0);
-}
+const format = 'HH:mm';
 
 ReactDOM.render(
-  <TimePicker disabledMinutes={disabledMinutes} disabledSeconds={disabledSeconds} hideDisabledOptions />
-, mountNode);
+  <TimePicker defaultValue={moment('12:08', format)} format={format} />,
+  mountNode
+);
 ````

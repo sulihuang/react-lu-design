@@ -5,8 +5,25 @@ toc: false
 timeline: true
 ---
 
+## 1.1.0
+
+* 合并 Ant Design 2.4.2 如下改动。
+* 新增 [Anchor](https://ant.design/components/anchor) 组件.
+* 为 `Transfer` 组件新增了受控属性 `selectedKeys`. [#3729](https://github.com/ant-design/ant-design/issues/3729)
+* 为 `Tag` 新增选中状态.
+* 修复 `DatePicker` 的 `今天` 按钮. [#3748](https://github.com/ant-design/ant-design/issues/3748)
+* 修复 `Steps` 竖直方向的样式. [#3760](https://github.com/ant-design/ant-design/issues/3760)
+* 修复 `Carousel` 的默认样式.
+* 修复 `Mention` 组件的 focus 逻辑. [#3801](https://github.com/ant-design/ant-design/issues/3801)
+* 修复 `Progress` 组件的动画 bug. [#3784](https://github.com/ant-design/ant-design/issues/3784)
+* 修复 `Select` 的焦点bug. [#3778](https://github.com/ant-design/ant-design/issues/3778)
+* 优化 `TimePicker` 的样式. [#3793](https://github.com/ant-design/ant-design/issues/3793)
+* 优化 `Checkbox` 和 `Radio` 的样式. [#3590](https://github.com/ant-design/ant-design/issues/3590)
+
+
+
 ## 1.0.1
 
 
-* 基于 Ant Design 2.4.2， 修改部分样式以符合 Lu Design 规范。
+* 基于 Ant Design 2.3.2， 修改部分样式以符合 Lu Design 规范。
 * 移除英文文档。

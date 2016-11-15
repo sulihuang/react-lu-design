@@ -10,7 +10,7 @@
   line-height: @line-height-base;
 
   &-list {
-    font-size: 12px;
+    font-size: @font-size-base;
     border: 1px solid @border-color-base;
     display: inline-block;
     border-radius: @border-radius-base;
@@ -34,13 +34,13 @@
         height: 32px;
         line-height: 32px;
         text-align: center;
-        font-size: 14px;
+        font-size: @font-size-lg;
         .@{iconfont-css-prefix} {
           transition: all .3s;
-          font-size: 12px;
+          font-size: @font-size-base;
           color: #ccc;
           &:hover {
-            color: #999;
+            color: @text-color-secondary;
           }
         }
       }
@@ -50,7 +50,7 @@
       padding: 7px 15px;
       border-radius: @border-radius-base @border-radius-base 0 0;
       background: #fff;
-      color: #666;
+      color: @text-color;
       border-bottom: 1px solid @border-color-split;
       overflow: hidden;
       position: absolute;
@@ -65,7 +65,7 @@
     }
 
     &-body {
-      font-size: 12px;
+      font-size: @font-size-base;
       position: relative;
       height: 100%;
 

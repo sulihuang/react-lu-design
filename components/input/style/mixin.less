@@ -29,7 +29,7 @@
 .disabled() {
   background-color: @input-disabled-bg;
   opacity: 1;
-  cursor: @cursor-disabled;
+  cursor: not-allowed;
   color: #ccc;
   &:hover {
     .hover(@input-border-color);
@@ -93,7 +93,7 @@
     right: 0;
     z-index: 2;
     .square(@height);
-    font-size: 14px;
+    font-size: @font-size-lg;
     line-height: @height;
     text-align: center;
     pointer-events: none;
@@ -157,6 +157,7 @@
     background-color: #eee;
     border: 1px solid @input-border-color;
     border-radius: @border-radius-base;
+    position: relative;
 
     // Reset Select's style in addon
     .@{ant-prefix}-select {
@@ -167,14 +168,26 @@
         border: 0;
         margin: -1px;
         border: 1px solid transparent;
+        box-shadow: none;
       }
 
       &-open,
       &-focused {
         .@{ant-prefix}-select-selection {
-          border-color: tint(@primary-color, 20%);
+          color: @primary-color;
         }
       }
+    }
+
+    // Expand addon icon click area
+    // https://github.com/ant-design/ant-design/issues/3714
+    > i:only-child:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
   }
 
