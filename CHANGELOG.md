@@ -7,7 +7,7 @@ timeline: true
 
 ## 1.1.0
 
-* 合并 Ant Design 2.4.2 如下改动。
+* 合并 Ant Design 2.4.2 如下改动:
 * 新增 [Anchor](https://ant.design/components/anchor) 组件.
 * 为 `Transfer` 组件新增了受控属性 `selectedKeys`. [#3729](https://github.com/ant-design/ant-design/issues/3729)
 * 为 `Tag` 新增选中状态.

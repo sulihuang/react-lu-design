@@ -1,8 +1,5 @@
 ---
-category:
-  zh-CN: 设计基础
-  en-US: Design Fundamental
-order: 0
+order: 1
 title:
   zh-CN: 字体
   en-US: Font
@@ -14,18 +11,12 @@ title:
 
 ## 字体家族
 
-- 中文字体族：
-
-   <img src="https://os.alipayobjects.com/rmsportal/OKbesWXtRMCNGmO.png" width="100%">
-
-- 英文文字体族：
-
-   <img src="https://t.alipayobjects.com/images/T1bcXhXfNeXXXXXXXX.png" width="100%">
+   <img src="//o9uj5rfjo.qnssl.com/lu_design/OKbesWXtRMCNGmO.png" width="85%">
 
 字体家族 css 代码如下：
 
 ```css
-font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+font-family: "Avenir Next", Avenir, Roboto, "Segoe UI", "Helvetica Neue", "Helvetica", "PingFang SC", "Hiragino Sans GB", "Source Han Sans", "Microsoft YaHei", sans-serif;
 ```
 
 ## 字体使用规范

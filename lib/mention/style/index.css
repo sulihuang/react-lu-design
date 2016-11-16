@@ -47,7 +47,7 @@
   box-shadow: 0 0 0 2px rgba(21, 137, 238, 0.2);
 }
 .ant-mention-wrapper .ant-mention-editor[disabled] {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   opacity: 1;
   cursor: not-allowed;
   color: #ccc;
@@ -141,7 +141,7 @@ textarea.ant-mention-wrapper .ant-mention-editor {
 }
 .ant-mention-dropdown-item-selected,
 .ant-mention-dropdown-item-selected:hover {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   font-weight: bold;
   color: #16325c;
 }

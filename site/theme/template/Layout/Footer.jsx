@@ -4,27 +4,13 @@ import { Modal } from 'antd';
 import { version as antdVersion } from 'antd/package.json';
 import { docVersions } from '../../';
 
-function isLocalStorageNameSupported() {
-  const testKey = 'test';
-  const storage = window.localStorage;
-  try {
-    storage.setItem(testKey, '1');
-    storage.removeItem(testKey);
-    return true;
-  } catch (error) {
-    return false;
-  }
-}
-
 docVersions[antdVersion] = antdVersion;
 
 class Footer extends React.Component {
+ /*
   componentDidMount() {
     // for some iOS
     // http://stackoverflow.com/a/14555361
-    if (!isLocalStorageNameSupported()) {
-      return;
-    }
     // 大版本发布后全局弹窗提示
     //   1. 点击『知道了』之后不再提示
     //   2. 超过截止日期后不再提示
@@ -33,6 +19,7 @@ class Footer extends React.Component {
       this.infoNewVersion();
     }
   }
+  */
 
   infoNewVersion() {
     const messages = this.props.intl.messages;

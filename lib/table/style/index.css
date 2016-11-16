@@ -19,7 +19,7 @@
   overflow: hidden;
 }
 .ant-table-thead > tr > th {
-  background: #f7f7f7;
+  background: #f4f8f9;
   font-weight: bold;
   -webkit-transition: background .3s ease;
   transition: background .3s ease;
@@ -59,7 +59,7 @@
 }
 .ant-table-footer {
   padding: 16px 8px;
-  background: #f7f7f7;
+  background: #f4f8f9;
   position: relative;
   z-index: 2;
   top: -1px;
@@ -101,7 +101,7 @@
   width: 60px;
 }
 .ant-table-header {
-  background: #f7f7f7;
+  background: #f4f8f9;
   overflow: hidden;
 }
 .ant-table-header table {

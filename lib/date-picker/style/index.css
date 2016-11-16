@@ -475,7 +475,7 @@
 .ant-calendar .ant-calendar-ok-btn.disabled.active,
 .ant-calendar .ant-calendar-ok-btn[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-calendar .ant-calendar-ok-btn.disabled > a:only-child,
@@ -510,7 +510,7 @@
 }
 .ant-calendar .ant-calendar-ok-btn-disabled {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
   cursor: not-allowed;
 }
@@ -528,7 +528,7 @@
 }
 .ant-calendar .ant-calendar-ok-btn-disabled:hover {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-calendar .ant-calendar-ok-btn-disabled:hover > a:only-child {
@@ -659,7 +659,7 @@
 }
 .ant-calendar-range .ant-calendar-input[disabled],
 .ant-calendar-range .ant-calendar-time-picker-input[disabled] {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   opacity: 1;
   cursor: not-allowed;
   color: #ccc;
@@ -894,7 +894,7 @@ textarea.ant-calendar-range .ant-calendar-time-picker-input {
   background: #e8f3fd;
 }
 li.ant-calendar-time-picker-select-option-selected {
-  background: #f7f7f7;
+  background: #f4f8f9;
   font-weight: bold;
 }
 li.ant-calendar-time-picker-select-option-disabled {

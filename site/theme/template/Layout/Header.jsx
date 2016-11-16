@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
 import enquire from 'enquire.js';
 import classNames from 'classnames';
-import { Select, Menu, Row, Col, Icon, Button, Popover } from 'antd';
+import { Select, Menu, Row, Col, Icon, Popover } from 'antd';
 
 const Option = Select.Option;
 
@@ -81,9 +81,6 @@ export default class Header extends React.Component {
     const menuMode = this.state.menuMode;
     const query = location.query;
     const menu = [
-      <Button className="lang" type="ghost" size="small" onClick={this.handleLangChange} key="lang">
-        <FormattedMessage id="app.header.lang" />
-      </Button>,
       <Menu mode={menuMode} selectedKeys={[activeMenuItem]} id="nav" key="nav">
         <Menu.Item key="home">
           <Link to={{ query, pathname: '/' }}>
@@ -95,26 +92,28 @@ export default class Header extends React.Component {
             <FormattedMessage id="app.header.menu.spec" />
           </Link>
         </Menu.Item>
-        <Menu.Item key="docs/react">
-          <Link to={{ query, pathname: '/docs/react/introduce' }}>
-            <FormattedMessage id="app.header.menu.components" />
-          </Link>
-        </Menu.Item>
         <Menu.Item key="docs/pattern">
           <Link to={{ query, pathname: '/docs/pattern/navigation' }}>
             <FormattedMessage id="app.header.menu.pattern" />
           </Link>
         </Menu.Item>
-        <Menu.Item key="docs/practice">
-          <Link to={{ query, pathname: '/docs/practice/cases' }}>
-            <FormattedMessage id="app.header.menu.practice" />
+        <Menu.Item key="docs/react">
+          <Link to={{ query, pathname: '/docs/react/introduce' }}>
+            <FormattedMessage id="app.header.menu.components" />
           </Link>
         </Menu.Item>
-        <Menu.Item key="docs/resource">
-          <Link to={{ query, pathname: '/docs/resource/download' }}>
-            <FormattedMessage id="app.header.menu.resource" />
-          </Link>
-        </Menu.Item>
+        {/*
+         <Menu.Item key="docs/practice">
+         <Link to={{ query, pathname: '/docs/practice/cases' }}>
+         <FormattedMessage id="app.header.menu.practice" />
+         </Link>
+         </Menu.Item>
+         <Menu.Item key="docs/resource">
+         <Link to={{ query, pathname: '/docs/resource/download' }}>
+         <FormattedMessage id="app.header.menu.resource" />
+         </Link>
+         </Menu.Item>
+        */}
       </Menu>,
     ];
 
@@ -136,8 +135,7 @@ export default class Header extends React.Component {
         <Row>
           <Col lg={4} md={6} sm={24} xs={24}>
             <Link to={{ query, pathname: '/' }} id="logo">
-              <img alt="logo" src="https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg" />
-              <span>Ant Design</span>
+              <span>Lu Design</span>
             </Link>
           </Col>
           <Col lg={20} md={18} sm={17} xs={0} style={{ display: 'block' }}>

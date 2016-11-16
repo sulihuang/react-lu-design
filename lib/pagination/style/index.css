@@ -236,7 +236,7 @@
   box-shadow: 0 0 0 2px rgba(21, 137, 238, 0.2);
 }
 .ant-pagination-options-quick-jumper input[disabled] {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   opacity: 1;
   cursor: not-allowed;
   color: #ccc;

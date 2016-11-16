@@ -6,7 +6,6 @@ import Banner from './Banner';
 import Page1 from './Page1';
 import Page2 from './Page2';
 import Page3 from './Page3';
-import Page4 from './Page4';
 // To store style which is only for Home and has conflicts with others.
 function getStyle() {
   return `
@@ -24,21 +23,19 @@ function getStyle() {
       display: inline;
       min-height: 600px;
     }
-    #header {
+    #header,#header.home-nav-white {
+      background: rgba(255, 255, 255, 0.9);
       position: fixed;
       z-index: 999;
-      background: rgba(0, 0, 0, 0.25);
       border-bottom: 1px solid transparent;
+      border-bottom-color: #EBEDEE;
       transition: border .5s cubic-bezier(0.455, 0.03, 0.515, 0.955), background .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
     #header .ant-select-selection,
     #header .ant-menu {
       background: transparent;
     }
-    #header.home-nav-white {
-      background: rgba(255, 255, 255, 0.9);
-      border-bottom-color: #EBEDEE;
-    }
+
     .home-nav-white #search-box {
       border-left-color: #EBEDEE;
     }
@@ -57,11 +54,7 @@ function getStyle() {
       background: #777;
       box-shadow: 0 7px 0 0 #777, 0 14px 0 0 #777;
     }
-    .lang,
-    #nav a {
-      color: #eee;
-      transition: color 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    }
+    
     #search-box {
       border-left-color: rgba(235, 237, 238, .5);
       transition: border 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -89,14 +82,13 @@ function getStyle() {
 
 function Home(props) {
   return (
-    <DocumentTitle title={`Ant Design - ${props.intl.formatMessage({ id: 'app.home.slogan' })}`}>
+    <DocumentTitle title={'Lu Design - 中后台设计语言'}>
       <div className="main-wrapper">
         <Link />
         <Banner {...props} />
         <Page1 {...props} />
         <Page2 {...props} />
         <Page3 {...props} />
-        <Page4 {...props} />
         <style dangerouslySetInnerHTML={{ __html: getStyle() }} />
       </div>
     </DocumentTitle>

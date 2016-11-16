@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tooltip, Icon } from 'antd';
 
-const branchUrl = 'https://github.com/ant-design/ant-design/blob/master/';
+const branchUrl = 'https://github.com/zhulux/react-lu-design/blob/master/';
 
 export default function EditButton({ title, filename }) {
   return (

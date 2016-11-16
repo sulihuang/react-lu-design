@@ -121,7 +121,7 @@
 .ant-btn.disabled.active,
 .ant-btn[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-btn.disabled > a:only-child,
@@ -230,7 +230,7 @@
 .ant-btn-primary.disabled.active,
 .ant-btn-primary[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-btn-primary.disabled > a:only-child,
@@ -349,7 +349,7 @@
 .ant-btn-ghost.disabled.active,
 .ant-btn-ghost[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-btn-ghost.disabled > a:only-child,
@@ -451,7 +451,7 @@
 .ant-btn-dashed.disabled.active,
 .ant-btn-dashed[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-btn-dashed.disabled > a:only-child,
@@ -552,7 +552,7 @@
 .ant-btn-success.disabled.active,
 .ant-btn-success[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-btn-success.disabled > a:only-child,
@@ -653,7 +653,7 @@
 .ant-btn-danger.disabled.active,
 .ant-btn-danger[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-btn-danger.disabled > a:only-child,

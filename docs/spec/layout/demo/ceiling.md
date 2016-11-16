@@ -17,11 +17,11 @@ ReactDOM.render(
       <div className="ant-layout-ceiling">
         <div className="ant-layout-wrapper">
           <ul className="right">
-            <li>xxx@example.com</li>
+            <li>service@zhulux.com</li>
             <li>|</li>
             <li>帮助中心</li>
             <li>|</li>
-            <li>客服/投诉电话：400-826-7710</li>
+            <li>隐私权政策</li>
           </ul>
         </div>
       </div>

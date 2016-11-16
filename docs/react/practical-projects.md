@@ -1,70 +1,14 @@
 ---
 order: 3
-title: 项目实战
+title: 快速上手
 ---
 
-[dva](https://github.com/dvajs/dva) 是一个基于 react 和 redux 的轻量应用框架，概念来自 elm，支持 side effects、热替换、动态加载、react-native、SSR 等，已在生产环境广泛应用。
 
 本文会引导你使用 dva 和 antd 从 0 开始创建一个简单应用。
 
 会包含以下内容：
 
 ---
-
-## 安装 dva
-
-通过 npm 安装 dva 。
-
-```bash
-$ npm install dva-cli -g
-```
-
-## 创建新应用
-
-安装完 dva-cli 之后，就可以在 terminal 里访问到 `dva` 命令。现在，你可以通过 `dva new` 创建新应用。
-
-```bash
-$ dva new dva-quickstart
-```
-
-这会创建 `dva-quickstart` 目录，包含项目初始化目录和文件，并提供开发服务器、构建脚本、数据 mock 服务、代理服务器等功能。
-
-然后我们 `cd` 进入 `dva-quickstart` 目录，并启动开发服务器：
-
-```bash
-$ cd dva-quickstart
-$ npm start
-```
-
-几秒钟后，你会看到以下输出：
-
-```bash
-          proxy: load rule from proxy.config.js
-          proxy: listened on 8989
-📦  411/411 build modules
-webpack: bundle build is now finished.
-```
-
-在浏览器里打开 http://localhost:8989 ，你会看到 dva 的欢迎界面。
-
-## 使用 antd
-
-通过 npm 安装 `antd` 和 `babel-plugin-import` 。`babel-plugin-import` 是用来按需加载 antd 的脚本和样式的，详见 [repo](https://github.com/ant-design/babel-plugin-import) 。
-
-```bash
-$ npm install antd babel-plugin-import --save
-```
-
-编辑 `webpack.config.js`，使 `babel-plugin-import` 插件生效。
-
-```diff
-+ webpackConfig.babel.plugins.push(['import', {
-+   libraryName: 'antd',
-+   style: 'css',
-+ }]);
-```
-
-> 注：这里不需要手动重启开发服务器，保存 `webpack.config.js` 后会自动重启。
 
 ## 定义路由
 
@@ -104,7 +48,7 @@ export default Products;
 
 ```javascript
 import React, { PropTypes } from 'react';
-import { Table, Popconfirm, Button } from 'antd';
+import { Table, Popconfirm, Button } from 'react-lu-design';
 
 const ProductList = ({ onDelete, products }) => {
   const columns = [

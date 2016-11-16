@@ -1,8 +1,5 @@
 ---
-category:
-  zh-CN: 设计基础
-  en-US: Design Fundamental
-order: 1
+order: 2
 title:
   zh-CN: 排版
   en-US: Typography

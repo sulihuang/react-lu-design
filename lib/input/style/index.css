@@ -87,7 +87,7 @@
 .ant-search-input .ant-search-btn.disabled.active,
 .ant-search-input .ant-search-btn[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-search-input .ant-search-btn.disabled > a:only-child,
@@ -224,7 +224,7 @@
 .ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled].active,
 .ant-search-input:hover .ant-search-btn-noempty[disabled].active {
   color: #ccc;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   border-color: #d9d9d9;
 }
 .ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled > a:only-child,
@@ -316,7 +316,7 @@
   box-shadow: 0 0 0 2px rgba(21, 137, 238, 0.2);
 }
 .ant-input[disabled] {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   opacity: 1;
   cursor: not-allowed;
   color: #ccc;

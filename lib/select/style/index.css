@@ -127,7 +127,7 @@
   color: #ccc;
 }
 .ant-select-disabled .ant-select-selection {
-  background: #f7f7f7;
+  background: #f4f8f9;
   cursor: not-allowed;
 }
 .ant-select-disabled .ant-select-selection:hover,
@@ -487,7 +487,7 @@
 }
 .ant-select-dropdown-menu-item-selected,
 .ant-select-dropdown-menu-item-selected:hover {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   font-weight: bold;
   color: #16325c;
 }

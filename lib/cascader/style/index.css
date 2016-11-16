@@ -175,7 +175,7 @@
 }
 .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
 .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   font-weight: bold;
 }
 .ant-cascader-menu-item-expand {

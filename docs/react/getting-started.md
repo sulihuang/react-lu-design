@@ -1,110 +1,69 @@
 ---
 order: 1
-title: 快速上手
+title: 脚手架
 ---
 
-Ant Design React 致力于提供给程序员**愉悦**的开发体验。
+[dva](https://github.com/dvajs/dva) 是一个基于 react 和 redux 的轻量应用框架，概念来自 elm，支持 side effects、热替换、动态加载、react-native、SSR 等，已在生产环境广泛应用。
 
 ---
 
 在开始之前，推荐先学习 [React](http://facebook.github.io/react/) 和 [ES2015](http://babeljs.io/docs/learn-es2015/)。
 
-## 第一个例子
+## 安装 dva
 
-最简单的使用方式参照以下 CodePen 演示，也推荐 Fork 本例来进行 `Bug Report`，注意不要在实际项目中这样使用。
-
-- [antd CodePen](http://codepen.io/benjycui/pen/KgPZrE?editors=001)
-
-## 标准开发
-
-实际项目开发中，你会需要对 ES2015 和 JSX 代码的构建、调试、代理、打包部署等一系列工程化的需求。
-我们提供了一套 `npm` + `webpack` 的开发工具链来辅助开发，下面我们用一个简单的实例来说明。
-
-### 1. 安装脚手架工具
-
-> 使用 `antd-init` 前，务必确认 [Node.js](https://nodejs.org/en/) 已经升级到 v4.x 或以上。
+通过 npm 安装 dva 。
 
 ```bash
-$ npm install antd-init -g
+$ npm install dva-cli -g
 ```
 
-更多功能请参考 [脚手架工具](https://github.com/ant-design/antd-init/) 和 [开发工具文档](http://ant-tool.github.io/)。
+## 创建新应用
 
-> 除了官方提供的脚手架，您也可以使用社区提供的脚手架和范例：
->
->   - [react-redux-antd](https://github.com/okoala/react-redux-antd)
->   - [react-antd-admin](https://github.com/fireyy/react-antd-admin)
->   - [react-antd-redux-router-starter](https://github.com/yuzhouisme/react-antd-redux-router-starter)
->   - [react-redux-antd-starter](https://github.com/BetaRabbit/react-redux-antd-starter)
->   - [更多](https://github.com/ant-design/ant-design/issues/129)
-
-### 2. 创建一个项目
-
-使用命令行进行初始化。
+安装完 dva-cli 之后，就可以在 terminal 里访问到 `dva` 命令。现在，你可以通过 `dva new` 创建新应用。
 
 ```bash
-$ mkdir antd-demo && cd antd-demo
-$ antd-init
+$ dva new dva-quickstart
 ```
 
-antd-init 会自动安装 npm 依赖，若有问题则可自行安装。
+这会创建 `dva-quickstart` 目录，包含项目初始化目录和文件，并提供开发服务器、构建脚本、数据 mock 服务、代理服务器等功能。
 
-若安装缓慢报错，可尝试用 `cnpm` 或别的镜像源自行安装：`rm -rf node_modules && cnpm install`。
-
-### 3. 使用组件
-
-脚手架会生成一个 Todo 应用实例（一个很有参考价值的 React 上手示例），先不管它，我们用来测试组件。
-
-直接用下面的代码替换 `index.js` 的内容，用 React 的方式直接使用 antd 组件。
-
-```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { DatePicker, message } from 'antd';
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      date: '',
-    };
-  }
-  handleChange(date) {
-    message.info('您选择的日期是: ' + date.toString());
-    this.setState({ date });
-  }
-  render() {
-    return (
-      <div style={{ width: 400, margin: '100px auto' }}>
-        <DatePicker onChange={value => this.handleChange(value)} />
-        <div style={{ marginTop: 20 }}>当前日期：{this.state.date.toString()}</div>
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(<App />, document.getElementById('root'));
-```
-
-> 你可以在左侧菜单选用更多组件。
-
-### 4. 开发调试
-
-一键启动调试，访问 http://127.0.0.1:8000 查看效果。
+然后我们 `cd` 进入 `dva-quickstart` 目录，并启动开发服务器：
 
 ```bash
+$ cd dva-quickstart
 $ npm start
 ```
 
-### 5. 构建和部署
+几秒钟后，你会看到以下输出：
 
 ```bash
-$ npm run build
+          proxy: load rule from proxy.config.js
+          proxy: listened on 8989
+📦  411/411 build modules
+webpack: bundle build is now finished.
 ```
 
-入口文件会构建到 `dist` 目录中，你可以自由部署到不同环境中进行引用。
+在浏览器里打开 http://localhost:8989 ，你会看到 dva 的欢迎界面。
 
-> 上述例子用于帮助你理解 Ant Design React 的使用流程，并非真实的开发过程，你可以根据自己的项目开发流程进行接入。
+## 使用 antd
+
+通过 npm 安装 `react-lu-design` 和 `babel-plugin-import` 。`babel-plugin-import` 是用来按需加载 antd 的脚本和样式的，详见 [repo](https://github.com/ant-design/babel-plugin-import) 。
+
+```bash
+$ npm install antd babel-plugin-import --save
+```
+
+编辑 `webpack.config.js`，使 `babel-plugin-import` 插件生效。
+
+```diff
++ webpackConfig.babel.plugins.push(['import', {
++   libraryName: 'react-lu-design',
++   style: 'css',
++ }]);
+```
+
+> 注：这里不需要手动重启开发服务器，保存 `webpack.config.js` 后会自动重启。
+
 
 ## 兼容性
 
@@ -121,12 +80,15 @@ React Lu Design 支持所有的现代浏览器。
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="dns-prefetch" href="//as.alipayobjects.com" />
+  <link rel="dns-prefetch" href="//at.alicdn.com" />
+  <link rel="dns-prefetch" href="//static.zhulux.net" />
     <!-- 引入样式 -->
     <link rel="stylesheet" href="/index.css">
     <!-- Polyfills -->
-+    <!--[if lte IE 11]>
-+    <script src="https://as.alipayobjects.com/g/component/??es6-shim/0.35.1/es6-sham.min.js,es6-shim/0.35.1/es6-shim.min.js></script>
-+    <![endif]-->
+    <!--[if lte IE 11]>
+    <script src="https://as.alipayobjects.com/g/component/??es6-shim/0.35.1/es6-sham.min.js,es6-shim/0.35.1/es6-shim.min.js></script>
+    <![endif]-->
   </head>
   <body>
   </body>
@@ -138,16 +100,16 @@ React Lu Design 支持所有的现代浏览器。
 ```
 ## 按需加载
 
-通过 `import { Button } from 'antd';` 引入会加载 antd 下所有的模块，如果要按需加载可以通过以下的写法来引用。
+通过 `import { Button } from 'react-lu-design';` 引入会加载 react-lu-design 下所有的模块，如果要按需加载可以通过以下的写法来引用。
 
 ```jsx
-import Button from 'antd/lib/button';
+import Button from 'react-lu-design/lib/button';
 ```
 
 如果你使用 babel，我们推荐使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 来进行按需加载，加入这个插件后。你可以仍然这么写：
 
 ```jsx
-import { Button } from 'antd';
+import { Button } from 'react-lu-design';
 ```
 
 插件会帮你转换成上面的写法。另外此插件配合 [style](https://github.com/ant-design/babel-plugin-import#usage) 属性可以做到模块样式的按需自动加载。

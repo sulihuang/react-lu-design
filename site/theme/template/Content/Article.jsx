@@ -63,7 +63,7 @@ export default class Article extends React.Component {
     const { title, subtitle, filename } = meta;
     const locale = this.context.intl.locale;
     return (
-      <DocumentTitle title={`${title[locale] || title} - Ant Design`}>
+      <DocumentTitle title={`${title[locale] || title} - Lu Design`}>
         <article className="markdown">
           <h1>
             {title[locale] || title}

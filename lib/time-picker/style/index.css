@@ -119,7 +119,7 @@
   background: #e8f3fd;
 }
 li.ant-time-picker-panel-select-option-selected {
-  background: #f7f7f7;
+  background: #f4f8f9;
   font-weight: bold;
 }
 li.ant-time-picker-panel-select-option-disabled {
@@ -216,7 +216,7 @@ li.ant-time-picker-panel-select-option-disabled:hover {
   box-shadow: 0 0 0 2px rgba(21, 137, 238, 0.2);
 }
 .ant-time-picker-input[disabled] {
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   opacity: 1;
   cursor: not-allowed;
   color: #ccc;

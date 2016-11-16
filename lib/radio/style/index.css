@@ -178,14 +178,14 @@ span.ant-radio + * {
 }
 .ant-radio-button-wrapper-disabled {
   border-color: #d9d9d9;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   cursor: not-allowed;
   color: #ccc;
 }
 .ant-radio-button-wrapper-disabled:first-child,
 .ant-radio-button-wrapper-disabled:hover {
   border-color: #d9d9d9;
-  background-color: #f7f7f7;
+  background-color: #f4f8f9;
   color: #ccc;
 }
 .ant-radio-button-wrapper-disabled:first-child {

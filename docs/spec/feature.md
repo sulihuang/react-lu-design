@@ -1,27 +1,31 @@
 ---
 order: 1
 title:
-  zh-CN: 三大特性
+  zh-CN: 基本原则
   en-US: Features
 ---
 
-与众不同的是，Ant Design 不但追求『用户』的使用体验，还追求『设计者』的使用体验，真真正正贯彻和践行『以人为本』的设计理念。
-
-<div style="margin-left:-40px;margin-right:-40px;overflow:hidden;margin-top:30px;">
+<div style="margin-left:-40px;margin-right:-40px;overflow:hidden;margin-top:1rem;">
   <div class="ant-col-8 features">
-    <img src="https://os.alipayobjects.com/rmsportal/OVirOHTeAdzDBuQ.png">
-    <h5>微小</h5>
-    <div>致力于微小而美好的改变，力求在细节上精益求精，不仅让业务产品更加实用和可靠，而且还能让『用户』感到小惊喜。</div>
+    <div class="feature-img">
+    <img src="//o9uj5rfjo.qnssl.com/lu_design/img-clarity.svg">
+    </div>
+    <h5>极简</h5>
+    <div>如无必要，勿增实体简单意味着没有歧义，开箱即用。</div>
   </div>
   <div class="ant-col-8 features">
-    <img src="https://os.alipayobjects.com/rmsportal/iJbUiLYpuPBXUhV.png">
-    <h5>确定</h5>
-    <div>制定通俗而科学的设计原则、运用面向对象的方法、使用一致的文档沟通机制，给予研发团队一种高确定性、低熵值的研发状态。</div>
+    <div class="feature-img">
+    <img src="//o9uj5rfjo.qnssl.com/lu_design/img-efficiency.svg">
+    </div>
+    <h5>高效</h5>
+    <div>帮助用户尽可能快的完成任务，同时亦确保开发设计阶段的高效体验。</div>
   </div>
   <div class="ant-col-8 features">
-    <img src="https://os.alipayobjects.com/rmsportal/uSOjjlCRjRIhtIY.png">
-    <h5>幸福</h5>
-    <div>不苛求简单，但是力求让『用户』和『设计者』流畅的完成目标，并带着成功和满足离开。</div>
+    <div class="feature-img">
+    <img src="//o9uj5rfjo.qnssl.com/lu_design/img-beauty.svg">
+    </div>
+    <h5>低熵值</h5>
+    <div>探索设计规律，并将其抽象，增强界面设计的灵活性和可维护性，同时也减少设计者的主观干扰，从而降低系统的不确定性。</div>
   </div>
 </div>
 
@@ -34,6 +38,13 @@ title:
   font-size: 14px;
   margin-top: 16px;
 }
+.feature-img {
+     height: 170px;
+     display: flex;
+     background: #f7f7f7;
+     padding: 1rem;
+     border-radius: .5rem;
+ }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .features {
     width: 100%;
@@ -48,7 +59,7 @@ title:
 
 ---
 
-## 微小
+## 极简
 
 ### 微创新
 
@@ -70,7 +81,35 @@ title:
 
 ---
 
-## 确定
+## 高效
+
+### 用户的幸福
+
+<img class="preview-img no-padding" align="right" alt="用户的幸福示例" description="想了解更多内容，可阅读唐纳德•A•诺曼所著的 《设计心理学 3》。" src="https://os.alipayobjects.com/rmsportal/sBjNEGgHEpNfqTs.png">
+
+漂亮的组件、精致的排版、流畅的动画等的元素，使用户在『本能层次』中产生积极反应；
+
+良好的功能、性能和可用性，使用户在『行为层次』中产生积极反应；
+
+自我形象、个人满足和美好记忆，使用户在『反思层次』中体验思想和情感的交融。
+
+### 通俗而科学的设计原则
+
+详见[『设计原则』](/docs/spec/principle)。
+
+---
+
+## 低熵值
+
+
+### 设计者的幸福
+
+<img class="preview-img no-padding" align="right" alt="设计者的幸福示例" description="Lu Design 无法保证业务产品能否成功，但是能帮助业务产品『正确的成功』或者『正确的失败』。" src="https://os.alipayobjects.com/rmsportal/eMcdBWuZxRbvlvW.png">
+
+从『无』到『有』时，提供一整套设计解决方案，帮助『设计者』将商业想法快速形成产品并推向市场，快速、低成本试错。
+
+从『有』到『优』时，提供一系列自定义建议，帮助『设计者』塑造产品个性并提升整体体验，服务海量用户。
+
 
 ### 面向对象的方法
 
@@ -83,29 +122,3 @@ title:
 <img class="preview-img no-padding bad" align="right" alt="操作反馈 - 错误示例" description="这是体验更好的反馈方式，但是对『设计者』来说是灾难。因为这些『删除』文案只能通过人肉维护，难免产生遗漏和错别字，增大了系统的不确定性，这在多人合作和需求变更时尤为明显。" src="https://os.alipayobjects.com/rmsportal/OWLtvGCGmqawyPt.png">
 
 探索设计规律，并将其抽象成『对象』，增强界面设计的灵活性和可维护性，同时也减少『设计者』的主观干扰，从而降低系统的不确定性。
-
-### 通俗而科学的设计原则
-
-详见[『十大原则』](/docs/spec/principle)。
-
----
-
-## 幸福
-
-### 用户的幸福
-
-<img class="preview-img no-padding" align="right" alt="用户的幸福示例" description="想了解更多内容，可阅读唐纳德•A•诺曼所著的 《设计心理学 3》。" src="https://os.alipayobjects.com/rmsportal/sBjNEGgHEpNfqTs.png">
-
-漂亮的组件、精致的排版、流畅的动画等的元素，使用户在『本能层次』中产生积极反应；
-
-良好的功能、性能和可用性，使用户在『行为层次』中产生积极反应；
-
-自我形象、个人满足和美好记忆，使用户在『反思层次』中体验思想和情感的交融。
-
-### 设计者的幸福
-
-<img class="preview-img no-padding" align="right" alt="设计者的幸福示例" description="Ant Design 无法保证业务产品能否成功，但是能帮助业务产品『正确的成功』或者『正确的失败』。" src="https://os.alipayobjects.com/rmsportal/eMcdBWuZxRbvlvW.png">
-
-从『无』到『有』时，提供一整套设计解决方案，帮助『设计者』将商业想法快速形成产品并推向市场，快速、低成本试错。
-
-从『有』到『优』时，提供一系列自定义建议，帮助『设计者』塑造产品个性并提升整体体验，服务海量用户。
