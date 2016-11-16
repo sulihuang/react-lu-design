@@ -15,7 +15,7 @@ Components which need localization support are listed here, you can toggle the l
 
 ````jsx
 import { LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
-         Popconfirm, Table, Modal, Button, Select, Transfer, Radio } from 'antd';
+         Popconfirm, Table, Modal, Button, Select, Radio } from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
@@ -88,14 +88,6 @@ const Page = React.createClass({
           <Popconfirm title="Question?">
             <a href="#">Click to confirm</a>
           </Popconfirm>
-        </div>
-        <div className="example">
-          <Transfer
-            dataSource={[]}
-            showSearch
-            targetKeys={[]}
-            render={item => item.title}
-          />
         </div>
         <div style={{ width: 319, border: '1px solid #d9d9d9', borderRadius: 4 }}>
           <Calendar fullscreen={false} value={moment()} />

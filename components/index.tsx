@@ -84,12 +84,6 @@ export { default as Switch } from './switch';
 
 export { default as Table } from './table';
 
-export { default as Transfer } from './transfer';
-
-export { default as Tree } from './tree';
-
-export { default as TreeSelect } from './tree-select';
-
 export { default as Tabs } from './tabs';
 
 export { default as Tag } from './tag';
