@@ -14,7 +14,7 @@ title:
 Controlled mode, for example, to work with `Form` .
 
 ````jsx
-import { Mention, Form, Button } from 'antd';
+import { Mention, Form, Button } from 'react-lu-design';
 const { toEditorState, getMentions } = Mention;
 const FormItem = Form.Item;
 

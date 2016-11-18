@@ -14,7 +14,7 @@ title:
 Horizontal top navigation menu.
 
 ````jsx
-import { Menu, Icon } from 'antd';
+import { Menu, Icon } from 'react-lu-design';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 

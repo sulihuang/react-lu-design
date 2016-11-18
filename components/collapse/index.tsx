@@ -28,7 +28,7 @@ export default class Collapse extends React.Component<CollapseProps, any> {
   static Panel: typeof CollapsePanel = RcCollapse.Panel;
 
   static defaultProps = {
-    prefixCls: 'ant-collapse',
+    prefixCls: 'lud-collapse',
     bordered: true,
   };
 

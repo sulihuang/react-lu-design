@@ -14,7 +14,7 @@ title:
 A circular progress bar.
 
 ````jsx
-import { Progress } from 'antd';
+import { Progress } from 'react-lu-design';
 
 ReactDOM.render(
   <div>
@@ -26,8 +26,8 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-progress-circle-wrap,
-.ant-progress-line-wrap {
+.lud-progress-circle-wrap,
+.lud-progress-line-wrap {
   margin-right: 8px;
   margin-bottom: 5px;
 }

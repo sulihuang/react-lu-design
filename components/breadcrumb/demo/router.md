@@ -16,7 +16,7 @@ Used together with `react-router@2.x`.
 
 ````jsx
 import { Router, Route, Link, hashHistory } from 'react-router';
-import { Breadcrumb } from 'antd';
+import { Breadcrumb } from 'react-lu-design';
 
 const Apps = () => (
   <ul className="app-list">

@@ -15,7 +15,7 @@ After release `1.0`,  Modal's `align` prop was removed. You can use `style.top` 
 set position of modal dialog.
 
 ````jsx
-import { Modal, Button } from 'antd';
+import { Modal, Button } from 'react-lu-design';
 
 const App = React.createClass({
   getInitialState() {
@@ -74,7 +74,7 @@ ReactDOM.render(<App />, mountNode);
   justify-content: center;
 }
 
-.vertical-center-modal .ant-modal {
+.vertical-center-modal .lud-modal {
   top: 0;
 }
 ````

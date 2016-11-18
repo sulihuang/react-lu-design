@@ -51,7 +51,7 @@ subtitle: 级联选择
 | matchInputWidth | 搜索结果列表是否与输入框同宽 | boolean | |
 
 <style>
-.ant-cascader-picker {
+.lud-cascader-picker {
   width: 220px;
 }
 </style>

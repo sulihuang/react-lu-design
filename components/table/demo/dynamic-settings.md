@@ -14,7 +14,7 @@ title:
 Select different settings to see the result.
 
 ````jsx
-import { Table, Icon, Switch, Radio, Form } from 'antd';
+import { Table, Icon, Switch, Radio, Form } from 'react-lu-design';
 const FormItem = Form.Item;
 
 const columns = [{
@@ -149,7 +149,7 @@ ReactDOM.render(<Demo />, mountNode);
 .components-table-demo-control-bar {
   margin-bottom: 10px;
 }
-.components-table-demo-control-bar .ant-form-item {
+.components-table-demo-control-bar .lud-form-item {
   margin-right: 16px;
   margin-bottom: 8px;
 }

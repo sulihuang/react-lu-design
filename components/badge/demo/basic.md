@@ -14,7 +14,7 @@ title:
 Simplest Usage.
 
 ````jsx
-import { Badge } from 'antd';
+import { Badge } from 'react-lu-design';
 
 ReactDOM.render(
   <Badge count={5}>
@@ -24,7 +24,7 @@ ReactDOM.render(
 ````
 
 ````css
-.ant-badge:not(.ant-badge-status) {
+.ant-badge:not(.lud-badge-status) {
   margin-right: 16px;
 }
 .head-example {

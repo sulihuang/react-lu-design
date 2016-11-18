@@ -79,7 +79,7 @@ moment.locale('zh-cn');
 | disabledTime | 不可选择的时间 | function(dates: [moment, moment], partial: `'start'|'end'`) | 无 |
 
 <style>
-.code-box-demo .ant-calendar-picker {
+.code-box-demo .lud-calendar-picker {
   margin: 0 8px 12px 0;
 }
 </style>

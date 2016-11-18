@@ -36,7 +36,7 @@ import 'antd/dist/antd.css';  // or 'react-lu-design/dist/react-lu-design.less'
 以下两种方法都可以达到按需加载的目的：
 
 - `import DatePicker from 'react-lu-design/lib/date-picker'`
-- 配合插件 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 使用 `import { DatePicker } from 'antd';`
+- 配合插件 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 使用 `import { DatePicker } from 'react-lu-design';`
 
 > babel-plugin-import 支持 js 和 css 同时按需加载。
 

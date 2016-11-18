@@ -68,7 +68,7 @@ class ActionButton extends React.Component<ActionButtonProps, any> {
 
 export default function confirm(config) {
   const props = assign({ iconType: 'question-circle' }, config);
-  const prefixCls = props.prefixCls || 'ant-confirm';
+  const prefixCls = props.prefixCls || 'lud-confirm';
   let div = document.createElement('div');
   document.body.appendChild(div);
 

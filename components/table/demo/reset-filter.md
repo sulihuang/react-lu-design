@@ -22,7 +22,7 @@ Control filters and sorters by `fileredValue` and `sortOrder`.
 > 3. `column.key` is required.
 
 ````jsx
-import { Table } from 'antd';
+import { Table } from 'react-lu-design';
 
 const data = [{
   key: '1',

@@ -14,7 +14,7 @@ title:
 Use `visible` prop to control the display of the card.
 
 ````jsx
-import { Popover, Button } from 'antd';
+import { Popover, Button } from 'react-lu-design';
 
 const App = React.createClass({
   getInitialState() {

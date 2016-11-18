@@ -16,13 +16,7 @@ module.exports = {
     Feedback: 5,
     Localization: 6,
   },
-  docVersions: {
-    '0.9.x': 'http://09x.ant.design',
-    '0.10.x': 'http://010x.ant.design',
-    '0.11.x': 'http://011x.ant.design',
-    '0.12.x': 'http://012x.ant.design',
-    '1.x': 'http://1x.ant.design',
-  },
+  docVersions: {},
   routes: {
     path: '/',
     component: './template/Layout/index',

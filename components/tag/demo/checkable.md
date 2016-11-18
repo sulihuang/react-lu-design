@@ -14,7 +14,7 @@ title:
 Tag.CheckableTag works like Checkbox, and it is an absolute controlled component and has no uncontrolled mode.
 
 ````jsx
-import { Tag } from 'antd';
+import { Tag } from 'react-lu-design';
 const CheckableTag = Tag.CheckableTag;
 
 class UncontrolledCheckableTag extends React.Component {

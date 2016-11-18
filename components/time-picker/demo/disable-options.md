@@ -13,7 +13,7 @@ title:
 Make part of time unselectable by `disabledHours` `disabledMinutes` `disabledSeconds`, and we even can hide those unselectable options by `hideDisabledOptions`.
 
 ````jsx
-import { TimePicker } from 'antd';
+import { TimePicker } from 'react-lu-design';
 
 function range(start, end) {
   const result = [];
@@ -57,10 +57,10 @@ ReactDOM.render(
 ````
 
 <style>
-#components-time-picker-demo-disable-options .ant-time-picker {
+#components-time-picker-demo-disable-options .lud-time-picker {
   width: 120px;
 }
-#components-time-picker-demo-disable-options .ant-time-picker .ant-time-picker-input {
+#components-time-picker-demo-disable-options .lud-time-picker .lud-time-picker-input {
   width: 120px;
   margin-right: 8px;
 }

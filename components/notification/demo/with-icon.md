@@ -14,7 +14,7 @@ title:
 A notification box with a icon at the left side.
 
 ````jsx
-import { Button, notification } from 'antd';
+import { Button, notification } from 'react-lu-design';
 
 const openNotificationWithIcon = type => () => (
   notification[type]({
@@ -34,7 +34,7 @@ ReactDOM.render(
 ````
 
 <style>
-.code-box-demo .ant-btn {
+.code-box-demo .lud-btn {
   margin-right: 1em;
 }
 </style>

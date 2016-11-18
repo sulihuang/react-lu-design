@@ -14,7 +14,7 @@ title:
 The most basic dropdown menu.
 
 ````jsx
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon } from 'react-lu-design';
 
 const menu = (
   <Menu>
@@ -32,7 +32,7 @@ const menu = (
 
 ReactDOM.render(
   <Dropdown overlay={menu}>
-    <a className="ant-dropdown-link" href="#">
+    <a className="lud-dropdown-link" href="#">
       Hover me <Icon type="down" />
     </a>
   </Dropdown>

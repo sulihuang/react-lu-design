@@ -31,7 +31,7 @@ export default class Mention extends React.Component<MentionProps, MentionState>
   static toEditorState = toEditorState;
   static getMentions = getMentions;
   static defaultProps = {
-    prefixCls: 'ant-mention',
+    prefixCls: 'lud-mention',
     notFoundContent: '无匹配结果，轻敲空格完成输入',
     loading: false,
     multiLines: false,

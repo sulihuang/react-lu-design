@@ -47,7 +47,7 @@ export default class Col extends React.Component<ColProps, any> {
 
   render() {
     const props = this.props;
-    const [{ span, order, offset, push, pull, className, children, prefixCls = 'ant-col' }, others] = splitObject(props,
+    const [{ span, order, offset, push, pull, className, children, prefixCls = 'lud-col' }, others] = splitObject(props,
       ['span', 'order', 'offset', 'push', 'pull', 'className', 'children', 'prefixCls']);
     let sizeClassObj = {};
     ['xs', 'sm', 'md', 'lg'].forEach(size => {

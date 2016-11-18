@@ -14,7 +14,7 @@ title:
 The basic example.
 
 ````jsx
-import { Popconfirm, message } from 'antd';
+import { Popconfirm, message } from 'react-lu-design';
 
 function confirm() {
   message.success('Click on Yes');

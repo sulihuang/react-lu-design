@@ -118,7 +118,7 @@ CustomizedForm = Form.create({})(CustomizedForm);
 | hasFeedback | 配合 validateStatus 属性使用，展示校验状态图标，建议只配合 Input 组件使用 | bool |  | false  |
 
 <style>
-.code-box-demo .ant-form-horizontal {
+.code-box-demo .lud-form-horizontal {
   max-width: 540px;
 }
 </style>

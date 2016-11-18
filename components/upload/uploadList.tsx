@@ -19,7 +19,7 @@ export default class UploadList extends React.Component<UploadListProps, any> {
       strokeWidth: 3,
       showInfo: false,
     },
-    prefixCls: 'ant-upload',
+    prefixCls: 'lud-upload',
   };
 
   handleClose = (file) => {

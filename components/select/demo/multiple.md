@@ -14,7 +14,7 @@ title:
 Multiple selection, selecting from existing items (scroll the menu).
 
 ````jsx
-import { Select } from 'antd';
+import { Select } from 'react-lu-design';
 const Option = Select.Option;
 
 const children = [];

@@ -14,7 +14,7 @@ title:
 This will simply display a red badge, without a specific count.
 
 ````jsx
-import { Badge, Icon } from 'antd';
+import { Badge, Icon } from 'react-lu-design';
 
 ReactDOM.render(<div>
   <Badge dot>
@@ -27,7 +27,7 @@ ReactDOM.render(<div>
 ````
 
 <style>
-.anticon-notification {
+.ludicon-notification {
   width: 16px;
   height: 16px;
   line-height: 16px;

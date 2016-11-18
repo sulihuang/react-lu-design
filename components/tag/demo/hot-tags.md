@@ -14,7 +14,7 @@ title:
 Select your favourite topics.
 
 ````jsx
-import { Tag } from 'antd';
+import { Tag } from 'react-lu-design';
 const CheckableTag = Tag.CheckableTag;
 
 const tagsFromServer = ['Movie', 'Books', 'Music'];

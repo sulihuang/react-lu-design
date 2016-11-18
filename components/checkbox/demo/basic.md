@@ -14,7 +14,7 @@ title:
 Basic usage of checkbox.
 
 ````jsx
-import { Checkbox } from 'antd';
+import { Checkbox } from 'react-lu-design';
 
 function onChange(e) {
   console.log(`checked = ${e.target.checked}`);

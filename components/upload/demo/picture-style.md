@@ -15,7 +15,7 @@ If uploade file is picture, a thumbnail can be shown. `IE8/9` do not support loc
 
 
 ````jsx
-import { Upload, Button, Icon } from 'antd';
+import { Upload, Button, Icon } from 'react-lu-design';
 
 const props = {
   action: '/upload.do',
@@ -55,7 +55,7 @@ ReactDOM.render(
 
 ````css
 /* tile uploaded pictures */
-.upload-list-inline .ant-upload-list-item {
+.upload-list-inline .lud-upload-list-item {
   display: inline-block;
   width: 200px;
   margin-right: 8px;

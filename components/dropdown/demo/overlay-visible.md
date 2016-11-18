@@ -14,7 +14,7 @@ title:
 The default is to close the menu when you click on menu items, this feature can be turned off.
 
 ````jsx
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon } from 'react-lu-design';
 
 const OverlayVisible = React.createClass({
   getInitialState() {
@@ -43,7 +43,7 @@ const OverlayVisible = React.createClass({
         onVisibleChange={this.handleVisibleChange}
         visible={this.state.visible}
       >
-        <a className="ant-dropdown-link" href="#">
+        <a className="lud-dropdown-link" href="#">
           Hover me <Icon type="down" />
         </a>
       </Dropdown>

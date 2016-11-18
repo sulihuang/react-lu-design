@@ -237,7 +237,7 @@ export default class Upload extends React.Component<UploadProps, any> {
 
   render() {
     const {
-      prefixCls = 'ant-upload', showUploadList, listType, onPreview,
+      prefixCls = 'lud-upload', showUploadList, listType, onPreview,
       type, disabled, children, className,
     } = this.props;
 

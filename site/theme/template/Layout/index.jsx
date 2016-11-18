@@ -1,8 +1,9 @@
 import React, { cloneElement } from 'react';
 import ReactDOM from 'react-dom';
 import { addLocaleData, IntlProvider } from 'react-intl';
-import { LocaleProvider } from 'antd';
-import enUS from 'antd/lib/locale-provider/en_US';
+import 'react-lu-design/lib/style';
+import { LocaleProvider } from 'react-lu-design';
+import enUS from 'react-lu-design/lib/locale-provider/en_US';
 import Header from './Header';
 import Footer from './Footer';
 import cnLocale from '../../zh-CN';
@@ -11,7 +12,7 @@ import '../../static/style';
 // Expose to iframe
 window.react = React;
 window['react-dom'] = ReactDOM;
-window.antd = require('antd');
+window['react-lu-design'] = require('react-lu-design');
 
 const appLocale = cnLocale;
 addLocaleData(appLocale.data);

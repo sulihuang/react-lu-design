@@ -1,0 +1,16 @@
+@import "../../style/config";
+@import "../../style/mixins";
+@import "../../input/style/mixin";
+@import "../../button/style/mixin";
+
+$calendar-prefix-cls: "#{$css-prefix}calendar";
+$calendar-timepicker-prefix-cls: "#{$css-prefix}calendar-time-picker";
+
+@import "Picker";
+@import "Calendar";
+@import "RangePicker";
+@import "TimePicker";
+@import "MonthPanel";
+@import "YearPanel";
+@import "DecadePanel";
+@import "MonthPicker";

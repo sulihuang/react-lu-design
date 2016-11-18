@@ -36,7 +36,7 @@ function getNotificationInstance(prefixCls) {
 }
 
 function notice(args) {
-  const outerPrefixCls = args.prefixCls || 'ant-notification';
+  const outerPrefixCls = args.prefixCls || 'lud-notification';
   const prefixCls = `${outerPrefixCls}-notice`;
 
   let duration;

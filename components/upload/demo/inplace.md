@@ -14,7 +14,7 @@ title:
 Show uploaded image in-place.
 
 ```jsx
-import { Upload, Icon } from 'antd';
+import { Upload, Icon } from 'react-lu-design';
 
 const Demo = React.createClass({
   getInitialState() {

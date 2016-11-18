@@ -21,8 +21,8 @@ font-family: "Avenir Next", Avenir, Roboto, "Segoe UI", "Helvetica Neue", "Helve
 
 ## 字体使用规范
 
-<div class="ant-row">
-  <div class="ant-col ant-col-12">
+<div class="lud-row">
+  <div class="lud-col lud-col-12">
     <div class="font-type">
       <div class="font-title">主标题</div>
       <h1>
@@ -85,7 +85,7 @@ font-family: "Avenir Next", Avenir, Roboto, "Segoe UI", "Helvetica Neue", "Helve
       </p>
     </div>
   </div>
-  <div class="ant-col ant-col-12">
+  <div class="lud-col lud-col-12">
     <div class="font-type">
       <div class="font-title">Main Head</div>
       <h1>

@@ -6,21 +6,21 @@ title:
 ---
 
 <div style="margin-left:-40px;margin-right:-40px;overflow:hidden;margin-top:1rem;">
-  <div class="ant-col-8 features">
+  <div class="lud-col-8 features">
     <div class="feature-img">
     <img src="//o9uj5rfjo.qnssl.com/lu_design/img-clarity.svg">
     </div>
     <h5>极简</h5>
     <div>如无必要，勿增实体简单意味着没有歧义，开箱即用。</div>
   </div>
-  <div class="ant-col-8 features">
+  <div class="lud-col-8 features">
     <div class="feature-img">
     <img src="//o9uj5rfjo.qnssl.com/lu_design/img-efficiency.svg">
     </div>
     <h5>高效</h5>
     <div>帮助用户尽可能快的完成任务，同时亦确保开发设计阶段的高效体验。</div>
   </div>
-  <div class="ant-col-8 features">
+  <div class="lud-col-8 features">
     <div class="feature-img">
     <img src="//o9uj5rfjo.qnssl.com/lu_design/img-beauty.svg">
     </div>

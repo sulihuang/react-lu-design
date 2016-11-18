@@ -14,7 +14,7 @@ title:
 Basic slider. When `range` is `true`, display as dual thumb mode. When `disable` is `true`, the slider will not be interactable.
 
 ````jsx
-import { Slider } from 'antd';
+import { Slider } from 'react-lu-design';
 
 ReactDOM.render(<div>
   <Slider defaultValue={30} />
@@ -25,10 +25,10 @@ ReactDOM.render(<div>
 ````
 
 <style>
-.code-box-demo .ant-slider {
+.code-box-demo .lud-slider {
   margin-bottom: 50px;
 }
-.code-box-demo .ant-slider:last-child {
+.code-box-demo .lud-slider:last-child {
   margin-bottom: 10px;
 }
 </style>

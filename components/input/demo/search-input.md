@@ -14,7 +14,7 @@ title:
 Example of creating a search box by grouping a standard input with a search button.
 
 ````jsx
-import { Input, Button } from 'antd';
+import { Input, Button } from 'react-lu-design';
 import classNames from 'classnames';
 const InputGroup = Input.Group;
 
@@ -43,20 +43,20 @@ const SearchInput = React.createClass({
   render() {
     const { style, size, placeholder } = this.props;
     const btnCls = classNames({
-      'ant-search-btn': true,
-      'ant-search-btn-noempty': !!this.state.value.trim(),
+      'lud-search-btn': true,
+      'lud-search-btn-noempty': !!this.state.value.trim(),
     });
     const searchCls = classNames({
-      'ant-search-input': true,
-      'ant-search-input-focus': this.state.focus,
+      'lud-search-input': true,
+      'lud-search-input-focus': this.state.focus,
     });
     return (
-      <div className="ant-search-input-wrapper" style={style}>
+      <div className="lud-search-input-wrapper" style={style}>
         <InputGroup className={searchCls}>
           <Input placeholder={placeholder} value={this.state.value} onChange={this.handleInputChange}
             onFocus={this.handleFocusBlur} onBlur={this.handleFocusBlur} onPressEnter={this.handleSearch}
           />
-          <div className="ant-input-group-wrap">
+          <div className="lud-input-group-wrap">
             <Button icon="search" className={btnCls} size={size} onClick={this.handleSearch} />
           </div>
         </InputGroup>

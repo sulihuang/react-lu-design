@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
 import enquire from 'enquire.js';
 import classNames from 'classnames';
-import { Select, Menu, Row, Col, Icon, Popover } from 'antd';
+import { Select, Menu, Row, Col, Icon, Popover } from 'react-lu-design';
 
 const Option = Select.Option;
 

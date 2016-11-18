@@ -8,13 +8,13 @@ describe('Layout', function() {
       <Col span="2"></Col>
     );
     const colNode = TestUtils.findRenderedDOMComponentWithTag(col, 'DIV');
-    expect(colNode.className).toBe('ant-col-2');
+    expect(colNode.className).toBe('lud-col-2');
   });
   it('should render Row', () => {
     const row = TestUtils.renderIntoDocument(
       <Row></Row>
     );
     const rowNode = TestUtils.findRenderedDOMComponentWithTag(row, 'DIV');
-    expect(rowNode.className).toBe('ant-row');
+    expect(rowNode.className).toBe('lud-row');
   });
 });

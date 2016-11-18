@@ -14,7 +14,7 @@ title:
 Simple table with actions.
 
 ````jsx
-import { Table, Icon } from 'antd';
+import { Table, Icon } from 'react-lu-design';
 
 const columns = [{
   title: 'Name',

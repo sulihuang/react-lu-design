@@ -14,7 +14,7 @@ title:
 The simplest usage.
 
 ```jsx
-import { Anchor } from 'antd';
+import { Anchor } from 'react-lu-design';
 const { Link } = Anchor;
 
 ReactDOM.render(
@@ -30,7 +30,7 @@ ReactDOM.render(
 ```
 
 <style>
-.code-box-demo .ant-affix {
+.code-box-demo .lud-affix {
   z-index: 11;
 }
 </style>

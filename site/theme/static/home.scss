@@ -1,0 +1,118 @@
+#list {
+  position: fixed;
+  z-index: 9998;
+  top: 50%;
+  right: 20px;
+  width: 6px;
+  margin-top: -35px;
+}
+.list-point {
+  width: 6px;
+  height: 6px;
+  background: #00AAEE;
+  border-radius: 6px;
+  float: left;
+  margin: 4px auto;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+.list-point:hover, .list-point.active {
+  opacity: 1;
+}
+
+#banner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.down {
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  color: rgba(255, 255, 255, .75);
+  left: 50%;
+  margin-left: -7px;
+}
+
+.page {
+  min-height: 700px;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+  background: #fff;
+
+  .image-wrapper {
+    width: 65%;
+    float: left;
+    position: relative;
+  }
+
+  .text-wrapper {
+    width: 35%;
+    float: left;
+    position: relative;
+    top: 20%;
+    left: 10px;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+  }
+  .text-wrapper h2,
+  .text-wrapper-bottom h2 {
+    font-size: 32px;
+    color: #666;
+    font-weight: normal;
+  }
+  .text-wrapper p {
+    margin: 10px 0 20px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #999999;
+  }
+  .left-text {
+    padding-left: 10%;
+  }
+}
+
+.image1 {
+  background: url("https://t.alipayobjects.com/images/T1Ch8kXfpdXXXXXXXX.png") no-repeat right / 841px;
+  height: 511px;
+  top: 50%;
+  margin-top: -256px;
+}
+.image2 {
+  background: url("https://t.alipayobjects.com/images/T1r5RkXotXXXXXXXXX.png") no-repeat left / 800px;
+  height: 474px;
+  top: 50%;
+  margin-top: -266px;
+}
+.image3 {
+  padding-right: 10%;
+  background: url("https://t.alipayobjects.com/images/T1nx0kXdFfXXXXXXXX.png") no-repeat right / 639px;
+  background-origin: content-box;
+  height: 500px;
+  top: 50%;
+  margin-top: -250px;
+}
+.image4 {
+  background: url("https://t.alipayobjects.com/images/T1lyJkXg4aXXXXXXXX.png") no-repeat center / 615px;
+  height: 364px;
+  margin: auto;
+}
+
+.text-wrapper-bottom {
+  text-align: center;
+  margin: 10% auto 40px;
+}
+.text-wrapper-bottom p {
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 28px;
+  color: #999;
+}

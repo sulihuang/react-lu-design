@@ -1,5 +1,6 @@
 const path = require('path');
 const CSSSplitWebpackPlugin = require('css-split-webpack-plugin').default;
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 function pickerGenerator(module) {
   const tester = new RegExp(`^docs/${module}`);
@@ -64,8 +65,8 @@ module.exports = {
   },
   webpackConfig(config) {
     config.resolve.alias = {
-      'antd/lib': path.join(process.cwd(), 'components'),
-      antd: process.cwd(),
+      'react-lu-design/lib': path.join(process.cwd(), 'components'),
+      'react-lu-design': process.cwd(),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',
     };
@@ -83,10 +84,18 @@ module.exports = {
       require.resolve('babel-plugin-import'),
       {
         style: true,
-        libraryName: 'antd',
+        libraryName: 'react-lu-design',
         libraryDirectory: 'components',
       },
     ]);
+
+    // Support SCSS Modules
+    config.module.loaders.push({
+      test: /\.scss$/,
+      loader: ExtractTextPlugin.extract('style-loader',
+        'css?&sourceMap!' +
+        'sass?outputStyle=expanded&sourceMap'),
+    });
 
     return config;
   },

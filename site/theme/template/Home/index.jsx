@@ -31,7 +31,7 @@ function getStyle() {
       border-bottom-color: #EBEDEE;
       transition: border .5s cubic-bezier(0.455, 0.03, 0.515, 0.955), background .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
-    #header .ant-select-selection,
+    #header .lud-select-selection,
     #header .ant-menu {
       background: transparent;
     }

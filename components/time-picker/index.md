@@ -37,4 +37,4 @@ import moment from 'moment';
 | getPopupContainer   | 定义浮层的容器，默认为 body 上新建 div | function(trigger) | 无 |
 | addon | 选择框底部显示自定义的内容 | function | 无 |
 
-<style>.code-box-demo .ant-time-picker { margin: 0 8px 12px 0; }</style>
+<style>.code-box-demo .lud-time-picker { margin: 0 8px 12px 0; }</style>
