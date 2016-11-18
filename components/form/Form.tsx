@@ -83,7 +83,7 @@ export interface ComponentDecorator {
 
 export default class Form extends React.Component<FormProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-form',
+    prefixCls: 'lud-form',
     onSubmit(e) {
       e.preventDefault();
     },

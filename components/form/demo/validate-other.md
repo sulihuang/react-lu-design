@@ -17,7 +17,7 @@ Demostration for validataion configuration for form controls which are not show 
 import {
   Form, Select, InputNumber, Switch, Radio,
   Slider, Button, Upload, Icon,
-} from 'antd';
+} from 'react-lu-design';
 const FormItem = Form.Item;
 const Option = Select.Option;
 const RadioButton = Radio.Button;
@@ -88,7 +88,7 @@ const Demo = Form.create()(React.createClass({
           {getFieldDecorator('input-number', { initialValue: 3 })(
             <InputNumber min={1} max={10} />
           )}
-          <span className="ant-form-text"> machines</span>
+          <span className="lud-form-text"> machines</span>
         </FormItem>
 
         <FormItem

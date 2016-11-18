@@ -18,7 +18,7 @@ When `RangePicker` is not satisfied your requirements, try to implement similar 
 > * Imporve user experience with `open` `onOpenChange`.
 
 ````jsx
-import { DatePicker } from 'antd';
+import { DatePicker } from 'react-lu-design';
 
 class DateRange extends React.Component {
   state = {

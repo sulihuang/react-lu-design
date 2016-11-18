@@ -6,7 +6,7 @@ title: 可收起展开的侧边导航
 页面横向空间有限时使用。侧边导航默认收起，点击底部按钮时展开。
 
 ````jsx
-import { Menu, Breadcrumb, Icon } from 'antd';
+import { Menu, Breadcrumb, Icon } from 'react-lu-design';
 import BrowserDemo from 'site/theme/template/BrowserDemo';
 const SubMenu = Menu.SubMenu;
 

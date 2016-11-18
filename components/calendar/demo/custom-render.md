@@ -14,7 +14,7 @@ title:
 This component can be rendered by using `dateCellRender` and `monthCellRender` with the data you need.
 
 ````jsx
-import { Calendar } from 'antd';
+import { Calendar } from 'react-lu-design';
 import moment from 'moment';
 
 function dateCellRender(value) {

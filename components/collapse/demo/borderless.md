@@ -14,7 +14,7 @@ title:
 A borderless style of Collapse.
 
 ````jsx
-import { Collapse } from 'antd';
+import { Collapse } from 'react-lu-design';
 const Panel = Collapse.Panel;
 
 const text = `

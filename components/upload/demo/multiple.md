@@ -9,7 +9,7 @@ title:
 For debugging.
 
 ````jsx
-import { Upload, message, Button, Icon } from 'antd';
+import { Upload, message, Button, Icon } from 'react-lu-design';
 
 const props = {
   action: '/upload.do',

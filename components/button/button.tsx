@@ -47,7 +47,7 @@ export default class Button extends React.Component<ButtonProps, any> {
   static Group: any;
 
   static defaultProps = {
-    prefixCls: 'ant-btn',
+    prefixCls: 'lud-btn',
     loading: false,
   };
 

@@ -59,7 +59,7 @@ export default class Input extends Component<InputProps, any> {
   static Group: any;
   static defaultProps = {
     disabled: false,
-    prefixCls: 'ant-input',
+    prefixCls: 'lud-input',
     type: 'text',
     autosize: false,
   };

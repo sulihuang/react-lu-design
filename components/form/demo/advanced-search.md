@@ -19,7 +19,7 @@ Because the width of label is not fixed, you may need to adjust it by customizin
 
 
 ````jsx
-import { Form, Row, Col, Input, Button, Icon } from 'antd';
+import { Form, Row, Col, Input, Button, Icon } from 'react-lu-design';
 const FormItem = Form.Item;
 
 class AdvancedSearchForm extends React.Component {
@@ -69,7 +69,7 @@ class AdvancedSearchForm extends React.Component {
     return (
       <Form
         horizontal
-        className="ant-advanced-search-form"
+        className="lud-advanced-search-form"
         onSubmit={this.handleSearch}
       >
         <Row gutter={40}>
@@ -102,7 +102,7 @@ ReactDOM.render(
 ````
 
 ````css
-#components-form-demo-advanced-search .ant-advanced-search-form {
+#components-form-demo-advanced-search .lud-advanced-search-form {
   padding: 24px;
   background: #fbfbfb;
   border: 1px solid #d9d9d9;
@@ -111,7 +111,7 @@ ReactDOM.render(
 ````
 
 <style>
-#components-form-demo-advanced-search .ant-form-horizontal {
+#components-form-demo-advanced-search .lud-form-horizontal {
   max-width: none;
 }
 #components-form-demo-advanced-search .search-result-list {

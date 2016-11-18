@@ -37,7 +37,7 @@ export default class Tabs extends React.Component<TabsProps, any> {
   static TabPane = TabPane as React.ClassicComponentClass<TabPaneProps>;
 
   static defaultProps = {
-    prefixCls: 'ant-tabs',
+    prefixCls: 'lud-tabs',
     hideAdd: false,
     animated: true,
   };

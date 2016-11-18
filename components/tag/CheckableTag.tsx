@@ -17,7 +17,7 @@ export default class CheckableTag extends React.Component<CheckableTagProps, any
     }
   }
   render() {
-    const [{ prefixCls = 'ant-tag', className = '', checked }, restProps ] = splitObject(
+    const [{ prefixCls = 'lud-tag', className = '', checked }, restProps ] = splitObject(
       this.props, ['prefixCls', 'className', 'checked']
     );
     const cls = classNames({

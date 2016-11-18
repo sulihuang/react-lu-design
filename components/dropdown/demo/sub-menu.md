@@ -14,7 +14,7 @@ title:
 The menu has multiple levels.
 
 ````jsx
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon } from 'react-lu-design';
 const SubMenu = Menu.SubMenu;
 
 const menu = (
@@ -30,7 +30,7 @@ const menu = (
 
 ReactDOM.render(
   <Dropdown overlay={menu}>
-    <a className="ant-dropdown-link" href="#">
+    <a className="lud-dropdown-link" href="#">
       Cascading menu <Icon type="down" />
     </a>
   </Dropdown>

@@ -14,7 +14,7 @@ title:
 You could pass `AutoComplete.Option` as children of `AutoComplete`, instead of using `dataSource`。
 
 ````jsx
-import { AutoComplete } from 'antd';
+import { AutoComplete } from 'react-lu-design';
 
 const Option = AutoComplete.Option;
 

@@ -14,7 +14,7 @@ title:
 Communicated with other components.
 
 ````jsx
-import { Checkbox, Button } from 'antd';
+import { Checkbox, Button } from 'react-lu-design';
 
 const App = React.createClass({
   getInitialState() {

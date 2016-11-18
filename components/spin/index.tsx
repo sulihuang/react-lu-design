@@ -17,7 +17,7 @@ export interface SpinProps {
 
 export default class Spin extends React.Component<SpinProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-spin',
+    prefixCls: 'lud-spin',
     spinning: true,
     size: 'default',
   };

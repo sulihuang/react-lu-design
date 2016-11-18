@@ -14,7 +14,7 @@ title:
 There are 12 `placement` options available. Use `arrowPointAtCenter` if you want arrow point at the center of target.
 
 ````jsx
-import { Popconfirm, message, Button } from 'antd';
+import { Popconfirm, message, Button } from 'react-lu-design';
 
 const text = 'Are you sure delete this task?';
 
@@ -71,14 +71,14 @@ ReactDOM.render(<div className="demo">
 ````
 
 <style>
-.code-box-demo .ant-popover-wrap > a {
+.code-box-demo .lud-popover-wrap > a {
   margin-right: 8px;
 }
-.code-box-demo .ant-btn {
+.code-box-demo .lud-btn {
   margin-right: 8px;
   margin-bottom: 8px;
 }
-#components-popconfirm-demo-placement .ant-btn {
+#components-popconfirm-demo-placement .lud-btn {
   width: 70px;
 }
 </style>

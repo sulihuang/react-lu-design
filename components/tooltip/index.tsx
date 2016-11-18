@@ -36,7 +36,7 @@ export interface TooltipProps {
 
 export default class Tooltip extends React.Component<TooltipProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-tooltip',
+    prefixCls: 'lud-tooltip',
     placement: 'top',
     transitionName: 'zoom-big-fast',
     mouseEnterDelay: 0.1,

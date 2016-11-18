@@ -14,7 +14,7 @@ title:
 Render addon contents to timepicker panel's bottom.
 
 ````jsx
-import { TimePicker, Button } from 'antd';
+import { TimePicker, Button } from 'react-lu-design';
 
 ReactDOM.render(
   <TimePicker

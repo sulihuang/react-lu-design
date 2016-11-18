@@ -1,10 +1,10 @@
 import React from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
-import { Modal } from 'antd';
-import { version as antdVersion } from 'antd/package.json';
+import { Modal } from 'react-lu-design';
+import { version as ludVersion } from 'react-lu-design/package.json';
 import { docVersions } from '../../';
 
-docVersions[antdVersion] = antdVersion;
+docVersions[ludVersion] = ludVersion;
 
 class Footer extends React.Component {
  /*
@@ -27,10 +27,10 @@ class Footer extends React.Component {
       title: messages['app.publish.title'],
       content: (
         <div>
-          <img src="https://os.alipayobjects.com/rmsportal/nyqBompsynAQCpJ.svg" alt="Ant Design" />
+          <img src="https://os.alipayobjects.com/rmsportal/nyqBompsynAQCpJ.svg" alt="Lu Design" />
           <p>
             {messages['app.publish.greeting']}
-            <a target="_blank" rel="noopener noreferrer" href="/changelog">antd@2.0.0</a>
+            <a target="_blank" rel="noopener noreferrer" href="/changelog">react-lu-design@2.0.0</a>
             {messages['app.publish.intro']}
             {messages['app.publish.old-version-guide']}
             <a target="_blank" rel="noopener noreferrer" href="http://1x.ant.design">1x.ant.design</a>
@@ -39,7 +39,7 @@ class Footer extends React.Component {
         </div>
       ),
       okText: 'OK',
-      onOk: () => localStorage.setItem('antd@2.0.0-notification-sent', 'true'),
+      onOk: () => localStorage.setItem('react-lu-design@2.0.0-notification-sent', 'true'),
       className: 'new-version-info-modal',
       width: 470,
     });
@@ -67,7 +67,7 @@ class Footer extends React.Component {
             <div>©2016 ZhuluX Inc.</div>
             <div>Powered by <a href="https://github.com/benjycui/bisheng">BiSheng</a></div>
             <div style={{ marginTop: 10 }}>
-              <FormattedMessage id="app.footer.version" /> {antdVersion}
+              <FormattedMessage id="app.footer.version" /> {ludVersion}
             </div>
           </li>
         </ul>

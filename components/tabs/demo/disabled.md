@@ -14,7 +14,7 @@ title:
 Disabled a tab.
 
 ````jsx
-import { Tabs } from 'antd';
+import { Tabs } from 'react-lu-design';
 const TabPane = Tabs.TabPane;
 
 ReactDOM.render(

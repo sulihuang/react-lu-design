@@ -23,7 +23,7 @@ export interface TagProps {
 export default class Tag extends React.Component<TagProps, any> {
   static CheckableTag = CheckableTag;
   static defaultProps = {
-    prefixCls: 'ant-tag',
+    prefixCls: 'lud-tag',
     closable: false,
   };
 

@@ -14,7 +14,7 @@ title:
 Messages of success, error and warning types.
 
 ````jsx
-import { message, Button } from 'antd';
+import { message, Button } from 'react-lu-design';
 
 const success = function () {
   message.success('This is a message of success');
@@ -36,7 +36,7 @@ ReactDOM.render(<div>
 ````
 
 <style>
-#components-message-demo-other .ant-btn {
+#components-message-demo-other .lud-btn {
   margin-right: 8px;
 }
 </style>

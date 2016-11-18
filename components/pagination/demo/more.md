@@ -14,7 +14,7 @@ title:
 More pages.
 
 ````jsx
-import { Pagination } from 'antd';
+import { Pagination } from 'react-lu-design';
 
 ReactDOM.render(
   <Pagination defaultCurrent={1} total={500} />,

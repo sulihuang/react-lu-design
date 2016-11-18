@@ -44,7 +44,7 @@ export default class Carousel extends React.Component<CarouselProps, any> {
   static defaultProps = {
     dots: true,
     arrows: false,
-    prefixCls: 'ant-carousel',
+    prefixCls: 'lud-carousel',
   };
 
   render() {

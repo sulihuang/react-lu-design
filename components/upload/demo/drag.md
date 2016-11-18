@@ -15,7 +15,7 @@ You can drag files to a specific area, to upload. Meanwhile you can also upload 
 
 
 ````jsx
-import { Upload, Icon, message } from 'antd';
+import { Upload, Icon, message } from 'react-lu-design';
 const Dragger = Upload.Dragger;
 
 const props = {
@@ -43,11 +43,11 @@ ReactDOM.render(
     </div>
     <div style={{ marginTop: 16, height: 180 }}>
       <Dragger {...props}>
-        <p className="ant-upload-drag-icon">
+        <p className="lud-upload-drag-icon">
           <Icon type="inbox" />
         </p>
-        <p className="ant-upload-text">Click or drag file to this area to upload</p>
-        <p className="ant-upload-hint">Support for a single or bulk upload. Strictly prohibit from uploading company data or other band files</p>
+        <p className="lud-upload-text">Click or drag file to this area to upload</p>
+        <p className="lud-upload-hint">Support for a single or bulk upload. Strictly prohibit from uploading company data or other band files</p>
       </Dragger>
     </div>
   </div>

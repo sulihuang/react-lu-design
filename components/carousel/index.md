@@ -28,7 +28,7 @@ subtitle: 走马灯
 更多参数可参考：https://github.com/akiran/react-slick
 
 <style>
-.ant-carousel .slick-slide {
+.lud-carousel .slick-slide {
   text-align: center;
   height: 160px;
   line-height: 130px;
@@ -36,7 +36,7 @@ subtitle: 走马灯
   color: #fff;
   overflow: hidden;
 }
-#components-carousel-demo-vertical .ant-carousel {
+#components-carousel-demo-vertical .lud-carousel {
   margin-right: 35px;
 }
 </style>

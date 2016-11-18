@@ -14,7 +14,7 @@ title:
 `Collapse` is nested inside the `Collapse`.
 
 ````jsx
-import { Collapse } from 'antd';
+import { Collapse } from 'react-lu-design';
 const Panel = Collapse.Panel;
 
 function callback(key) {

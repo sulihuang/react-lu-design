@@ -121,11 +121,11 @@ ReactDOM.render(<ExtendPalettes key="palettes" />, mountNode);
 const Values = require('values.js');
 const CopyToClipboard = require('react-copy-to-clipboard');
 const classNames = require('classnames');
-const antd = require('antd');
-const Button = antd.Button;
-const InputNumber = antd.InputNumber;
-const Slider = antd.Slider;
-const Tooltip = antd.Tooltip;
+const lud = require('react-lu-design');
+const Button = lud.Button;
+const InputNumber = lud.InputNumber;
+const Slider = lud.Slider;
+const Tooltip = lud.Tooltip;
 const TintShadeTool = React.createClass({
   getInitialState() {
     return {
@@ -194,7 +194,7 @@ const TintShadeTool = React.createClass({
           </CopyToClipboard>
         </Tooltip>
         <span style={{width: 188, display: 'inline-block', fontFamily: 'Consolas'}}>{this.state.result}</span>
-        <input className="ant-input" style={{width: 80, color: this.state.color, marginRight: 8}} value={this.state.color} onChange={this.handleChangeColor} />
+        <input className="lud-input" style={{width: 80, color: this.state.color, marginRight: 8}} value={this.state.color} onChange={this.handleChangeColor} />
         <InputNumber style={{width: 70}} value={this.state.value} onChange={this.handleChangeValue} min={-100} max={100} step={5} />
         <span style={{margin: '0 0 0 8px'}}>%</span>
       </div>

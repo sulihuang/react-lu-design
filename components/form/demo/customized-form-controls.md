@@ -19,7 +19,7 @@ Customized or third-party form controls can be used in Form, too. Controls must 
 
 
 ````jsx
-import { Form, Input, Button } from 'antd';
+import { Form, Input, Button } from 'react-lu-design';
 const FormItem = Form.Item;
 
 const CustomizedInputNumber = React.createClass({

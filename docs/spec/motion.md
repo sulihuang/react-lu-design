@@ -11,8 +11,8 @@ title:
 
 `````__react
 const cssAnimation = require('css-animation');
-const antd = require('antd');
-const Select = antd.Select;
+const lud = require('react-lu-design');
+const Select = lud.Select;
 const Option = Select.Option;
 const OptGroup = Select.OptGroup;
 

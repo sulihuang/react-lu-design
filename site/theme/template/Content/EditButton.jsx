@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, Icon } from 'antd';
+import { Tooltip, Icon } from 'react-lu-design';
 
 const branchUrl = 'https://github.com/zhulux/react-lu-design/blob/master/';
 

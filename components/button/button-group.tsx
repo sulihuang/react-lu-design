@@ -12,7 +12,7 @@ export interface ButtonGroupProps {
 }
 
 export default function ButtonGroup(props: ButtonGroupProps) {
-  const [{ prefixCls = 'ant-btn-group', size, className }, others] =
+  const [{ prefixCls = 'lud-btn-group', size, className }, others] =
     splitObject(props, ['prefixCls', 'size', 'className']);
 
   // large => lg

@@ -15,8 +15,8 @@ Components which need localization support are listed here, you can toggle the l
 
 ````jsx
 import { LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
-         Popconfirm, Table, Modal, Button, Select, Radio } from 'antd';
-import enUS from 'antd/lib/locale-provider/en_US';
+         Popconfirm, Table, Modal, Button, Select, Radio } from 'react-lu-design';
+import enUS from 'react-lu-design/lib/locale-provider/en_US';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 moment.locale('en');

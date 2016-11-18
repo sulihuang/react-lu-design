@@ -14,7 +14,7 @@ title:
 Search and select options directly.
 
 ````jsx
-import { Cascader } from 'antd';
+import { Cascader } from 'react-lu-design';
 
 const options = [{
   value: 'zhejiang',

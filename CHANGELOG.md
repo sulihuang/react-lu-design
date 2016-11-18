@@ -5,10 +5,11 @@ toc: false
 timeline: true
 ---
 
-## 1.2.0.alpha0
+## 1.2.0.alpha1
 
 * 梳理文档
-* 移除TreeSelect树选择等不必要组件。 [#2](https://github.com/zhulux/react-lu-design/issues/2)
+* 移除 TreeSelect 树选择等不必要组件。 [#2](https://github.com/zhulux/react-lu-design/issues/2)
+* 使用 SCSS 替代 LESS。 [#3](https://github.com/zhulux/react-lu-design/issues/3)
 
 ## 1.1.0
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
 import TweenOne from 'rc-tween-one';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { Icon, Button } from 'antd';
+import { Icon, Button } from 'react-lu-design';
 import QueueAnim from 'rc-queue-anim';
 
 export default function Page2({ location }) {

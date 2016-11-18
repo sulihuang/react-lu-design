@@ -14,7 +14,7 @@ title:
 Should be used at the top of container, needs to override styles.
 
 ````jsx
-import { Tabs } from 'antd';
+import { Tabs } from 'react-lu-design';
 const TabPane = Tabs.TabPane;
 
 ReactDOM.render(
@@ -35,21 +35,21 @@ ReactDOM.render(
   padding: 24px;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-content {
+.card-container > .lud-tabs-card > .lud-tabs-content {
   height: 120px;
   margin-top: -16px;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+.card-container > .lud-tabs-card > .lud-tabs-content > .lud-tabs-tabpane {
   background: #fff;
   padding: 16px;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+.card-container > .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab {
   border-color: transparent;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+.card-container > .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab-active {
   border-color: #fff;
 }
 ````

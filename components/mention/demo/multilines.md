@@ -14,7 +14,7 @@ title:
 Multi lines mode.
 
 ````jsx
-import { Mention } from 'antd';
+import { Mention } from 'react-lu-design';
 const { toString } = Mention;
 
 function onChange(editorState) {

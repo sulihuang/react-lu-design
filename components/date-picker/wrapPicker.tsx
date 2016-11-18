@@ -37,8 +37,8 @@ export default function wrapPicker(Picker, defaultFormat?) {
         align: {
           offset: [0, -9],
         },
-        prefixCls: 'ant-calendar',
-        inputPrefixCls: 'ant-input',
+        prefixCls: 'lud-calendar',
+        inputPrefixCls: 'lud-input',
       };
     },
 

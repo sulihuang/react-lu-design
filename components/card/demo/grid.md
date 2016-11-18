@@ -14,7 +14,7 @@ title:
 Cards usually cooperate with grid layout in overview page.
 
 ````jsx
-import { Card, Col, Row } from 'antd';
+import { Card, Col, Row } from 'react-lu-design';
 
 ReactDOM.render(
   <div style={{ background: '#ECECEC', padding: '30px' }}>
@@ -35,11 +35,11 @@ ReactDOM.render(
 
 ````css
 /* Increase grid spacing of 16px  */
-.code-box-demo .ant-row {
+.code-box-demo .lud-row {
   margin-left: -8px;
   margin-right: -8px;
 }
-.code-box-demo .ant-row > div {
+.code-box-demo .lud-row > div {
   padding: 0 8px;
 }
 ````

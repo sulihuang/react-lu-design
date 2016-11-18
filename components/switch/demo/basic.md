@@ -14,7 +14,7 @@ title:
 The most basic usage.
 
 ````jsx
-import { Switch } from 'antd';
+import { Switch } from 'react-lu-design';
 
 function onChange(checked) {
   console.log(`switch to ${checked}`);
@@ -27,7 +27,7 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-switch {
+.lud-switch {
   margin-bottom: 8px;
 }
 <style>

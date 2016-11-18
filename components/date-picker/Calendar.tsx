@@ -5,7 +5,7 @@ import RcCalendar from 'rc-calendar';
 export default class Calendar extends React.Component<any, any> {
   static defaultProps = {
     locale: CalendarLocale,
-    prefixCls: 'ant-calendar',
+    prefixCls: 'lud-calendar',
   };
 
   render() {

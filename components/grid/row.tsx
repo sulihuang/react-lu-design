@@ -17,7 +17,7 @@ export interface RowProps {
 export default class Row extends React.Component<RowProps, any> {
   static defaultProps = {
     gutter: 0,
-    prefixCls: 'ant-row',
+    prefixCls: 'lud-row',
   };
   static propTypes = {
     type: React.PropTypes.string,

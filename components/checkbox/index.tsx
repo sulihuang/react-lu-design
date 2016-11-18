@@ -22,7 +22,7 @@ export interface CheckboxProps {
 export default class Checkbox extends React.Component<CheckboxProps, any> {
   static Group = CheckboxGroup;
   static defaultProps = {
-    prefixCls: 'ant-checkbox',
+    prefixCls: 'lud-checkbox',
     indeterminate: false,
   };
   shouldComponentUpdate(...args) {

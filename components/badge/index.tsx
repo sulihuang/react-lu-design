@@ -21,7 +21,7 @@ export interface BadgeProps {
 
 export default class Badge extends React.Component<BadgeProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-badge',
+    prefixCls: 'lud-badge',
     count: null,
     dot: false,
     overflowCount: 99,

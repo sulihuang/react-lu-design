@@ -22,7 +22,7 @@ Suitable for large amounts of data with long columns.
 > A fixed width for `scroll.x` is recommended. The sum of unfixed columns should not greater than `scroll.x`.
 
 ````jsx
-import { Table } from 'antd';
+import { Table } from 'react-lu-design';
 
 const columns = [
   { title: 'Full Name', width: 100, dataIndex: 'name', key: 'name', fixed: 'left' },

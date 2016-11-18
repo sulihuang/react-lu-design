@@ -93,8 +93,8 @@ const defaultDisplayRender = label => label.join(' / ');
 
 export default class Cascader extends React.Component<CascaderProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-cascader',
-    inputPrefixCls: 'ant-input',
+    prefixCls: 'lud-cascader',
+    inputPrefixCls: 'lud-input',
     placeholder: 'Please select',
     transitionName: 'slide-up',
     popupPlacement: 'bottomLeft',
@@ -235,7 +235,7 @@ export default class Cascader extends React.Component<CascaderProps, any> {
         };
       });
     }
-    return [{ label: notFoundContent, value: 'ANT_CASCADER_NOT_FOUND', disabled: true }];
+    return [{ label: notFoundContent, value: 'LUD_CASCADER_NOT_FOUND', disabled: true }];
   }
 
   render() {
@@ -300,7 +300,7 @@ export default class Cascader extends React.Component<CascaderProps, any> {
     }
 
     const dropdownMenuColumnStyle: { width?: number, height?: string } = {};
-    const isNotFound = (options || []).length === 1 && options[0].value === 'ANT_CASCADER_NOT_FOUND';
+    const isNotFound = (options || []).length === 1 && options[0].value === 'LUD_CASCADER_NOT_FOUND';
     if (isNotFound) {
       dropdownMenuColumnStyle.height = 'auto'; // Height of one row.
     }

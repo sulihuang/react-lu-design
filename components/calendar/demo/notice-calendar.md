@@ -14,7 +14,7 @@ title:
 A complex application.
 
 ````jsx
-import { Calendar } from 'antd';
+import { Calendar } from 'react-lu-design';
 
 function getListData(value) {
   let listData;

@@ -14,7 +14,7 @@ title:
 Allow only select parent options.
 
 ````jsx
-import { Cascader } from 'antd';
+import { Cascader } from 'react-lu-design';
 
 const options = [{
   value: 'zhejiang',

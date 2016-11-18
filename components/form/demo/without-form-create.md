@@ -14,7 +14,7 @@ title:
 `Form.create` will collect and validate form data automatically. But if you don't need this feature or the default behaviour cannot satisfy you business, you can drop `Form.create` and handle form data manually.
 
 ````jsx
-import { Form, InputNumber } from 'antd';
+import { Form, InputNumber } from 'react-lu-design';
 const FormItem = Form.Item;
 
 function validatePrimeNumber(number) {

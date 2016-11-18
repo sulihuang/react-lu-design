@@ -16,7 +16,7 @@ export interface CardProps {
 
 export default (props: CardProps) => {
   const [{
-    prefixCls = 'ant-card', className, extra, bodyStyle,
+    prefixCls = 'lud-card', className, extra, bodyStyle,
     title, loading, bordered = true,
   }, others] = splitObject(props,
     ['prefixCls', 'className', 'children', 'extra', 'bodyStyle', 'title', 'loading', 'bordered']);

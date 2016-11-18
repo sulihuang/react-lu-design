@@ -14,7 +14,7 @@ title:
 Click the button to toggle between available and disabled states.
 
 ````jsx
-import { InputNumber, Button } from 'antd';
+import { InputNumber, Button } from 'react-lu-design';
 
 const Test = React.createClass({
   getInitialState() {

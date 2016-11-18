@@ -14,7 +14,7 @@ title:
 The height of the inpub field for the select defaults to 28px. If size is set to large, the height will be 32px, and if set to small, 22px.
 
 ````jsx
-import { Select } from 'antd';
+import { Select } from 'react-lu-design';
 const Option = Select.Option;
 
 function handleChange(value) {
@@ -46,11 +46,11 @@ ReactDOM.render(
 ````
 
 ````css
-.code-box-demo .ant-select {
+.code-box-demo .lud-select {
   margin: 0 8px 10px 0;
 }
 
-#components-select-demo-search-box .code-box-demo .ant-select {
+#components-select-demo-search-box .code-box-demo .lud-select {
   margin: 0;
 }
 ````

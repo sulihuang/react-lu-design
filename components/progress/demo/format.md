@@ -14,7 +14,7 @@ title:
 You can custom text format by setting `format`.
 
 ````jsx
-import { Progress } from 'antd';
+import { Progress } from 'react-lu-design';
 
 ReactDOM.render(
   <div>
@@ -25,8 +25,8 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-progress-circle,
-.ant-progress-line {
+.lud-progress-circle,
+.lud-progress-line {
   margin-right: 8px;
   margin-bottom: 8px;
 }

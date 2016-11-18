@@ -12,7 +12,7 @@ export interface TimelineProps {
 export default class Timeline extends React.Component<TimelineProps, any> {
   static Item: React.ReactNode;
   static defaultProps = {
-    prefixCls: 'ant-timeline',
+    prefixCls: 'lud-timeline',
   };
 
   render() {

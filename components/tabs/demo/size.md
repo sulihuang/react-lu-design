@@ -14,7 +14,7 @@ title:
 Small size can be used in Modal.
 
 ````jsx
-import { Tabs } from 'antd';
+import { Tabs } from 'react-lu-design';
 const TabPane = Tabs.TabPane;
 
 ReactDOM.render(

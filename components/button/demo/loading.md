@@ -14,7 +14,7 @@ title:
 A loading indicator can be added to a button by setting the `loading` property on the `Button`.
 
 ````jsx
-import { Button } from 'antd';
+import { Button } from 'react-lu-design';
 
 const App = React.createClass({
   getInitialState() {

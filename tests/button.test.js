@@ -18,7 +18,7 @@ describe('Button', function() {
   });
 
   it('should set the default className to button', () => {
-    expect(buttonNode.className).toBe('ant-btn');
+    expect(buttonNode.className).toBe('lud-btn');
   });
 
   it('should has a whitespace in two Chinese characters', () => {

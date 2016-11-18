@@ -20,7 +20,7 @@ export default class Anchor extends React.Component<AnchorProps, any> {
   static Link = AnchorLink;
 
   static defaultProps = {
-    prefixCls: 'ant-anchor',
+    prefixCls: 'lud-anchor',
     affix: true,
   };
 

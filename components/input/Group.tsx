@@ -10,7 +10,7 @@ export interface GroupProps {
 }
 
 const Group: React.StatelessComponent<GroupProps> = (props) => {
-  const { prefixCls = 'ant-input-group', className = '' } = props;
+  const { prefixCls = 'lud-input-group', className = '' } = props;
   const cls = classNames({
     [prefixCls]: true,
     [`${prefixCls}-lg`]: props.size === 'large',

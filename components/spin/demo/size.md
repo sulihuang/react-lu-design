@@ -14,7 +14,7 @@ title:
 A small `Spin` use in loading text, default `Spin` use in loading card-level block, and large `Spin` use in loading **page**.
 
 ````jsx
-import { Spin } from 'antd';
+import { Spin } from 'react-lu-design';
 
 ReactDOM.render(
   <div>
@@ -26,7 +26,7 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-spin {
+.lud-spin {
   margin-right: 16px;
 }
 </style>

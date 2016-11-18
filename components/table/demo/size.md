@@ -14,7 +14,7 @@ title:
 Two compacted table size: `middle` and `small`, `small` size is used in Modal only.
 
 ````jsx
-import { Table } from 'antd';
+import { Table } from 'react-lu-design';
 
 const columns = [{
   title: 'Name',

@@ -1,0 +1,74 @@
+@import "../../style/config";
+@import "../../style/mixins";
+
+$col-prefix: "#{$css-prefix}col";
+
+// mixins for grid system
+// ------------------------
+@mixin make-row($gutter: $grid-gutter-width) {
+  position: relative;
+  margin-left: ($gutter / -2);
+  margin-right: ($gutter / -2);
+  height: auto;
+  @include clearfix();
+}
+
+@mixin make-grid-columns() {
+  @for $i from 1 through $grid-columns{
+    .#{$col-prefix}-#{$i},
+    .#{$col-prefix}-xs-#{$i},
+    .#{$col-prefix}-sm-#{$i},
+    .#{$col-prefix}-md-#{$i},
+    .#{$col-prefix}-lg-#{$i}{
+      position: relative;
+      // Prevent columns from collapsing when empty
+      min-height: 1px;
+      padding-left:  ($grid-gutter-width / 2);
+      padding-right: ($grid-gutter-width / 2);
+    }
+  }
+}
+
+@mixin float-grid-columns($class) {
+  @for $i from 1 through $grid-columns{
+    .#{$col-prefix}#{$class}-#{$i}{
+      float: left;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+@mixin loop-grid-columns($class) {
+  .#{$css-prefix}col#{$class}-0 {
+    display: none;
+  }
+  .#{$css-prefix}col-push-0 {
+    left: auto;
+  }
+  .#{$css-prefix}col-pull-0 {
+    right: auto;
+  }
+  @for $i from 1 through $grid-columns{
+    .#{$css-prefix}col#{$class}-#{$i} {
+      display: block;
+      width: percentage(($i / $grid-columns));
+    }
+    .#{$css-prefix}col#{$class}-push-#{$i} {
+      left: percentage(($i/ $grid-columns));
+    }
+    .#{$css-prefix}col#{$class}-pull-#{$i} {
+      right: percentage(($i / $grid-columns));
+    }
+    .#{$css-prefix}col#{$class}-offset-#{$i} {
+      margin-left: percentage(($i / $grid-columns));
+    }
+    .#{$css-prefix}col#{$class}-order-#{$i} {
+      order: $i;
+    }
+  }
+}
+
+@mixin make-grid($class: '') {
+  @include float-grid-columns($class);
+  @include loop-grid-columns($class);
+}

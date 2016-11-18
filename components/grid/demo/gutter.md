@@ -14,7 +14,7 @@ title:
 You can use the `gutter` property of `Row` as grid spacing, we recommend set it to `(16 + 8n) px`.
 
 ````jsx
-import { Row, Col } from 'antd';
+import { Row, Col } from 'react-lu-design';
 
 ReactDOM.render(
   <div className="gutter-example">
@@ -37,7 +37,7 @@ ReactDOM.render(
 ````
 
 ````css
-.gutter-example .ant-row > div {
+.gutter-example .lud-row > div {
   background: transparent;
   border: 0;
 }

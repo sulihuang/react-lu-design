@@ -14,7 +14,7 @@ Radio 不可用。
 Radio unavailable.
 
 ```jsx
-import { Radio, Button } from 'antd';
+import { Radio, Button } from 'react-lu-design';
 
 const App = React.createClass({
   getInitialState() {

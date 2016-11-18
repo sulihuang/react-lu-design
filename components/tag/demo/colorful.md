@@ -14,7 +14,7 @@ title:
 We can set the background color of basic Tag by `color`, and it's helpful to tell different Tags.
 
 ````jsx
-import { Tag } from 'antd';
+import { Tag } from 'react-lu-design';
 
 ReactDOM.render(
   <div>

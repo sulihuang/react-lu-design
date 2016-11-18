@@ -48,8 +48,8 @@ export default class Pagination extends React.Component<PaginationProps, any> {
   static defaultProps = {
     locale: zhCN,
     className: '',
-    prefixCls: 'ant-pagination',
-    selectPrefixCls: 'ant-select',
+    prefixCls: 'lud-pagination',
+    selectPrefixCls: 'lud-select',
   };
 
   static contextTypes = {

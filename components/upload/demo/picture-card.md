@@ -14,7 +14,7 @@ title:
 If uploade file is picture, a thumbnail can be shown.
 
 ````jsx
-import { Upload, Icon, Modal } from 'antd';
+import { Upload, Icon, Modal } from 'react-lu-design';
 
 const ImageUploadList = React.createClass({
   getInitialState() {
@@ -50,7 +50,7 @@ const ImageUploadList = React.createClass({
       <div className="clearfix">
         <Upload {...props}>
           <Icon type="plus" />
-          <div className="ant-upload-text">Upload</div>
+          <div className="lud-upload-text">Upload</div>
         </Upload>
         <a href="https://os.alipayobjects.com/rmsportal/NDbkJhpzmLxtPhB.png" target="_blank" rel="noopener noreferrer" className="upload-example">
           <img alt="example" src="https://os.alipayobjects.com/rmsportal/NDbkJhpzmLxtPhB.png" />
@@ -69,12 +69,12 @@ ReactDOM.render(<ImageUploadList />, mountNode);
 
 ````css
 /* you can make up upload button and sample style by using stylesheets */
-.ant-upload-select-picture-card i {
+.lud-upload-select-picture-card i {
   font-size: 28px;
   color: #999;
 }
 
-.ant-upload-select-picture-card .ant-upload-text {
+.lud-upload-select-picture-card .lud-upload-text {
   margin-top: 8px;
   font-size: 12px;
   color: #666;

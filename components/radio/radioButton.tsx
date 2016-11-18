@@ -8,7 +8,7 @@ export interface RadioButtonProps {
 
 export default class RadioButton extends React.Component<RadioButtonProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-radio-button',
+    prefixCls: 'lud-radio-button',
   };
   render() {
     return (

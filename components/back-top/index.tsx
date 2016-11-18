@@ -98,7 +98,7 @@ export default class BackTop extends React.Component<BackTopProps, any> {
   }
 
   render() {
-    const { prefixCls = 'ant-back-top', className = '', children } = this.props;
+    const { prefixCls = 'lud-back-top', className = '', children } = this.props;
     const classString = classNames({
       [prefixCls]: true,
       [className]: !!className,

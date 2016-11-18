@@ -40,7 +40,7 @@ export interface PopconfirmContext {
 
 export default class Popconfirm extends React.Component<PopconfirmProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-popover',
+    prefixCls: 'lud-popover',
     transitionName: 'zoom-big',
     placement: 'top',
     trigger: 'click',

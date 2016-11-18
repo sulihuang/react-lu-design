@@ -15,7 +15,7 @@ Autocomplete select with search field.
 
 
 ````jsx
-import { Input, Select, Button, Icon } from 'antd';
+import { Input, Select, Button, Icon } from 'react-lu-design';
 import jsonp from 'jsonp';
 import querystring from 'querystring';
 import classNames from 'classnames';
@@ -101,7 +101,7 @@ const SearchInput = React.createClass({
           >
             {options}
           </Select>
-          <div className="ant-input-group-wrap">
+          <div className="lud-input-group-wrap">
             <Button className={btnCls} onClick={this.handleSubmit}>
               <Icon type="search" />
             </Button>

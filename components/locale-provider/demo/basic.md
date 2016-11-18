@@ -14,8 +14,8 @@ title:
 Wrap your app with `LocaleProvider`, and apply the corresponding language package.
 
 ````jsx
-import { Pagination, LocaleProvider } from 'antd';
-import enUS from 'antd/lib/locale-provider/en_US';
+import { Pagination, LocaleProvider } from 'react-lu-design';
+import enUS from 'react-lu-design/lib/locale-provider/en_US';
 
 function App() {
   return (

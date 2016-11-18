@@ -14,7 +14,7 @@ title:
 Basic usage.
 
 ````jsx
-import { Mention } from 'antd';
+import { Mention } from 'react-lu-design';
 const { toString, toEditorState } = Mention;
 
 function onChange(editorState) {

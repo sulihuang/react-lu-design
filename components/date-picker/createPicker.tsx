@@ -16,7 +16,7 @@ export default function createPicker(TheCalendar) {
   const CalenderWrapper = React.createClass<any, any>({
     getDefaultProps() {
       return {
-        prefixCls: 'ant-calendar',
+        prefixCls: 'lud-calendar',
         allowClear: true,
       };
     },

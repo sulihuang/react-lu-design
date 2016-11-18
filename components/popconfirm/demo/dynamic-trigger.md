@@ -14,7 +14,7 @@ title:
 Make it pop up under some conditions.
 
 ````jsx
-import { Popconfirm, Switch, message } from 'antd';
+import { Popconfirm, Switch, message } from 'react-lu-design';
 
 const App = React.createClass({
   getInitialState() {
