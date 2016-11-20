@@ -30,7 +30,7 @@ ReactDOM.render(<DatePicker />, mountNode);
 引入样式：
 
 ```jsx
-import 'antd/dist/antd.css';  // or 'react-lu-design/dist/react-lu-design.less'
+import 'react-lu-design/dist/react-lu-design.css';  // or 'react-lu-design/dist/react-lu-design.scss'
 ```
 
 以下两种方法都可以达到按需加载的目的：

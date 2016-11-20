@@ -1,0 +1,45 @@
+@import "../../style/config";
+@import "../../style/mixins";
+@import "../../button/style/mixin";
+@import "./mixin";
+
+.#{$css-prefix}search-input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.#{$css-prefix}search-input {
+  &.#{$css-prefix}input-group .#{$css-prefix}input:first-child,
+  &.#{$css-prefix}input-group .#{$css-prefix}select:first-child {
+    border-radius: $border-radius-base;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
+
+  &.#{$css-prefix}input-group .#{$css-prefix}input:first-child {
+    padding-right: 36px;
+  }
+
+  .#{$css-prefix}search-btn {
+    @include btn-default;
+    border-radius: 0 $border-radius-base - 1 $border-radius-base - 1 0;
+    left: -1px;
+    position: relative;
+    border-width: 0 0 0 1px;
+    z-index: 2;
+    padding: .42rem 8px;
+    &:hover {
+      border-color: $border-color-base;
+    }
+  }
+  &-focus .#{$css-prefix}search-btn-noempty,
+  &:hover .#{$css-prefix}search-btn-noempty {
+    @include btn-primary();
+  }
+  .#{$css-prefix}select-combobox {
+    .#{$css-prefix}select-selection__rendered {
+      right: 29px;
+    }
+  }
+}

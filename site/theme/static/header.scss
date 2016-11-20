@@ -83,7 +83,7 @@ $header-height: 80px;
   text-align: center;
   border-bottom-width: 3px;
 
-  &.ant-menu-item-selected a {
+  &.lud-menu-item-selected a {
     color: #2db7f5;
     font-weight: bold;
   }
@@ -102,7 +102,7 @@ $header-height: 80px;
   .lud-select-dropdown-menu-item {
     border-radius: 0 !important;
   }
-  .ant-component-decs {
+  .lud-component-decs {
     font-size: 12px;
     position: absolute;
     top: 9px;

@@ -24,7 +24,7 @@ ReactDOM.render(
 ````
 
 ````css
-.ant-badge:not(.lud-badge-status) {
+.lud-badge:not(.lud-badge-status) {
   margin-right: 16px;
 }
 .head-example {

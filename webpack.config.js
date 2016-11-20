@@ -1,7 +1,6 @@
 // This config is for building dist files
 const webpack = require('webpack');
-const getWebpackConfig = require('antd-tools/lib/getWebpackConfig');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const getWebpackConfig = require('lud-tools/lib/getWebpackConfig');
 
 // noParse still leave `require('./locale' + name)` in dist files
 // ignore is better
@@ -19,16 +18,6 @@ function es3ify(webpackConfig) {
   });
 }
 
-// Support SCSS Modules
-function sass(webpackConfig) {
-  webpackConfig.module.loaders.push({
-    test: /\.scss$/,
-    loader: ExtractTextPlugin.extract('style-loader',
-      'css?&sourceMap!' +
-      'sass?outputStyle=expanded&sourceMap'),
-  });
-}
-
 module.exports = function (webpackConfig) {
   webpackConfig = getWebpackConfig(webpackConfig);
   if (process.env.RUN_ENV === 'PRODUCTION') {
@@ -37,9 +26,6 @@ module.exports = function (webpackConfig) {
       ignoreMomentLocale(config);
     });
   }
-  webpackConfig.forEach((config) => {
-    sass(config);
-  });
 
   return webpackConfig;
 };

@@ -1,0 +1,102 @@
+.lud-badge {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle; }
+  .lud-badge-count {
+    position: absolute;
+    transform: translateX(-50%);
+    top: -10px;
+    height: 20px;
+    border-radius: 10px;
+    min-width: 20px;
+    background: #d4504c;
+    border: 1px solid transparent;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    padding: 0 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    transform-origin: -10% center;
+    z-index: 10;
+    box-shadow: 0 0 0 1px #fff; }
+    .lud-badge-count a,
+    .lud-badge-count a:hover {
+      color: #fff; }
+  .lud-badge-dot {
+    position: absolute;
+    transform: translateX(-50%);
+    transform-origin: 0 center;
+    top: -4px;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background: #d4504c;
+    z-index: 10;
+    box-shadow: 0 0 0 1px #fff; }
+  .lud-badge-status {
+    line-height: inherit;
+    vertical-align: baseline; }
+    .lud-badge-status-dot {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border-radius: 50%; }
+    .lud-badge-status-success {
+      background-color: #4bca81; }
+    .lud-badge-status-processing {
+      background-color: #1589ee;
+      animation: antStatusProcessing 1.2s infinite ease-in-out; }
+    .lud-badge-status-default {
+      background-color: #d9d9d9; }
+    .lud-badge-status-error {
+      background-color: #d4504c; }
+    .lud-badge-status-warning {
+      background-color: #fa0; }
+    .lud-badge-status-text {
+      color: #2E486F;
+      font-size: 14px;
+      margin-left: 8px; }
+  .lud-badge-zoom-appear, .lud-badge-zoom-enter {
+    animation: antZoomBadgeIn 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    animation-fill-mode: both; }
+  .lud-badge-zoom-leave {
+    animation: antZoomBadgeOut 0.3s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+    animation-fill-mode: both; }
+  .lud-badge-not-a-wrapper .lud-badge-count {
+    top: auto;
+    display: block;
+    position: relative;
+    transform: none !important; }
+
+@keyframes antStatusProcessing {
+  0%,
+  100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+.lud-scroll-number {
+  overflow: hidden; }
+  .lud-scroll-number-only {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .lud-scroll-number.not-support-css-animation .lud-scroll-number-only > p {
+    display: none; }
+    .lud-scroll-number.not-support-css-animation .lud-scroll-number-only > p.current {
+      display: block; }
+
+@keyframes antZoomBadgeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateX(-50%); }
+  100% {
+    transform: scale(1) translateX(-50%); } }
+
+@keyframes antZoomBadgeOut {
+  0% {
+    transform: scale(1) translateX(-50%); }
+  100% {
+    opacity: 0;
+    transform: scale(0) translateX(-50%); } }

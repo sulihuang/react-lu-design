@@ -1,0 +1,220 @@
+.lud-input-number {
+  position: relative;
+  display: inline-block;
+  padding: 4px 7px;
+  width: 100%;
+  height: 28px;
+  cursor: text;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2E486F;
+  background: #fff none;
+  border: 1px solid #d8dde6;
+  border-radius: 0.25rem;
+  transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  font-size: 14px;
+  height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #d8dde6;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  width: 80px; }
+  .lud-input-number:hover {
+    border-color: #44a1f1; }
+  .lud-input-number:focus {
+    border-color: #44a1f1;
+    outline: 0;
+    box-shadow: 0 0 0 2px fade(#1589ee, 20%); }
+  .lud-input-number[disabled] {
+    background-color: #f4f8f9;
+    opacity: 1;
+    cursor: not-allowed;
+    color: #ccc; }
+    .lud-input-number[disabled]:hover {
+      border-color: #e0e4eb; }
+  .lud-input-number textarea.lud-input-number {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom; }
+  .lud-input-number-lg {
+    padding: 6px 7px;
+    height: 32px; }
+  .lud-input-number-sm {
+    padding: 1px 7px;
+    height: 22px;
+    border-radius: 0.125rem; }
+  .lud-input-number-handler {
+    text-align: center;
+    line-height: 0;
+    height: 14px;
+    overflow: hidden;
+    color: #999;
+    position: relative;
+    transition: all 0.1s linear;
+    display: block;
+    width: 100%;
+    font-weight: bold; }
+    .lud-input-number-handler:active {
+      background: #f4f4f4; }
+    .lud-input-number-handler:hover .lud-input-number-handler-up-inner,
+    .lud-input-number-handler:hover .lud-input-number-handler-down-inner {
+      color: #44a1f1; }
+  .lud-input-number-handler-up-inner, .lud-input-number-handler-down-inner {
+    display: inline-block;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: center;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 12px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transition: all 0.1s linear;
+    display: inline-block;
+    font-size: 12px;
+    font-size: "7px 	";
+    transform: scale(0.58333) rotate(0deg);
+    right: 4px;
+    color: #999; }
+    .lud-input-number-handler-up-inner:before, .lud-input-number-handler-down-inner:before {
+      display: block;
+      font-family: "anticon" !important; }
+    :root .lud-input-number-handler-up-inner, :root .lud-input-number-handler-down-inner {
+      font-size: 12px; }
+  .lud-input-number:hover {
+    border-color: #44a1f1; }
+  .lud-input-number-focused {
+    border-color: #44a1f1;
+    outline: 0;
+    box-shadow: 0 0 0 2px fade(#1589ee, 20%); }
+  .lud-input-number-disabled {
+    background-color: #f4f8f9;
+    opacity: 1;
+    cursor: not-allowed;
+    color: #ccc; }
+    .lud-input-number-disabled:hover {
+      border-color: #e0e4eb; }
+  .lud-input-number-input-wrap {
+    overflow: hidden;
+    height: 28px; }
+  .lud-input-number-input {
+    width: 100%;
+    text-align: left;
+    outline: 0;
+    -moz-appearance: textfield;
+    line-height: 28px;
+    height: 28px;
+    transition: all 0.3s linear;
+    color: #2E486F;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 0 7px; }
+    .lud-input-number-input[disabled] {
+      background-color: #f4f8f9;
+      opacity: 1;
+      cursor: not-allowed;
+      color: #ccc; }
+      .lud-input-number-input[disabled]:hover {
+        border-color: #e0e4eb; }
+  .lud-input-number-lg {
+    padding: 0; }
+    .lud-input-number-lg .lud-input-number-handler-wrap {
+      height: 32px; }
+    .lud-input-number-lg .lud-input-number-input-wrap {
+      height: 32px; }
+    .lud-input-number-lg .lud-input-number-handler {
+      height: 16px; }
+    .lud-input-number-lg input {
+      height: 32px;
+      line-height: 32px; }
+    .lud-input-number-lg .lud-input-number-handler-up-inner {
+      top: 2px; }
+    .lud-input-number-lg .lud-input-number-handler-down-inner {
+      bottom: 2px; }
+    .lud-input-number-lg .lud-input-number-handler-up:hover {
+      height: 18px; }
+  .lud-input-number-sm {
+    padding: 0; }
+    .lud-input-number-sm .lud-input-number-handler-wrap {
+      height: 22px; }
+    .lud-input-number-sm .lud-input-number-input-wrap {
+      height: 22px; }
+    .lud-input-number-sm .lud-input-number-handler {
+      height: 11px; }
+    .lud-input-number-sm input {
+      height: 22px;
+      line-height: 22px;
+      margin-top: -1px;
+      vertical-align: top; }
+    .lud-input-number-sm .lud-input-number-handler-up-inner {
+      top: -1px; }
+    .lud-input-number-sm .lud-input-number-handler-down-inner {
+      bottom: -1px; }
+    .lud-input-number-sm .lud-input-number-handler-up:hover {
+      height: 13px; }
+    .lud-input-number-sm .lud-input-number-handler-down:hover .lud-input-number-handler-down-inner {
+      bottom: 4px; }
+  .lud-input-number-handler-wrap {
+    border-left: 1px solid #d8dde6;
+    width: 22px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    opacity: 0;
+    border-radius: 0 0.25rem 0.25rem 0;
+    transition: opacity 0.24s linear 0.1s; }
+  .lud-input-number:hover .lud-input-number-handler-wrap {
+    opacity: 1; }
+  .lud-input-number-handler-up {
+    cursor: pointer; }
+    .lud-input-number-handler-up-inner {
+      top: 1px; }
+      .lud-input-number-handler-up-inner:before {
+        text-align: center;
+        content: "\e61e"; }
+    .lud-input-number-handler-up:hover {
+      height: 16px; }
+    .lud-input-number-handler-up:hover .lud-input-number-handler-up-inner {
+      margin-top: 2px; }
+  .lud-input-number-handler-down {
+    border-top: 1px solid #d8dde6;
+    top: -1px;
+    cursor: pointer; }
+    .lud-input-number-handler-down-inner:before {
+      text-align: center;
+      content: "\e61d"; }
+    .lud-input-number-handler-down:hover {
+      height: 16px;
+      margin-top: -2px; }
+  .lud-input-number-handler-down-disabled .lud-input-number-handler-down-inner,
+  .lud-input-number-handler-down-disabled .lud-input-number-handler-up-inner, .lud-input-number-handler-up-disabled .lud-input-number-handler-down-inner,
+  .lud-input-number-handler-up-disabled .lud-input-number-handler-up-inner, .lud-input-number-disabled .lud-input-number-handler-down-inner,
+  .lud-input-number-disabled .lud-input-number-handler-up-inner {
+    opacity: 0.72;
+    color: #ccc !important;
+    cursor: not-allowed; }
+  .lud-input-number-disabled .lud-input-number-input {
+    opacity: 0.72;
+    cursor: not-allowed;
+    background-color: #f3f3f3; }
+  .lud-input-number-disabled .lud-input-number-handler-wrap {
+    display: none; }
+  .lud-input-number-disabled .lud-input-number-handler {
+    opacity: 0.72;
+    color: #ccc !important;
+    cursor: not-allowed; }

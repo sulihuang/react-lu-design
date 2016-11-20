@@ -7,7 +7,7 @@ title:
 
 ## zh-CN
 
-`antd@2.0` 之后，时间类组件的 `value` 改为 `moment` 类型，所以在提交前需要预处理。
+时间类组件的 `value` 为 `moment` 类型，所以在提交前需要预处理。
 
 ## en-US
 

@@ -1,0 +1,146 @@
+.lud-fullcalendar {
+  font-size: 14px;
+  line-height: 1.5;
+  outline: none;
+  border-top: 1px solid #d8dde6; }
+  .lud-fullcalendar-month-select {
+    margin: 0 .4rem; }
+  .lud-fullcalendar-header {
+    padding: 11px 16px 11px 0;
+    text-align: right; }
+    .lud-fullcalendar-header .lud-select {
+      text-align: left; }
+    .lud-fullcalendar-header .lud-radio-group {
+      margin-left: 8px;
+      text-align: left; }
+    .lud-fullcalendar-header label.lud-radio-button {
+      height: 22px;
+      line-height: 20px;
+      padding: 0 10px; }
+  .lud-fullcalendar-date-panel {
+    position: relative;
+    outline: none; }
+  .lud-fullcalendar-calendar-body {
+    padding: 8px 8px 14px; }
+  .lud-fullcalendar table {
+    border-collapse: collapse;
+    max-width: 100%;
+    background-color: transparent;
+    width: 100%;
+    height: 246px; }
+  .lud-fullcalendar table,
+  .lud-fullcalendar th,
+  .lud-fullcalendar td {
+    border: 0; }
+  .lud-fullcalendar td {
+    position: relative; }
+  .lud-fullcalendar-calendar-table {
+    border-spacing: 0;
+    margin-bottom: 0; }
+  .lud-fullcalendar-column-header {
+    line-height: 18px;
+    padding: 0;
+    width: 33px;
+    text-align: center; }
+    .lud-fullcalendar-column-header .lud-fullcalendarcolumn-header-inner {
+      display: block;
+      font-weight: normal; }
+  .lud-fullcalendar-week-number-header .lud-fullcalendarcolumn-header-inner {
+    display: none; }
+  .lud-fullcalendar-month, .lud-fullcalendar-date {
+    text-align: center; }
+  .lud-fullcalendar-value {
+    display: block;
+    margin: 0 auto;
+    color: #2E486F;
+    border-radius: 4px;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    background: transparent;
+    line-height: 22px; }
+    .lud-fullcalendar-value:hover {
+      background: #e8f3fd;
+      cursor: pointer; }
+  .lud-fullcalendar-month-panel-cell .lud-fullcalendar-value {
+    width: 48px; }
+  .lud-fullcalendar-today .lud-fullcalendar-value,
+  .lud-fullcalendar-month-panel-current-cell .lud-fullcalendar-value {
+    background: #1589ee;
+    color: #fff; }
+  .lud-fullcalendar-disabled-cell .lud-fullcalendar-value {
+    cursor: not-allowed;
+    color: #bcbcbc;
+    background: #f3f3f3;
+    border-radius: 0;
+    width: auto; }
+    .lud-fullcalendar-disabled-cell .lud-fullcalendar-value:hover {
+      background: #f3f3f3; }
+  .lud-fullcalendar-disabled-cell-first-of-row .lud-fullcalendar-value {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .lud-fullcalendar-disabled-cell-last-of-row .lud-fullcalendar-value {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .lud-fullcalendar-last-month-cell .lud-fullcalendar-value,
+  .lud-fullcalendar-next-month-btn-day .lud-fullcalendar-value {
+    color: #ccc; }
+  .lud-fullcalendar-month-panel-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate; }
+  .lud-fullcalendar-content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -9px; }
+  .lud-fullcalendar-fullscreen {
+    border-top: 0; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-table {
+    table-layout: fixed; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-header .lud-radio-group {
+    margin-left: 16px; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-header label.lud-radio-button {
+    height: 28px;
+    line-height: 26px; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-month,
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-date {
+    text-align: left;
+    margin: 0 4px;
+    display: block;
+    color: #2E486F;
+    height: 116px;
+    padding: 4px 8px;
+    border-top: 2px solid #eee;
+    transition: background 0.3s ease; }
+    .lud-fullcalendar-fullscreen .lud-fullcalendar-month:hover,
+    .lud-fullcalendar-fullscreen .lud-fullcalendar-date:hover {
+      background: #e8f3fd;
+      cursor: pointer; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-column-header {
+    text-align: right;
+    padding-right: 12px;
+    padding-bottom: 5px; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-value {
+    text-align: right;
+    background: transparent;
+    width: auto; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-today .lud-fullcalendar-value {
+    color: #2E486F; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-month-panel-current-cell .lud-fullcalendar-month,
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-today .lud-fullcalendar-date {
+    border-top-color: #1589ee;
+    background-color: #e8f3fd;
+    color: #1589ee; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-month-panel-current-cell .lud-fullcalendar-value {
+    color: #1589ee; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-last-month-cell .lud-fullcalendar-date,
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-next-month-btn-day .lud-fullcalendar-date {
+    color: #ccc; }
+  .lud-fullcalendar-fullscreen .lud-fullcalendar-content {
+    height: 90px;
+    overflow-y: auto;
+    position: static;
+    width: auto;
+    left: auto;
+    bottom: auto; }

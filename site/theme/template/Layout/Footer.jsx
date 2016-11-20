@@ -14,7 +14,7 @@ class Footer extends React.Component {
     // 大版本发布后全局弹窗提示
     //   1. 点击『知道了』之后不再提示
     //   2. 超过截止日期后不再提示
-    if (localStorage.getItem('antd@2.0.0-notification-sent') !== 'true' &&
+    if (localStorage.getItem('react-lu-design@2.0.0-notification-sent') !== 'true' &&
         Date.now() < new Date('2016/10/14').getTime()) {
       this.infoNewVersion();
     }

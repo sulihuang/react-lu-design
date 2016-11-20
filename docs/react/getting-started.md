@@ -45,12 +45,12 @@ webpack: bundle build is now finished.
 
 在浏览器里打开 http://localhost:8989 ，你会看到 dva 的欢迎界面。
 
-## 使用 antd
+## 使用 lu design
 
-通过 npm 安装 `react-lu-design` 和 `babel-plugin-import` 。`babel-plugin-import` 是用来按需加载 antd 的脚本和样式的，详见 [repo](https://github.com/ant-design/babel-plugin-import) 。
+通过 npm 安装 `react-lu-design` 和 `babel-plugin-import` 。`babel-plugin-import` 是用来按需加载 lu design 的脚本和样式的，详见 [repo](https://github.com/ant-design/babel-plugin-import) 。
 
 ```bash
-$ npm install antd babel-plugin-import --save
+$ npm install react-lu-design babel-plugin-import --save
 ```
 
 编辑 `webpack.config.js`，使 `babel-plugin-import` 插件生效。

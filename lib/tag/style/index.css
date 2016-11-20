@@ -1,0 +1,75 @@
+.lud-tag {
+  display: inline-block;
+  line-height: 20px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 0.25rem;
+  border: 1px solid #e9e9e9;
+  background: #f4f8f9;
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  vertical-align: middle;
+  opacity: 1;
+  overflow: hidden;
+  margin: 4px 8px 4px 0;
+  cursor: pointer; }
+  .lud-tag:hover {
+    opacity: 0.85; }
+  .lud-tag,
+  .lud-tag a,
+  .lud-tag a:hover {
+    color: #2E486F; }
+  .lud-tag-text a:first-child:last-child {
+    display: inline-block;
+    margin: 0 -8px;
+    padding: 0 8px; }
+  .lud-tag .anticon-cross {
+    display: inline-block;
+    font-size: 12px;
+    font-size: "10px 	";
+    transform: scale(0.83333) rotate(0deg);
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 3px;
+    color: #2E486F;
+    transition: all 0.3s ease;
+    opacity: 0.66; }
+    :root .lud-tag .anticon-cross {
+      font-size: 12px; }
+    .lud-tag .anticon-cross:hover {
+      opacity: 1; }
+  .lud-tag-has-color {
+    border-color: transparent; }
+    .lud-tag-has-color,
+    .lud-tag-has-color a,
+    .lud-tag-has-color a:hover,
+    .lud-tag-has-color .anticon-cross,
+    .lud-tag-has-color .anticon-cross:hover {
+      color: #fff; }
+  .lud-tag-blue {
+    background: #0070d2; }
+  .lud-tag-green {
+    background: #4bca81; }
+  .lud-tag-yellow {
+    background: #fa0; }
+  .lud-tag-red {
+    background: #d4504c; }
+  .lud-tag-checkable {
+    background-color: transparent;
+    border-color: transparent; }
+    .lud-tag-checkable:hover, .lud-tag-checkable:active, .lud-tag-checkable-checked {
+      color: #fff; }
+    .lud-tag-checkable:hover {
+      background-color: #44a1f1; }
+    .lud-tag-checkable:active, .lud-tag-checkable-checked {
+      background-color: #1482e2; }
+  .lud-tag-close {
+    width: 0 !important;
+    padding: 0;
+    margin: 0; }
+  .lud-tag-zoom-enter, .lud-tag-zoom-appear {
+    animation: antFadeIn 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    animation-fill-mode: both; }
+  .lud-tag-zoom-leave {
+    animation: antZoomOut 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    animation-fill-mode: both; }

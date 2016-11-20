@@ -1,0 +1,117 @@
+.lud-alert {
+  position: relative;
+  padding: 8px 48px 8px 38px;
+  border-radius: 0.25rem;
+  color: #2E486F;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px; }
+  .lud-alert-no-icon {
+    padding: 8px 48px 8px 16px; }
+  .lud-alert-icon {
+    font-size: 16px;
+    top: 9px;
+    left: 16px;
+    position: absolute; }
+  .lud-alert-description {
+    font-size: 14px;
+    line-height: 21px;
+    display: none; }
+  .lud-alert-success {
+    border: 1px solid #e4f7ec;
+    background-color: #e9f9f0; }
+    .lud-alert-success .lud-alert-icon {
+      color: #4bca81; }
+  .lud-alert-info {
+    border: 1px solid #dcedfc;
+    background-color: #e3f1fd; }
+    .lud-alert-info .lud-alert-icon {
+      color: #1589ee; }
+  .lud-alert-warning {
+    border: 1px solid #fff2d9;
+    background-color: #fff5e0; }
+    .lud-alert-warning .lud-alert-icon {
+      color: #fa0; }
+  .lud-alert-error {
+    border: 1px solid #f9e5e4;
+    background-color: #faeaea; }
+    .lud-alert-error .lud-alert-icon {
+      color: #d4504c; }
+  .lud-alert-close-icon {
+    font-size: 14px;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    height: 12px;
+    line-height: 12px;
+    overflow: hidden;
+    cursor: pointer; }
+    .lud-alert-close-icon .anticon-cross {
+      color: #999;
+      transition: color .3s ease; }
+      .lud-alert-close-icon .anticon-cross:hover {
+        color: #404040; }
+  .lud-alert-close-text {
+    position: absolute;
+    right: 16px; }
+  .lud-alert-with-description {
+    padding: 16px 16px 16px 60px;
+    position: relative;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    color: #2E486F;
+    line-height: 1.5; }
+  .lud-alert-with-description .lud-alert-no-icon {
+    padding: 16px; }
+  .lud-alert-with-description .lud-alert-icon {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    font-size: 24px; }
+  .lud-alert-with-description .lud-alert-close-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    font-size: 14px; }
+  .lud-alert-with-description .lud-alert-message {
+    font-size: 16px;
+    color: #404040;
+    display: block;
+    margin-bottom: 4px; }
+  .lud-alert-with-description .lud-alert-description {
+    display: block; }
+  .lud-alert-close {
+    height: 0 !important;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform-origin: 50% 0; }
+  .lud-alert-slide-up-leave {
+    animation: antAlertSlideUpOut 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    animation-fill-mode: both; }
+  .lud-alert-banner {
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0; }
+
+@keyframes antAlertSlideUpIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(0); }
+  100% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1); } }
+
+@keyframes antAlertSlideUpOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1); }
+  100% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(0); } }

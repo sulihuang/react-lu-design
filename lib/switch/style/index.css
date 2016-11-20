@@ -1,0 +1,83 @@
+.lud-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 22px;
+  min-width: 44px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .lud-switch-inner {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 24px;
+    margin-right: 6px;
+    display: block; }
+  .lud-switch:after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 2px;
+    top: 1px;
+    border-radius: 18px;
+    background-color: #fff;
+    content: " ";
+    cursor: pointer;
+    transition: all 0.3s, width 0.3s; }
+  .lud-switch:active:after {
+    width: 24px; }
+  .lud-switch:focus {
+    box-shadow: 0 0 0 2px fade(#1589ee, 20%);
+    outline: 0; }
+  .lud-switch:focus:hover {
+    box-shadow: none; }
+  .lud-switch-small {
+    height: 14px;
+    min-width: 28px;
+    line-height: 12px; }
+    .lud-switch-small .lud-switch-inner {
+      margin-left: 18px;
+      margin-right: 3px; }
+    .lud-switch-small:after {
+      width: 12px;
+      height: 12px;
+      top: 0;
+      left: 0; }
+    .lud-switch-small:active:after {
+      width: 16px; }
+  .lud-switch-small.lud-switch-checked:after {
+    left: 100%;
+    margin-left: -12px; }
+  .lud-switch-small.lud-switch-checked .lud-switch-inner {
+    margin-left: 3px;
+    margin-right: 18px; }
+  .lud-switch-small:active.lud-switch-checked:after {
+    left: 10px; }
+  .lud-switch-checked {
+    border-color: #1589ee;
+    background-color: #1589ee; }
+    .lud-switch-checked .lud-switch-inner {
+      margin-left: 6px;
+      margin-right: 24px; }
+    .lud-switch-checked:after {
+      left: 100%;
+      margin-left: -20px; }
+    .lud-switch-checked:active:after {
+      left: 16px; }
+  .lud-switch-disabled {
+    cursor: not-allowed;
+    background: #f4f4f4;
+    border-color: #f4f4f4; }
+    .lud-switch-disabled:after {
+      background: #ccc;
+      cursor: not-allowed; }
+    .lud-switch-disabled .lud-switch-inner {
+      color: #ccc; }

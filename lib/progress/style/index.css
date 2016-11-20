@@ -1,0 +1,85 @@
+.lud-progress {
+  display: inline-block; }
+  .lud-progress-line {
+    width: 100%;
+    font-size: 14px;
+    position: relative; }
+  .lud-progress-outer {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0; }
+    .lud-progress-show-info .lud-progress-outer {
+      padding-right: 45px;
+      margin-right: -45px; }
+  .lud-progress-inner {
+    display: inline-block;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 100px;
+    vertical-align: middle; }
+  .lud-progress-bg {
+    border-radius: 100px;
+    background-color: #54698d;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    position: relative; }
+  .lud-progress-text {
+    width: 35px;
+    text-align: left;
+    font-size: 1em;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-family: tahoma;
+    position: relative;
+    top: -1px; }
+    .lud-progress-text .anticon {
+      font-size: 14px; }
+  .lud-progress-status-active .lud-progress-bg:before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 10px;
+    animation: "progress-active" 2s cubic-bezier(0.23, 1, 0.32, 1) infinite; }
+  .lud-progress-status-exception .lud-progress-bg {
+    background-color: #d4504c; }
+  .lud-progress-status-exception .lud-progress-text {
+    color: #d4504c; }
+  .lud-progress-status-success .lud-progress-bg {
+    background-color: #4bca81; }
+  .lud-progress-status-success .lud-progress-text {
+    color: #4bca81; }
+  .lud-progress-circle .lud-progress-inner {
+    position: relative;
+    line-height: 1;
+    background-color: transparent; }
+  .lud-progress-circle .lud-progress-text {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-family: tahoma;
+    margin: 0; }
+    .lud-progress-circle .lud-progress-text .anticon {
+      font-size: 14 / 12em; }
+  .lud-progress-circle .lud-progress-status-exception .lud-progress-text {
+    color: #d4504c; }
+  .lud-progress-circle .lud-progress-status-success .lud-progress-text {
+    color: #4bca81; }
+
+@keyframes progress-active {
+  0% {
+    opacity: 0.8;
+    width: 0; }
+  100% {
+    opacity: 0;
+    width: 100%; } }

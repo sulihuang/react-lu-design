@@ -92,7 +92,7 @@ module.exports = {
     // Support SCSS Modules
     config.module.loaders.push({
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style-loader',
+      loader: ExtractTextPlugin.extract(
         'css?&sourceMap!' +
         'sass?outputStyle=expanded&sourceMap'),
     });

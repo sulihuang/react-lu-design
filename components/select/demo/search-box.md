@@ -76,16 +76,16 @@ const SearchInput = React.createClass({
   },
   render() {
     const btnCls = classNames({
-      'ant-search-btn': true,
-      'ant-search-btn-noempty': !!this.state.value.trim(),
+      'lud-search-btn': true,
+      'lud-search-btn-noempty': !!this.state.value.trim(),
     });
     const searchCls = classNames({
-      'ant-search-input': true,
-      'ant-search-input-focus': this.state.focus,
+      'lud-search-input': true,
+      'lud-search-input-focus': this.state.focus,
     });
     const options = this.state.data.map(d => <Option key={d.value}>{d.text}</Option>);
     return (
-      <div className="ant-search-input-wrapper" style={this.props.style}>
+      <div className="lud-search-input-wrapper" style={this.props.style}>
         <Input.Group className={searchCls}>
           <Select
             combobox

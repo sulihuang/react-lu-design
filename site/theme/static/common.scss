@@ -38,9 +38,9 @@ div.main-container {
 .aside-container {
   padding-bottom: 50px;
 
-  &.ant-menu-inline .ant-menu-submenu-title h4,
-  &.ant-menu-inline > .ant-menu-item,
-  &.ant-menu-inline .ant-menu-item a {
+  &.lud-menu-inline .lud-menu-submenu-title h4,
+  &.lud-menu-inline > .lud-menu-item,
+  &.lud-menu-inline .lud-menu-item a {
     font-size: 14px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -74,7 +74,7 @@ div.main-container {
   display: none;
 }
 
-.ant-site-loading {
+.lud-site-loading {
   width: 100vw;
   text-align: center;
   position: absolute;
@@ -91,7 +91,7 @@ div.main-container {
     animation: loadTween 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
   }
 }
-#react-content:empty + .ant-site-loading {
+#react-content:empty + .lud-site-loading {
   opacity: 1;
 }
 

@@ -1,0 +1,201 @@
+.lud-time-picker-panel {
+  max-width: 168px;
+  z-index: 1050;
+  position: absolute; }
+  .lud-time-picker-panel-inner {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    line-height: 1.5;
+    overflow: hidden;
+    left: -2px; }
+  .lud-time-picker-panel-input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    cursor: auto;
+    line-height: 1.5;
+    outline: 0; }
+    .lud-time-picker-panel-input-wrap {
+      box-sizing: border-box;
+      position: relative;
+      padding: 6px;
+      border-bottom: 1px solid #e9e9e9; }
+    .lud-time-picker-panel-input-invalid {
+      border-color: red; }
+  .lud-time-picker-panel-clear-btn {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    top: 5px;
+    margin: 0; }
+  .lud-time-picker-panel-clear-btn:after {
+    font-size: 14px;
+    color: #ccc;
+    display: inline-block;
+    line-height: 1;
+    width: 20px;
+    transition: color 0.3s ease;
+    font-family: 'anticon';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "xe62e"; }
+  .lud-time-picker-panel-clear-btn:hover:after {
+    color: #999; }
+  .lud-time-picker-panel-narrow .lud-time-picker-panel-input-wrap {
+    max-width: 111px; }
+  .lud-time-picker-panel-select {
+    float: left;
+    font-size: 14px;
+    border-left: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    width: 56px;
+    overflow: hidden;
+    position: relative;
+    max-height: 144px; }
+    .lud-time-picker-panel-select:hover {
+      overflow-y: auto; }
+    .lud-time-picker-panel-select:first-child {
+      border-left: 0;
+      margin-left: 0; }
+    .lud-time-picker-panel-select:last-child {
+      border-right: 0; }
+    .lud-time-picker-panel-select:only-child {
+      width: 100%; }
+    .lud-time-picker-panel-select ul {
+      list-style: none;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 0 120px 0;
+      width: 100%; }
+    .lud-time-picker-panel-select li {
+      list-style: none;
+      box-sizing: content-box;
+      margin: 0;
+      padding: 0 0 0 16px;
+      width: 100%;
+      height: 24px;
+      line-height: 24px;
+      text-align: left;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      transition: background 0.3s ease; }
+    .lud-time-picker-panel-select li:hover {
+      background: #e8f3fd; }
+    .lud-time-picker-panel-select li.lud-time-picker-panel-option-selected {
+      background: #f4f8f9;
+      font-weight: bold; }
+    .lud-time-picker-panel-select li.lud-time-picker-panel-option-disabled {
+      color: #ccc; }
+      .lud-time-picker-panel-select li.lud-time-picker-panel-option-disabled:hover {
+        background: transparent;
+        cursor: not-allowed; }
+  .lud-time-picker-panel-combobox::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .lud-time-picker-panel-addon {
+    padding: 8px;
+    border-top: 1px solid #e9e9e9; }
+  .lud-time-picker-panel.slide-up-enter.slide-up-enter-active.lud-time-picker-panel-placement-topLeft, .lud-time-picker-panel.slide-up-enter.slide-up-enter-active.lud-time-picker-panel-placement-topRight, .lud-time-picker-panel.slide-up-appear.slide-up-appear-active.lud-time-picker-panel-placement-topLeft, .lud-time-picker-panel.slide-up-appear.slide-up-appear-active.lud-time-picker-panel-placement-topRight {
+    animation-name: antSlideDownIn; }
+  .lud-time-picker-panel.slide-up-enter.slide-up-enter-active.lud-time-picker-panel-placement-bottomLeft, .lud-time-picker-panel.slide-up-enter.slide-up-enter-active.lud-time-picker-panel-placement-bottomRight, .lud-time-picker-panel.slide-up-appear.slide-up-appear-active.lud-time-picker-panel-placement-bottomLeft, .lud-time-picker-panel.slide-up-appear.slide-up-appear-active.lud-time-picker-panel-placement-bottomRight {
+    animation-name: antSlideUpIn; }
+  .lud-time-picker-panel.slide-up-leave.slide-up-leave-active.lud-time-picker-panel-placement-topLeft, .lud-time-picker-panel.slide-up-leave.slide-up-leave-active.lud-time-picker-panel-placement-topRight {
+    animation-name: antSlideDownOut; }
+  .lud-time-picker-panel.slide-up-leave.slide-up-leave-active.lud-time-picker-panel-placement-bottomLeft, .lud-time-picker-panel.slide-up-leave.slide-up-leave-active.lud-time-picker-panel-placement-bottomRight {
+    animation-name: antSlideUpOut; }
+
+.lud-time-picker {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  font-size: 14px;
+  transition: opacity 0.3s ease; }
+  .lud-time-picker-input {
+    position: relative;
+    display: inline-block;
+    padding: 4px 7px;
+    width: 100%;
+    height: 28px;
+    cursor: text;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2E486F;
+    background: #fff none;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100px; }
+    .lud-time-picker-input:hover {
+      border-color: #44a1f1; }
+    .lud-time-picker-input:focus {
+      border-color: #44a1f1;
+      outline: 0;
+      box-shadow: 0 0 0 2px fade(#1589ee, 20%); }
+    .lud-time-picker-input[disabled] {
+      background-color: #f4f8f9;
+      opacity: 1;
+      cursor: not-allowed;
+      color: #ccc; }
+      .lud-time-picker-input[disabled]:hover {
+        border-color: #e0e4eb; }
+    .lud-time-picker-input textarea.lud-time-picker-input {
+      max-width: 100%;
+      height: auto;
+      vertical-align: bottom; }
+    .lud-time-picker-input-lg {
+      padding: 6px 7px;
+      height: 32px; }
+    .lud-time-picker-input-sm {
+      padding: 1px 7px;
+      height: 22px;
+      border-radius: 0.125rem; }
+  .lud-time-picker-large .lud-time-picker-input {
+    padding: 6px 7px;
+    height: 32px; }
+  .lud-time-picker-small .lud-time-picker-input {
+    padding: 1px 7px;
+    height: 22px;
+    border-radius: 0.125rem; }
+  .lud-time-picker-open {
+    opacity: 0; }
+  .lud-time-picker-icon {
+    position: absolute;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    right: 8px;
+    color: #999;
+    top: 50%;
+    margin-top: -6px; }
+    .lud-time-picker-icon:after {
+      content: "\e641";
+      font-family: "anticon";
+      font-size: 14px;
+      color: #999;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: bottom; }

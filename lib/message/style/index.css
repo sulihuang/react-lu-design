@@ -1,0 +1,34 @@
+.lud-message {
+  font-size: 14px;
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 16px;
+  left: 0; }
+  .lud-message-notice {
+    width: auto;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%; }
+  .lud-message-notice-content {
+    position: relative;
+    right: 50%;
+    padding: 8px 16px;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    display: block; }
+  .lud-message-success .anticon {
+    color: #4bca81; }
+  .lud-message-error .anticon {
+    color: #d4504c; }
+  .lud-message-warning .anticon {
+    color: #fa0; }
+  .lud-message-info .anticon,
+  .lud-message-loading .anticon {
+    color: #1589ee; }
+  .lud-message .anticon {
+    margin-right: 8px;
+    font-size: 16px;
+    top: 1px;
+    position: relative; }

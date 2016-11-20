@@ -1,0 +1,117 @@
+.lud-mention-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle; }
+  .lud-mention-wrapper.active .lud-mention-editor {
+    border-color: #44a1f1;
+    outline: 0;
+    box-shadow: 0 0 0 2px fade(#1589ee, 20%); }
+  .lud-mention-wrapper .lud-mention-editor {
+    position: relative;
+    display: inline-block;
+    padding: 4px 7px;
+    width: 100%;
+    height: 28px;
+    cursor: text;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2E486F;
+    background: #fff none;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0;
+    display: block; }
+    .lud-mention-wrapper .lud-mention-editor:hover {
+      border-color: #44a1f1; }
+    .lud-mention-wrapper .lud-mention-editor:focus {
+      border-color: #44a1f1;
+      outline: 0;
+      box-shadow: 0 0 0 2px fade(#1589ee, 20%); }
+    .lud-mention-wrapper .lud-mention-editor[disabled] {
+      background-color: #f4f8f9;
+      opacity: 1;
+      cursor: not-allowed;
+      color: #ccc; }
+      .lud-mention-wrapper .lud-mention-editor[disabled]:hover {
+        border-color: #e0e4eb; }
+    .lud-mention-wrapper .lud-mention-editor textarea.lud-mention-wrapper .lud-mention-editor {
+      max-width: 100%;
+      height: auto;
+      vertical-align: bottom; }
+    .lud-mention-wrapper .lud-mention-editor-lg {
+      padding: 6px 7px;
+      height: 32px; }
+    .lud-mention-wrapper .lud-mention-editor-sm {
+      padding: 1px 7px;
+      height: 22px;
+      border-radius: 0.125rem; }
+  .lud-mention-wrapper .lud-mention-editor-wrapper {
+    overflow-y: auto;
+    height: auto; }
+  .lud-mention-wrapper .public-DraftEditorPlaceholder-root {
+    position: absolute; }
+    .lud-mention-wrapper .public-DraftEditorPlaceholder-root .public-DraftEditorPlaceholder-inner {
+      color: #ccc;
+      opacity: 1;
+      outline: none;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      height: auto;
+      padding: 4px 7px; }
+  .lud-mention-wrapper .DraftEditor-editorContainer .public-DraftEditor-content {
+    height: auto;
+    padding: 4px 7px; }
+
+.lud-mention-dropdown {
+  margin-top: 1.5em;
+  max-height: 250px;
+  min-width: 120px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  z-index: 1050;
+  left: -9999px;
+  top: -9999px;
+  position: absolute;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 14px; }
+  .lud-mention-dropdown-notfound.lud-mention-dropdown-item {
+    color: #ccc; }
+    .lud-mention-dropdown-notfound.lud-mention-dropdown-item .anticon-loading {
+      color: #1589ee; }
+  .lud-mention-dropdown-item {
+    position: relative;
+    display: block;
+    padding: 7px 16px;
+    font-weight: normal;
+    color: #2E486F;
+    white-space: nowrap;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: background 0.3s ease; }
+    .lud-mention-dropdown-item:hover, .lud-mention-dropdown-item.focus, .lud-mention-dropdown-item-active {
+      background-color: #e8f3fd; }
+    .lud-mention-dropdown-item-disabled {
+      color: #ccc;
+      cursor: not-allowed; }
+      .lud-mention-dropdown-item-disabled:hover {
+        color: #ccc;
+        background-color: #fff;
+        cursor: not-allowed; }
+    .lud-mention-dropdown-item-selected, .lud-mention-dropdown-item-selected:hover {
+      background-color: #f4f8f9;
+      font-weight: bold;
+      color: #2E486F; }
+    .lud-mention-dropdown-item-divider {
+      height: 1px;
+      margin: 1px 0;
+      overflow: hidden;
+      background-color: #e5e5e5;
+      line-height: 0; }
