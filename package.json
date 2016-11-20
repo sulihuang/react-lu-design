@@ -78,11 +78,8 @@
     "warning": "~3.0.0"
   },
   "devDependencies": {
-    "node-sass": "^3.13.0",
-    "sass-loader": "^4.0.2",
     "@types/react": "~0.14.49",
     "@types/react-dom": "~0.14.18",
-    "lud-tools": "^0.1.1",
     "babel-eslint": "^7.0.1",
     "babel-jest": "^17.0.2",
     "babel-plugin-import": "^1.0.0",
@@ -94,6 +91,7 @@
     "bisheng-plugin-toc": "^0.3.0",
     "bourbon": "^4.2.7",
     "css-split-webpack-plugin": "^0.2.1",
+    "dekko": "^0.2.1",
     "dora-plugin-upload": "^0.3.1",
     "enquire.js": "^2.1.1",
     "enzyme": "^2.6.0",
@@ -112,8 +110,10 @@
     "jsonml.js": "^0.1.0",
     "jsonp": "^0.2.0",
     "lodash.debounce": "^4.0.8",
+    "lud-tools": "^0.1.1",
     "lutool-build": "^0.1.2",
     "moment-timezone": "^0.5.5",
+    "node-sass": "^3.13.0",
     "pre-commit": "1.x",
     "querystring": "^0.2.0",
     "rc-queue-anim": "~0.12.4",
@@ -130,12 +130,13 @@
     "react-stateless-wrapper": "^1.0.2",
     "react-sublime-video": "^0.2.0",
     "reqwest": "^2.0.5",
+    "sass-loader": "^4.0.2",
     "typescript-babel-jest": "^0.1.5",
     "values.js": "^1.0.3"
   },
   "scripts": {
-    "dist": "lud-tools run dist",
-    "compile": "lud-tools run compile",
+    "dist": "lud-tools run dist && node ./tests/dekko/dist.test.js",
+    "compile": "lud-tools run compile && node ./tests/dekko/lib.test.js",
     "clean": "lud-tools run clean",
     "start": "bisheng start -c ./site/bisheng.config.js --no-livereload",
     "site": "bisheng build -c ./site/bisheng.config.js",
@@ -161,6 +162,7 @@
       "/_site/"
     ],
     "testPathIgnorePatterns": [
+      "dekko",
       "/node_modules/"
     ],
     "scriptPreprocessor": "node_modules/typescript-babel-jest",

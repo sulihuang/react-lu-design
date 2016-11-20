@@ -10,6 +10,7 @@ timeline: true
 * 梳理文档
 * 移除 TreeSelect 树选择等不必要组件。 [#2](https://github.com/zhulux/react-lu-design/issues/2)
 * 使用 SCSS 替代 LESS。 [#3](https://github.com/zhulux/react-lu-design/issues/3)
+* 合并 Ant Design 2.4.3: 修复 Anchor 内部 querySelector 报错，并做了一些体验优化 。
 
 ## 1.1.0
 

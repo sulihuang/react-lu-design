@@ -18,8 +18,8 @@ describe('Popover', function() {
 
     const popup = popover.getPopupDomNode();
     expect(popup).not.toBe(null);
-    expect(popup.className).toContain('ant-popover-placement-top');
-    expect(popup.innerHTML).toMatch(/<div class="ant-popover-title".*?>code<\/div>/);
-    expect(popup.innerHTML).toMatch(/<div class="ant-popover-inner-content".*?>console\.log\('hello world'\)<\/div>/);
+    expect(popup.className).toContain('lud-popover-placement-top');
+    expect(popup.innerHTML).toMatch(/<div class="lud-popover-title".*?>code<\/div>/);
+    expect(popup.innerHTML).toMatch(/<div class="lud-popover-inner-content".*?>console\.log\('hello world'\)<\/div>/);
   });
 });
