@@ -38,13 +38,13 @@
       font-size: 32px;
       line-height: 32px; }
       .lud-notification-notice-icon-success {
-        color: #4bca81; }
+        color: #77D042; }
       .lud-notification-notice-icon-info {
         color: #1589ee; }
       .lud-notification-notice-icon-warning {
-        color: #fa0; }
+        color: #FFBC34; }
       .lud-notification-notice-icon-error {
-        color: #d4504c; }
+        color: #F62D51; }
     .lud-notification-notice-close-x:after {
       font-size: 14px;
       content: "\e633";

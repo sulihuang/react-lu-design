@@ -294,7 +294,7 @@
             user-select: none;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     position: relative;
-    color: #fff;
+    color: #FFFFFF;
     background-color: #1589ee;
     border-color: #1589ee;
     padding: 0.3rem 0.66rem;
@@ -335,7 +335,7 @@
         right: 0;
         background: transparent; }
     .lud-calendar .lud-calendar-ok-btn:hover, .lud-calendar .lud-calendar-ok-btn:focus {
-      color: #fff;
+      color: #FFFFFF;
       background-color: #44a1f1;
       border-color: #44a1f1; }
       .lud-calendar .lud-calendar-ok-btn:hover > a:only-child, .lud-calendar .lud-calendar-ok-btn:focus > a:only-child {
@@ -349,7 +349,7 @@
           right: 0;
           background: transparent; }
     .lud-calendar .lud-calendar-ok-btn:active, .lud-calendar .lud-calendar-ok-btn.active {
-      color: #fff;
+      color: #FFFFFF;
       background-color: #1482e2;
       border-color: #1482e2; }
       .lud-calendar .lud-calendar-ok-btn:active > a:only-child, .lud-calendar .lud-calendar-ok-btn.active > a:only-child {

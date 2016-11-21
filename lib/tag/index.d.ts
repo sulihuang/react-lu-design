@@ -1,8 +1,9 @@
 /// <reference types="react" />
 import React from 'react';
 import CheckableTag from './CheckableTag';
+export declare type TagType = 'primary' | 'info' | 'success' | 'danger' | 'warning';
 export interface TagProps {
-    color?: string;
+    type?: TagType;
     /** 标签是否可以关闭 */
     closable?: boolean;
     /** 关闭时的回调 */

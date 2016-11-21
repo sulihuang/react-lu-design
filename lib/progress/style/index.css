@@ -47,13 +47,13 @@
     border-radius: 10px;
     animation: "progress-active" 2s cubic-bezier(0.23, 1, 0.32, 1) infinite; }
   .lud-progress-status-exception .lud-progress-bg {
-    background-color: #d4504c; }
+    background-color: #F62D51; }
   .lud-progress-status-exception .lud-progress-text {
-    color: #d4504c; }
+    color: #F62D51; }
   .lud-progress-status-success .lud-progress-bg {
-    background-color: #4bca81; }
+    background-color: #77D042; }
   .lud-progress-status-success .lud-progress-text {
-    color: #4bca81; }
+    color: #77D042; }
   .lud-progress-circle .lud-progress-inner {
     position: relative;
     line-height: 1;
@@ -72,9 +72,9 @@
     .lud-progress-circle .lud-progress-text .anticon {
       font-size: 14 / 12em; }
   .lud-progress-circle .lud-progress-status-exception .lud-progress-text {
-    color: #d4504c; }
+    color: #F62D51; }
   .lud-progress-circle .lud-progress-status-success .lud-progress-text {
-    color: #4bca81; }
+    color: #77D042; }
 
 @keyframes progress-active {
   0% {

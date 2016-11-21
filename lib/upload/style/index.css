@@ -107,7 +107,7 @@
       opacity: 1; }
     .lud-upload-list-item-error,
     .lud-upload-list-item-error .anticon-paper-clip {
-      color: #d4504c; }
+      color: #F62D51; }
     .lud-upload-list-item-error .anticon-cross {
       opacity: 1; }
     .lud-upload-list-item-progress {
@@ -234,7 +234,7 @@
     .lud-upload-list-picture-card .lud-upload-list-item-progress {
       padding-left: 0; }
   .lud-upload-list .lud-upload-success-icon {
-    color: #4bca81;
+    color: #77D042;
     font-weight: bold; }
   .lud-upload-list .lud-upload-margin-top-enter {
     animation: uploadMarginTopIn 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }

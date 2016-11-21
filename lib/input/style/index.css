@@ -13,9 +13,9 @@
   padding-right: 36px; }
 
 .lud-search-input .lud-search-btn {
-  color: #0070d2;
-  background-color: #fff;
-  border-color: #d8dde6;
+  color: #404040;
+  background-color: #f4f8f9;
+  border-color: #f4f8f9;
   border-radius: 0 -0.75rem -0.75rem 0;
   left: -1px;
   position: relative;
@@ -34,7 +34,7 @@
       background: transparent; }
   .lud-search-input .lud-search-btn:hover, .lud-search-input .lud-search-btn:focus {
     color: #44a1f1;
-    background-color: #fff;
+    background-color: #f4f8f9;
     border-color: #44a1f1; }
     .lud-search-input .lud-search-btn:hover > a:only-child, .lud-search-input .lud-search-btn:focus > a:only-child {
       color: currentColor; }
@@ -48,7 +48,7 @@
         background: transparent; }
   .lud-search-input .lud-search-btn:active, .lud-search-input .lud-search-btn.active {
     color: #1482e2;
-    background-color: #fff;
+    background-color: #f4f8f9;
     border-color: #1482e2; }
     .lud-search-input .lud-search-btn:active > a:only-child, .lud-search-input .lud-search-btn.active > a:only-child {
       color: currentColor; }
@@ -75,15 +75,15 @@
         right: 0;
         background: transparent; }
   .lud-search-input .lud-search-btn:hover, .lud-search-input .lud-search-btn:focus, .lud-search-input .lud-search-btn:active, .lud-search-input .lud-search-btn.active {
-    background: #e6e6e6;
-    color: #0070d2;
-    border-color: #d8dde6; }
+    background: #f4f8f9;
+    color: #333;
+    border-color: #f4f8f9; }
   .lud-search-input .lud-search-btn:hover {
     border-color: #d8dde6; }
 
 .lud-search-input-focus .lud-search-btn-noempty,
 .lud-search-input:hover .lud-search-btn-noempty {
-  color: #fff;
+  color: #FFFFFF;
   background-color: #1589ee;
   border-color: #1589ee; }
   .lud-search-input-focus .lud-search-btn-noempty > a:only-child,
@@ -101,7 +101,7 @@
   .lud-search-input-focus .lud-search-btn-noempty:hover, .lud-search-input-focus .lud-search-btn-noempty:focus,
   .lud-search-input:hover .lud-search-btn-noempty:hover,
   .lud-search-input:hover .lud-search-btn-noempty:focus {
-    color: #fff;
+    color: #FFFFFF;
     background-color: #44a1f1;
     border-color: #44a1f1; }
     .lud-search-input-focus .lud-search-btn-noempty:hover > a:only-child, .lud-search-input-focus .lud-search-btn-noempty:focus > a:only-child,
@@ -121,7 +121,7 @@
   .lud-search-input-focus .lud-search-btn-noempty:active, .lud-search-input-focus .lud-search-btn-noempty.active,
   .lud-search-input:hover .lud-search-btn-noempty:active,
   .lud-search-input:hover .lud-search-btn-noempty.active {
-    color: #fff;
+    color: #FFFFFF;
     background-color: #1482e2;
     border-color: #1482e2; }
     .lud-search-input-focus .lud-search-btn-noempty:active > a:only-child, .lud-search-input-focus .lud-search-btn-noempty.active > a:only-child,

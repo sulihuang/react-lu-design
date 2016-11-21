@@ -2,7 +2,7 @@ export declare const reqAnimFrame: any;
 export declare const easeInOutCubic: (t: any, b: any, c: any, d: any) => any;
 export declare function getDefaultTarget(): Window | null;
 export declare function getOffsetTop(element: any): number;
-export declare function scrollTo(href: any, target?: typeof getDefaultTarget): void;
+export declare function scrollTo(href: any, target?: typeof getDefaultTarget, callback?: () => void): void;
 declare class AnchorHelper {
     private links;
     private currentAnchor;
@@ -12,6 +12,6 @@ declare class AnchorHelper {
     getCurrentActiveAnchor(): HTMLElement | null;
     setActiveAnchor(component: any): void;
     getCurrentAnchor(bounds?: number): string;
-    scrollTo(href: any, target?: typeof getDefaultTarget): void;
+    scrollTo(href: any, target?: typeof getDefaultTarget, callback?: () => void): void;
 }
 export default AnchorHelper;

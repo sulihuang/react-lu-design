@@ -22,11 +22,10 @@ import { Button } from 'react-lu-design';
 
 ReactDOM.render(
   <div>
-    <Button type="primary" shape="circle" icon="search" />
-    <Button type="primary" icon="search">Search</Button>
-    <br />
-    <Button type="ghost" shape="circle-outline" icon="search" />
-    <Button type="ghost" icon="search">Search</Button>
+    <Button icon="edit" />
+    <Button icon="bars" />
+    <Button type="primary" icon="plus">添加Deal</Button>
+    <Button type="second" icon="ellipsis" />
   </div>,
   mountNode,
 );

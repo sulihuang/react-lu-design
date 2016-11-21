@@ -18,25 +18,25 @@
     line-height: 21px;
     display: none; }
   .lud-alert-success {
-    border: 1px solid #e4f7ec;
-    background-color: #e9f9f0; }
+    border: 1px solid #ebf8e3;
+    background-color: #eff9e8; }
     .lud-alert-success .lud-alert-icon {
-      color: #4bca81; }
+      color: #77D042; }
   .lud-alert-info {
     border: 1px solid #dcedfc;
     background-color: #e3f1fd; }
     .lud-alert-info .lud-alert-icon {
       color: #1589ee; }
   .lud-alert-warning {
-    border: 1px solid #fff2d9;
-    background-color: #fff5e0; }
+    border: 1px solid #fff5e1;
+    background-color: #fff7e7; }
     .lud-alert-warning .lud-alert-icon {
-      color: #fa0; }
+      color: #FFBC34; }
   .lud-alert-error {
-    border: 1px solid #f9e5e4;
-    background-color: #faeaea; }
+    border: 1px solid #fee0e5;
+    background-color: #fee6ea; }
     .lud-alert-error .lud-alert-icon {
-      color: #d4504c; }
+      color: #F62D51; }
   .lud-alert-close-icon {
     font-size: 14px;
     position: absolute;

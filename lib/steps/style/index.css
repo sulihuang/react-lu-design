@@ -43,19 +43,19 @@
     .lud-steps .lud-steps-item.lud-steps-status-finish .lud-steps-description {
       color: #999; }
     .lud-steps .lud-steps-item.lud-steps-status-error .lud-steps-head-inner {
-      border-color: #d4504c;
+      border-color: #F62D51;
       background-color: #fff; }
       .lud-steps .lud-steps-item.lud-steps-status-error .lud-steps-head-inner > .lud-steps-icon {
-        color: #d4504c; }
+        color: #F62D51; }
     .lud-steps .lud-steps-item.lud-steps-status-error .lud-steps-title {
-      color: #d4504c; }
+      color: #F62D51; }
     .lud-steps .lud-steps-item.lud-steps-status-error .lud-steps-description {
-      color: #d4504c; }
+      color: #F62D51; }
     .lud-steps .lud-steps-item.lud-steps-status-error .lud-steps-tail > i {
       background-color: #e9e9e9; }
     .lud-steps .lud-steps-item.lud-steps-next-error .lud-steps-tail > i,
     .lud-steps .lud-steps-item.lud-steps-next-error .lud-steps-tail > i:after {
-      background-color: #d4504c; }
+      background-color: #F62D51; }
     .lud-steps .lud-steps-item.lud-steps-custom .lud-steps-head-inner {
       background: none;
       border: 0;

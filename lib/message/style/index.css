@@ -19,11 +19,11 @@
     background: #fff;
     display: block; }
   .lud-message-success .anticon {
-    color: #4bca81; }
+    color: #77D042; }
   .lud-message-error .anticon {
-    color: #d4504c; }
+    color: #F62D51; }
   .lud-message-warning .anticon {
-    color: #fa0; }
+    color: #FFBC34; }
   .lud-message-info .anticon,
   .lud-message-loading .anticon {
     color: #1589ee; }

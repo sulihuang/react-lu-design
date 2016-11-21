@@ -10,7 +10,7 @@ $tag-prefix-cls: "#{$css-prefix}tag";
   height: 22px;
   padding: 0 8px;
   border-radius: $border-radius-base;
-  border: 1px solid $border-color-split;
+  border: 1px solid $background-color-base;
   background: $background-color-base;
   font-size: $font-size-base;
   transition: all 0.3s $ease-in-out-circ;
@@ -52,7 +52,7 @@ $tag-prefix-cls: "#{$css-prefix}tag";
     }
   }
 
-  &-has-color {
+  &-primary,&-info,&-success,&-danger,&-warning {
     border-color: transparent;
     &,
     a,
@@ -63,20 +63,24 @@ $tag-prefix-cls: "#{$css-prefix}tag";
     }
   }
 
-  &-blue {
-    background: $link-color;
+  &-primary {
+    background: $primary-color;
   }
 
-  &-green {
+  &-success {
     background: $success-color;
   }
 
-  &-yellow {
+  &-warning {
     background: $warning-color;
   }
 
-  &-red {
+  &-danger {
     background: $error-color;
+  }
+
+  &-info {
+    background: $info-color;
   }
 
   &-checkable {

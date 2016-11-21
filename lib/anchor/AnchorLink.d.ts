@@ -3,7 +3,7 @@ import React from 'react';
 import AnchorHelper from './anchorHelper';
 export interface AnchorLinkProps {
     href: string;
-    onClick: (href: string) => void;
+    onClick: (href: string, component: Element) => void;
     active?: boolean;
     prefixCls?: string;
     children?: any;
@@ -26,11 +26,16 @@ export default class AnchorLink extends React.Component<AnchorLinkProps, any> {
     context: {
         anchorHelper: AnchorHelper;
     };
+    private _component;
     constructor(props: any, context: any);
     getChildContext(): {
         anchorHelper: AnchorHelper;
     };
+    setActiveAnchor(): void;
+    componentDidMount(): void;
+    componentDidUpdate(): void;
     renderAnchorLink: (child: any) => any;
+    refsTo: (component: any) => void;
     scrollTo: (e: any) => void;
     render(): JSX.Element;
 }

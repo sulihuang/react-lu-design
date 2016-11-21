@@ -238,9 +238,9 @@
     .lud-table-filter-dropdown-link {
       color: #0070d2; }
       .lud-table-filter-dropdown-link:hover {
-        color: tint(#0070d2, 10%); }
+        color: #1a7ed7; }
       .lud-table-filter-dropdown-link:active {
-        color: shade(#0070d2, 10%); }
+        color: #0065bd; }
       .lud-table-filter-dropdown-link.confirm {
         float: left; }
       .lud-table-filter-dropdown-link.clear {

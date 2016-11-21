@@ -10,7 +10,7 @@
     height: 20px;
     border-radius: 10px;
     min-width: 20px;
-    background: #d4504c;
+    background: #F62D51;
     border: 1px solid transparent;
     color: #fff;
     line-height: 18px;
@@ -32,7 +32,7 @@
     height: 8px;
     width: 8px;
     border-radius: 100%;
-    background: #d4504c;
+    background: #F62D51;
     z-index: 10;
     box-shadow: 0 0 0 1px #fff; }
   .lud-badge-status {
@@ -44,16 +44,16 @@
       display: inline-block;
       border-radius: 50%; }
     .lud-badge-status-success {
-      background-color: #4bca81; }
+      background-color: #77D042; }
     .lud-badge-status-processing {
       background-color: #1589ee;
       animation: antStatusProcessing 1.2s infinite ease-in-out; }
     .lud-badge-status-default {
       background-color: #d9d9d9; }
     .lud-badge-status-error {
-      background-color: #d4504c; }
+      background-color: #F62D51; }
     .lud-badge-status-warning {
-      background-color: #fa0; }
+      background-color: #FFBC34; }
     .lud-badge-status-text {
       color: #2E486F;
       font-size: 14px;

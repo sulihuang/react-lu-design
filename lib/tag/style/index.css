@@ -4,7 +4,7 @@
   height: 22px;
   padding: 0 8px;
   border-radius: 0.25rem;
-  border: 1px solid #e9e9e9;
+  border: 1px solid #f4f8f9;
   background: #f4f8f9;
   font-size: 14px;
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -38,22 +38,40 @@
       font-size: 12px; }
     .lud-tag .anticon-cross:hover {
       opacity: 1; }
-  .lud-tag-has-color {
+  .lud-tag-primary, .lud-tag-info, .lud-tag-success, .lud-tag-danger, .lud-tag-warning {
     border-color: transparent; }
-    .lud-tag-has-color,
-    .lud-tag-has-color a,
-    .lud-tag-has-color a:hover,
-    .lud-tag-has-color .anticon-cross,
-    .lud-tag-has-color .anticon-cross:hover {
+    .lud-tag-primary,
+    .lud-tag-primary a,
+    .lud-tag-primary a:hover,
+    .lud-tag-primary .anticon-cross,
+    .lud-tag-primary .anticon-cross:hover, .lud-tag-info,
+    .lud-tag-info a,
+    .lud-tag-info a:hover,
+    .lud-tag-info .anticon-cross,
+    .lud-tag-info .anticon-cross:hover, .lud-tag-success,
+    .lud-tag-success a,
+    .lud-tag-success a:hover,
+    .lud-tag-success .anticon-cross,
+    .lud-tag-success .anticon-cross:hover, .lud-tag-danger,
+    .lud-tag-danger a,
+    .lud-tag-danger a:hover,
+    .lud-tag-danger .anticon-cross,
+    .lud-tag-danger .anticon-cross:hover, .lud-tag-warning,
+    .lud-tag-warning a,
+    .lud-tag-warning a:hover,
+    .lud-tag-warning .anticon-cross,
+    .lud-tag-warning .anticon-cross:hover {
       color: #fff; }
-  .lud-tag-blue {
-    background: #0070d2; }
-  .lud-tag-green {
-    background: #4bca81; }
-  .lud-tag-yellow {
-    background: #fa0; }
-  .lud-tag-red {
-    background: #d4504c; }
+  .lud-tag-primary {
+    background: #1589ee; }
+  .lud-tag-success {
+    background: #77D042; }
+  .lud-tag-warning {
+    background: #FFBC34; }
+  .lud-tag-danger {
+    background: #F62D51; }
+  .lud-tag-info {
+    background: #54698d; }
   .lud-tag-checkable {
     background-color: transparent;
     border-color: transparent; }

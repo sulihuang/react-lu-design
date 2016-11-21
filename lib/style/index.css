@@ -52,9 +52,9 @@ a {
   cursor: pointer;
   transition: color .1s linear; }
   a:hover {
-    color: tint(#0070d2, 10%); }
+    color: #1a7ed7; }
   a:active {
-    color: shade(#0070d2, 10%); }
+    color: #0065bd; }
   a:active, a:hover {
     outline: 0;
     text-decoration: none; }

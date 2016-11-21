@@ -1,0 +1,24 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  scss-lint:
+    enabled: true
+ratings:
+  paths:
+  - "**.css"
+  - "**.scss"
+  - "**.js"
+  - "**.jsx"
+  - "**.ts"
+  - "**.tsx"
+exclude_paths:
+- dist/
+- tests/
+- lib/

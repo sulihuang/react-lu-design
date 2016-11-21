@@ -1,3 +1,4 @@
+
 // mixins for button
 // ------------------------
 @mixin button-size($padding, $font-size, $border-radius) {
@@ -160,14 +161,29 @@
 // default button style
 @mixin btn-default() {
   @include button-variant-other($btn-default-color, $btn-default-bg, $btn-default-border);
-&:hover,
-&:focus,
-&:active,
-&.active {
-  background: #e6e6e6;
-  color: $btn-default-color;
-  border-color: $btn-default-border;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background: $btn-default-bg;
+    color: #333;
+    border-color: $btn-default-border;
+  }
 }
+
+// second button style
+@mixin btn-second() {
+  @include button-variant-other($btn-second-color, $btn-second-bg, $btn-second-border);
+}
+
+// grey button style
+@mixin btn-white() {
+  @include button-variant-other($btn-white-color, $btn-white-bg, $btn-white-border);
+}
+
+// danger button style
+@mixin btn-danger() {
+  @include button-variant-other($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
 // ghost button style
@@ -179,16 +195,6 @@
 @mixin btn-dashed() {
   @include button-variant-other($btn-ghost-color, $btn-ghost-bg, $btn-ghost-border);
   border-style: dashed;
-}
-
-// success button style
-@mixin btn-success() {
-  @include button-variant-primary($btn-primary-color, $success-color);
-}
-
-// danger button style
-@mixin btn-danger() {
-  @include button-variant-primary($btn-primary-color, $error-color);
 }
 
 // circle button: the content only contains icon

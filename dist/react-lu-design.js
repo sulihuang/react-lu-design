@@ -10777,7 +10777,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var store      = __webpack_require__(95)('wks')
 	  , uid        = __webpack_require__(68)
-	  , Symbol     = __webpack_require__(32).Symbol
+	  , Symbol     = __webpack_require__(31).Symbol
 	  , USE_SYMBOL = typeof Symbol == 'function';
 	
 	var $exports = module.exports = function(name){
@@ -11329,6 +11329,36 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 31 */
+/***/ function(module, exports) {
+
+	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+	var global = module.exports = typeof window != 'undefined' && window.Math == Math
+	  ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
+	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var anObject       = __webpack_require__(34)
+	  , IE8_DOM_DEFINE = __webpack_require__(163)
+	  , toPrimitive    = __webpack_require__(98)
+	  , dP             = Object.defineProperty;
+	
+	exports.f = __webpack_require__(35) ? Object.defineProperty : function defineProperty(O, P, Attributes){
+	  anObject(O);
+	  P = toPrimitive(P, true);
+	  anObject(Attributes);
+	  if(IE8_DOM_DEFINE)try {
+	    return dP(O, P, Attributes);
+	  } catch(e){ /* empty */ }
+	  if('get' in Attributes || 'set' in Attributes)throw TypeError('Accessors not supported!');
+	  if('value' in Attributes)O[P] = Attributes.value;
+	  return O;
+	};
+
+/***/ },
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11355,36 +11385,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 32 */
-/***/ function(module, exports) {
-
-	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-	var global = module.exports = typeof window != 'undefined' && window.Math == Math
-	  ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
-	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
-
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var anObject       = __webpack_require__(34)
-	  , IE8_DOM_DEFINE = __webpack_require__(163)
-	  , toPrimitive    = __webpack_require__(98)
-	  , dP             = Object.defineProperty;
-	
-	exports.f = __webpack_require__(35) ? Object.defineProperty : function defineProperty(O, P, Attributes){
-	  anObject(O);
-	  P = toPrimitive(P, true);
-	  anObject(Attributes);
-	  if(IE8_DOM_DEFINE)try {
-	    return dP(O, P, Attributes);
-	  } catch(e){ /* empty */ }
-	  if('get' in Attributes || 'set' in Attributes)throw TypeError('Accessors not supported!');
-	  if('value' in Attributes)O[P] = Attributes.value;
-	  return O;
-	};
-
-/***/ },
 /* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -11407,7 +11407,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global    = __webpack_require__(32)
+	var global    = __webpack_require__(31)
 	  , core      = __webpack_require__(23)
 	  , ctx       = __webpack_require__(87)
 	  , hide      = __webpack_require__(46)
@@ -12100,7 +12100,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP         = __webpack_require__(33)
+	var dP         = __webpack_require__(32)
 	  , createDesc = __webpack_require__(57);
 	module.exports = __webpack_require__(35) ? function(object, key, value){
 	  return dP.f(object, key, createDesc(1, value));
@@ -19990,7 +19990,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var def = __webpack_require__(33).f
+	var def = __webpack_require__(32).f
 	  , has = __webpack_require__(37)
 	  , TAG = __webpack_require__(24)('toStringTag');
 	
@@ -20012,7 +20012,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global = __webpack_require__(32)
+	var global = __webpack_require__(31)
 	  , SHARED = '__core-js_shared__'
 	  , store  = global[SHARED] || (global[SHARED] = {});
 	module.exports = function(key){
@@ -20061,11 +20061,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global         = __webpack_require__(32)
+	var global         = __webpack_require__(31)
 	  , core           = __webpack_require__(23)
 	  , LIBRARY        = __webpack_require__(90)
 	  , wksExt         = __webpack_require__(100)
-	  , defineProperty = __webpack_require__(33).f;
+	  , defineProperty = __webpack_require__(32).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
 	  if(name.charAt(0) != '_' && !(name in $Symbol))defineProperty($Symbol, name, {value: wksExt.f(name)});
@@ -20082,7 +20082,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(408);
-	var global        = __webpack_require__(32)
+	var global        = __webpack_require__(31)
 	  , hide          = __webpack_require__(46)
 	  , Iterators     = __webpack_require__(47)
 	  , TO_STRING_TAG = __webpack_require__(24)('toStringTag');
@@ -22269,9 +22269,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	function _scrollTo(href) {
 	    var target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : getDefaultTarget;
+	    var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function () {};
 	
 	    var scrollTop = (0, _getScroll2["default"])(target(), true);
-	    var targetElement = document.querySelector(href);
+	    var targetElement = document.getElementById(href.substring(1));
 	    if (!targetElement) {
 	        return;
 	    }
@@ -22284,10 +22285,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	        window.scrollTo(window.pageXOffset, easeInOutCubic(time, scrollTop, targetScrollTop, 450));
 	        if (time < 450) {
 	            reqAnimFrame(frameFunc);
+	        } else {
+	            callback();
 	        }
 	    };
 	    reqAnimFrame(frameFunc);
-	    history.pushState(null, undefined, href);
+	    history.pushState(null, '', href);
 	}
 	exports.scrollTo = _scrollTo;
 	
@@ -22319,7 +22322,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	        var activeAnchor = '';
 	        this.links.forEach(function (section) {
-	            var target = document.querySelector(section);
+	            var target = document.getElementById(section.substring(1));
 	            if (target) {
 	                var top = getOffsetTop(target);
 	                var bottom = top + target.clientHeight;
@@ -22334,8 +22337,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    AnchorHelper.prototype.scrollTo = function scrollTo(href) {
 	        var target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : getDefaultTarget;
+	        var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function () {};
 	
-	        _scrollTo(href, target);
+	        _scrollTo(href, target, callback);
 	    };
 	
 	    return AnchorHelper;
@@ -23574,7 +23578,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(55)
-	  , document = __webpack_require__(32).document
+	  , document = __webpack_require__(31).document
 	  // in old IE typeof document.createElement is 'object'
 	  , is = isObject(document) && isObject(document.createElement);
 	module.exports = function(it){
@@ -32052,11 +32056,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	            if (href) {
 	                _this.context.anchorHelper.addLink(href);
 	                return _react2["default"].cloneElement(child, {
-	                    onClick: _this.context.anchorHelper.scrollTo,
-	                    prefixCls: _this.props.prefixCls
+	                    onClick: _this.props.onClick,
+	                    prefixCls: _this.props.prefixCls,
+	                    affix: _this.props.affix
 	                });
 	            }
 	            return child;
+	        };
+	        _this.refsTo = function (component) {
+	            _this._component = component;
 	        };
 	        _this.scrollTo = function (e) {
 	            var _this$props = _this.props,
@@ -32066,7 +32074,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	            e.preventDefault();
 	            if (onClick) {
-	                onClick(href);
+	                onClick(href, _this._component);
 	            } else {
 	                e.stopPreventDefault();
 	                var scrollToFn = anchorHelper ? anchorHelper.scrollTo : _anchorHelper.scrollTo;
@@ -32082,16 +32090,37 @@ return /******/ (function(modules) { // webpackBootstrap
 	        };
 	    };
 	
+	    AnchorLink.prototype.setActiveAnchor = function setActiveAnchor() {
+	        var _props = this.props,
+	            bounds = _props.bounds,
+	            href = _props.href,
+	            affix = _props.affix;
+	        var anchorHelper = this.context.anchorHelper;
+	
+	        var active = affix && anchorHelper && anchorHelper.getCurrentAnchor(bounds) === href;
+	        if (active && anchorHelper) {
+	            anchorHelper.setActiveAnchor(this._component);
+	        }
+	    };
+	
+	    AnchorLink.prototype.componentDidMount = function componentDidMount() {
+	        this.setActiveAnchor();
+	    };
+	
+	    AnchorLink.prototype.componentDidUpdate = function componentDidUpdate() {
+	        this.setActiveAnchor();
+	    };
+	
 	    AnchorLink.prototype.render = function render() {
 	        var _classNames;
 	
-	        var _props = this.props,
-	            prefixCls = _props.prefixCls,
-	            href = _props.href,
-	            children = _props.children,
-	            title = _props.title,
-	            bounds = _props.bounds,
-	            affix = _props.affix;
+	        var _props2 = this.props,
+	            prefixCls = _props2.prefixCls,
+	            href = _props2.href,
+	            children = _props2.children,
+	            title = _props2.title,
+	            bounds = _props2.bounds,
+	            affix = _props2.affix;
 	        var anchorHelper = this.context.anchorHelper;
 	
 	        var active = affix && anchorHelper && anchorHelper.getCurrentAnchor(bounds) === href;
@@ -32101,9 +32130,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: cls },
 	            _react2["default"].createElement(
 	                'a',
-	                { ref: function ref(component) {
-	                        return component && active && anchorHelper ? anchorHelper.setActiveAnchor(component) : null;
-	                    }, className: prefixCls + '-link-title', onClick: this.scrollTo, href: href, title: typeof title === 'string' ? title : '' },
+	                { ref: this.refsTo, className: prefixCls + '-link-title', onClick: this.scrollTo, href: href, title: typeof title === 'string' ? title : '' },
 	                title
 	            ),
 	            _react2["default"].Children.map(children, this.renderAnchorLink)
@@ -32199,13 +32226,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _this.refs.ink.style.top = activeAnchor.offsetTop + activeAnchor.clientHeight / 2 - 4.5 + 'px';
 	            }
 	        };
+	        _this.clickAnchorLink = function (href, component) {
+	            _this.refs.ink.style.transition = 'top 0.01s ease-in-out';
+	            _this._avoidInk = true;
+	            _this.refs.ink.style.top = component.offsetTop + component.clientHeight / 2 - 4.5 + 'px';
+	            _this.anchorHelper.scrollTo(href, _anchorHelper.getDefaultTarget, function () {
+	                _this.refs.ink.style.transition = 'top 0.3s ease-in-out';
+	                _this._avoidInk = false;
+	            });
+	        };
 	        _this.renderAnchorLink = function (child) {
 	            var href = child.props.href;
 	
 	            if (href) {
 	                _this.anchorHelper.addLink(href);
 	                return _react2["default"].cloneElement(child, {
-	                    onClick: _this.anchorHelper.scrollTo,
+	                    onClick: _this.clickAnchorLink,
 	                    prefixCls: _this.props.prefixCls,
 	                    bounds: _this.props.bounds,
 	                    affix: _this.props.affix
@@ -32214,7 +32250,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            return child;
 	        };
 	        _this.state = {
-	            activeAnchor: null
+	            activeAnchor: null,
+	            animated: true
 	        };
 	        _this.anchorHelper = new _anchorHelper2["default"]();
 	        return _this;
@@ -32239,7 +32276,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	
 	    Anchor.prototype.componentDidUpdate = function componentDidUpdate() {
-	        this.updateInk();
+	        if (!this._avoidInk) {
+	            this.updateInk();
+	        }
 	    };
 	
 	    Anchor.prototype.render = function render() {
@@ -32252,9 +32291,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _props$className = _props.className,
 	            className = _props$className === undefined ? '' : _props$className,
 	            affix = _props.affix;
-	        var activeAnchor = this.state.activeAnchor;
+	        var _state = this.state,
+	            activeAnchor = _state.activeAnchor,
+	            animated = _state.animated;
 	
-	        var inkClass = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, prefixCls + '-ink-ball', true), (0, _defineProperty3["default"])(_classNames, 'visible', !!activeAnchor), _classNames));
+	        var inkClass = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, prefixCls + '-ink-ball', true), (0, _defineProperty3["default"])(_classNames, 'animated', animated), (0, _defineProperty3["default"])(_classNames, 'visible', !!activeAnchor), _classNames));
 	        var wrapperClass = (0, _classnames2["default"])((_classNames2 = {}, (0, _defineProperty3["default"])(_classNames2, prefixCls + '-wrapper', true), (0, _defineProperty3["default"])(_classNames2, className, !!className), _classNames2));
 	        var anchorClass = (0, _classnames2["default"])((_classNames3 = {}, (0, _defineProperty3["default"])(_classNames3, '' + prefixCls, true), (0, _defineProperty3["default"])(_classNames3, 'fixed', !affix), _classNames3));
 	        var anchorContent = _react2["default"].createElement(
@@ -32842,7 +32883,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _warning = __webpack_require__(31);
+	var _warning = __webpack_require__(33);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -32969,7 +33010,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _warning = __webpack_require__(31);
+	var _warning = __webpack_require__(33);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -35058,7 +35099,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _warning = __webpack_require__(31);
+	var _warning = __webpack_require__(33);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -35240,6 +35281,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	            restProps = _splitObject2[1];
 	
 	        var cls = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, prefixCls, true), (0, _defineProperty3["default"])(_classNames, className, !!className), _classNames));
+	        var dropdownProps = {
+	            align: align,
+	            overlay: overlay,
+	            trigger: disabled ? [] : trigger,
+	            onVisibleChange: onVisibleChange
+	        };
+	        if ('visible' in this.props) {
+	            dropdownProps.visible = visible;
+	        }
 	        return _react2["default"].createElement(
 	            ButtonGroup,
 	            (0, _extends3["default"])({}, restProps, { className: cls }),
@@ -35250,7 +35300,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ),
 	            _react2["default"].createElement(
 	                _dropdown2["default"],
-	                { align: align, overlay: overlay, trigger: disabled ? [] : trigger, visible: visible, onVisibleChange: onVisibleChange },
+	                dropdownProps,
 	                _react2["default"].createElement(
 	                    _button2["default"],
 	                    { type: type, disabled: disabled },
@@ -35335,7 +35385,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _warning = __webpack_require__(31);
+	var _warning = __webpack_require__(33);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -35506,7 +35556,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _constants = __webpack_require__(138);
 	
-	var _warning = __webpack_require__(31);
+	var _warning = __webpack_require__(33);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -36747,7 +36797,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _openAnimation2 = _interopRequireDefault(_openAnimation);
 	
-	var _warning = __webpack_require__(31);
+	var _warning = __webpack_require__(33);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -38780,7 +38830,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _splitObject4 = _interopRequireDefault(_splitObject3);
 	
-	var _warning = __webpack_require__(31);
+	var _warning = __webpack_require__(33);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -40254,17 +40304,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _omit2 = _interopRequireDefault(_omit);
 	
-	var _objectAssign = __webpack_require__(10);
-	
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-	
 	var _icon = __webpack_require__(16);
 	
 	var _icon2 = _interopRequireDefault(_icon);
-	
-	var _warning = __webpack_require__(31);
-	
-	var _warning2 = _interopRequireDefault(_warning);
 	
 	var _splitObject3 = __webpack_require__(15);
 	
@@ -40312,7 +40354,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	                }
 	            }
 	        };
-	        (0, _warning2["default"])(!/blue|red|green|yellow/.test(props.color || ''), '`Tag[color=red|green|blue|yellow]` is deprecated, ' + 'please set color by `#abc` or `rgb(a, b, c)` instead.');
 	        _this.state = {
 	            closing: false,
 	            closed: false
@@ -40323,19 +40364,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    Tag.prototype.render = function render() {
 	        var _classNames;
 	
-	        var _splitObject = (0, _splitObject4["default"])(this.props, ['prefixCls', 'closable', 'color', 'className', 'children', 'style']),
+	        var _splitObject = (0, _splitObject4["default"])(this.props, ['prefixCls', 'closable', 'type', 'className', 'children']),
 	            _splitObject2 = (0, _slicedToArray3["default"])(_splitObject, 2),
 	            _splitObject2$ = _splitObject2[0],
 	            prefixCls = _splitObject2$.prefixCls,
 	            closable = _splitObject2$.closable,
-	            color = _splitObject2$.color,
+	            type = _splitObject2$.type,
 	            className = _splitObject2$.className,
 	            children = _splitObject2$.children,
-	            style = _splitObject2$.style,
 	            otherProps = _splitObject2[1];
 	
 	        var closeIcon = closable ? _react2["default"].createElement(_icon2["default"], { type: 'cross', onClick: this.close }) : '';
-	        var classString = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, prefixCls, true), (0, _defineProperty3["default"])(_classNames, prefixCls + '-' + color, !!color), (0, _defineProperty3["default"])(_classNames, prefixCls + '-has-color', !!color), (0, _defineProperty3["default"])(_classNames, prefixCls + '-close', this.state.closing), (0, _defineProperty3["default"])(_classNames, className, !!className), _classNames));
+	        var classString = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, prefixCls, true), (0, _defineProperty3["default"])(_classNames, prefixCls + '-' + type, !!type), (0, _defineProperty3["default"])(_classNames, prefixCls + '-close', this.state.closing), (0, _defineProperty3["default"])(_classNames, className, !!className), _classNames));
 	        // fix https://fb.me/react-unknown-prop
 	        var divProps = (0, _omit2["default"])(otherProps, ['onClose', 'afterClose']);
 	        return _react2["default"].createElement(
@@ -40343,9 +40383,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { component: '', showProp: 'data-show', transitionName: prefixCls + '-zoom', transitionAppear: true, onEnd: this.animationEnd },
 	            this.state.closed ? null : _react2["default"].createElement(
 	                'div',
-	                (0, _extends3["default"])({ 'data-show': !this.state.closing }, divProps, { className: classString, style: (0, _objectAssign2["default"])({
-	                        backgroundColor: /blue|red|green|yellow/.test(color) ? null : color
-	                    }, style) }),
+	                (0, _extends3["default"])({ 'data-show': !this.state.closing }, divProps, { className: classString }),
 	                _react2["default"].createElement(
 	                    'span',
 	                    { className: prefixCls + '-text' },
@@ -41953,7 +41991,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $defineProperty = __webpack_require__(33)
+	var $defineProperty = __webpack_require__(32)
 	  , createDesc      = __webpack_require__(57);
 	
 	module.exports = function(object, index, value){
@@ -41985,7 +42023,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(32).document && document.documentElement;
+	module.exports = __webpack_require__(31).document && document.documentElement;
 
 /***/ },
 /* 390 */
@@ -42101,7 +42139,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var META     = __webpack_require__(68)('meta')
 	  , isObject = __webpack_require__(55)
 	  , has      = __webpack_require__(37)
-	  , setDesc  = __webpack_require__(33).f
+	  , setDesc  = __webpack_require__(32).f
 	  , id       = 0;
 	var isExtensible = Object.isExtensible || function(){
 	  return true;
@@ -42194,7 +42232,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP       = __webpack_require__(33)
+	var dP       = __webpack_require__(32)
 	  , anObject = __webpack_require__(34)
 	  , getKeys  = __webpack_require__(56);
 	
@@ -42446,7 +42484,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var $export = __webpack_require__(36);
 	// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-	$export($export.S + $export.F * !__webpack_require__(35), 'Object', {defineProperty: __webpack_require__(33).f});
+	$export($export.S + $export.F * !__webpack_require__(35), 'Object', {defineProperty: __webpack_require__(32).f});
 
 /***/ },
 /* 412 */
@@ -42468,7 +42506,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	// ECMAScript 6 symbols shim
-	var global         = __webpack_require__(32)
+	var global         = __webpack_require__(31)
 	  , has            = __webpack_require__(37)
 	  , DESCRIPTORS    = __webpack_require__(35)
 	  , $export        = __webpack_require__(36)
@@ -42491,7 +42529,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  , _create        = __webpack_require__(91)
 	  , gOPNExt        = __webpack_require__(400)
 	  , $GOPD          = __webpack_require__(166)
-	  , $DP            = __webpack_require__(33)
+	  , $DP            = __webpack_require__(32)
 	  , $keys          = __webpack_require__(56)
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f

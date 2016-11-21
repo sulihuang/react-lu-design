@@ -143,14 +143,14 @@
     margin-bottom: 0; }
 
 .lud-confirm-error .lud-confirm-body > .anticon {
-  color: #d4504c; }
+  color: #F62D51; }
 
 .lud-confirm-warning .lud-confirm-body > .anticon,
 .lud-confirm-confirm .lud-confirm-body > .anticon {
-  color: #fa0; }
+  color: #FFBC34; }
 
 .lud-confirm-info .lud-confirm-body > .anticon {
   color: #1589ee; }
 
 .lud-confirm-success .lud-confirm-body > .anticon {
-  color: #4bca81; }
+  color: #77D042; }

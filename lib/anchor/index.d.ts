@@ -26,6 +26,7 @@ export default class Anchor extends React.Component<AnchorProps, any> {
     };
     private scrollEvent;
     private anchorHelper;
+    private _avoidInk;
     constructor(props: any);
     handleScroll: () => void;
     getChildContext(): {
@@ -35,6 +36,7 @@ export default class Anchor extends React.Component<AnchorProps, any> {
     componentWillUnmount(): void;
     componentDidUpdate(): void;
     updateInk: () => void;
+    clickAnchorLink: (href: any, component: any) => void;
     renderAnchorLink: (child: any) => any;
     render(): JSX.Element;
 }

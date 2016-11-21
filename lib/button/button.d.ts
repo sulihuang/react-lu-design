@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import React from 'react';
-export declare type ButtonType = 'primary' | 'ghost' | 'dashed';
+export declare type ButtonType = 'primary' | 'ghost' | 'dashed' | 'second' | 'white' | 'danger';
 export declare type ButtonShape = 'circle' | 'circle-outline';
 export declare type ButtonSize = 'small' | 'large';
 export interface ButtonProps {

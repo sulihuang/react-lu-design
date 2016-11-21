@@ -62,7 +62,7 @@ label {
   content: "*";
   font-family: SimSun;
   font-size: 14px;
-  color: #d4504c; }
+  color: #F62D51; }
 
 input[type="radio"][disabled], input[type="radio"].disabled,
 input[type="checkbox"][disabled],
@@ -269,138 +269,138 @@ form .lud-cascader-picker {
 
 .has-success.has-feedback:after {
   content: '\e630';
-  color: #4bca81; }
+  color: #77D042; }
 
 .has-warning .lud-form-explain,
 .has-warning .lud-form-split {
-  color: #fa0; }
+  color: #FFBC34; }
 
 .has-warning .lud-input, .has-warning .lud-input:hover {
-  border-color: #fa0; }
+  border-color: #FFBC34; }
 
 .has-warning .lud-input:focus {
-  border-color: #ffbb33;
+  border-color: #ffc95d;
   outline: 0;
-  box-shadow: 0 0 0 2px fade(#fa0, 20%); }
+  box-shadow: 0 0 0 2px fade(#FFBC34, 20%); }
 
 .has-warning .lud-input:not([disabled]):hover {
-  border-color: #fa0; }
+  border-color: #FFBC34; }
 
 .has-warning .lud-calendar-picker-open .lud-calendar-picker-input {
-  border-color: #ffbb33;
+  border-color: #ffc95d;
   outline: 0;
-  box-shadow: 0 0 0 2px fade(#fa0, 20%); }
+  box-shadow: 0 0 0 2px fade(#FFBC34, 20%); }
 
 .has-warning .lud-input-group-addon {
-  color: #fa0;
-  border-color: #fa0;
+  color: #FFBC34;
+  border-color: #FFBC34;
   background-color: #fff; }
 
 .has-warning .has-feedback {
-  color: #fa0; }
+  color: #FFBC34; }
 
 .has-warning.has-feedback:after {
   content: '\e62c';
-  color: #fa0; }
+  color: #FFBC34; }
 
 .has-warning .lud-select-selection {
-  border-color: #fa0;
-  border-color: #ffbb33;
+  border-color: #FFBC34;
+  border-color: #ffc95d;
   outline: 0;
-  box-shadow: 0 0 0 2px fade(#fa0, 20%); }
+  box-shadow: 0 0 0 2px fade(#FFBC34, 20%); }
 
 .has-warning .lud-select-arrow {
-  color: #fa0; }
+  color: #FFBC34; }
 
 .has-warning .lud-calendar-picker-icon:after {
-  color: #fa0; }
+  color: #FFBC34; }
 
 .has-warning .lud-time-picker-icon:after {
-  color: #fa0; }
+  color: #FFBC34; }
 
 .has-warning .lud-input-number,
 .has-warning .lud-time-picker-input {
-  border-color: #fa0; }
+  border-color: #FFBC34; }
   .has-warning .lud-input-number-focused, .has-warning .lud-input-number:focus,
   .has-warning .lud-time-picker-input-focused,
   .has-warning .lud-time-picker-input:focus {
-    border-color: #ffbb33;
+    border-color: #ffc95d;
     outline: 0;
-    box-shadow: 0 0 0 2px fade(#fa0, 20%); }
+    box-shadow: 0 0 0 2px fade(#FFBC34, 20%); }
   .has-warning .lud-input-number:not([disabled]):hover,
   .has-warning .lud-time-picker-input:not([disabled]):hover {
-    border-color: #fa0; }
+    border-color: #FFBC34; }
 
 .has-error .lud-form-explain,
 .has-error .lud-form-split {
-  color: #d4504c; }
+  color: #F62D51; }
 
 .has-error .lud-input, .has-error .lud-input:hover {
-  border-color: #d4504c; }
+  border-color: #F62D51; }
 
 .has-error .lud-input:focus {
-  border-color: #dd7370;
+  border-color: #f85774;
   outline: 0;
-  box-shadow: 0 0 0 2px fade(#d4504c, 20%); }
+  box-shadow: 0 0 0 2px fade(#F62D51, 20%); }
 
 .has-error .lud-input:not([disabled]):hover {
-  border-color: #d4504c; }
+  border-color: #F62D51; }
 
 .has-error .lud-calendar-picker-open .lud-calendar-picker-input {
-  border-color: #dd7370;
+  border-color: #f85774;
   outline: 0;
-  box-shadow: 0 0 0 2px fade(#d4504c, 20%); }
+  box-shadow: 0 0 0 2px fade(#F62D51, 20%); }
 
 .has-error .lud-input-group-addon {
-  color: #d4504c;
-  border-color: #d4504c;
+  color: #F62D51;
+  border-color: #F62D51;
   background-color: #fff; }
 
 .has-error .has-feedback {
-  color: #d4504c; }
+  color: #F62D51; }
 
 .has-error.has-feedback:after {
   content: '\e62e';
-  color: #d4504c; }
+  color: #F62D51; }
 
 .has-error .lud-select-selection {
-  border-color: #d4504c; }
+  border-color: #F62D51; }
 
 .has-error .lud-select-focused .has-error .lud-select-selection {
-  border-color: #dd7370;
+  border-color: #f85774;
   outline: 0;
-  box-shadow: 0 0 0 2px fade(#d4504c, 20%); }
+  box-shadow: 0 0 0 2px fade(#F62D51, 20%); }
 
 .has-error .lud-select-arrow {
-  color: #d4504c; }
+  color: #F62D51; }
 
 .has-error .lud-calendar-picker-icon:after {
-  color: #d4504c; }
+  color: #F62D51; }
 
 .has-error .lud-picker-icon:after {
-  color: #d4504c; }
+  color: #F62D51; }
 
 .has-error .lud-input-number,
 .has-error .lud-time-picker-input {
-  border-color: #d4504c; }
+  border-color: #F62D51; }
   .has-error .lud-input-number-focused, .has-error .lud-input-number:focus,
   .has-error .lud-time-picker-input-focused,
   .has-error .lud-time-picker-input:focus {
-    border-color: #dd7370;
+    border-color: #f85774;
     outline: 0;
-    box-shadow: 0 0 0 2px fade(#d4504c, 20%); }
+    box-shadow: 0 0 0 2px fade(#F62D51, 20%); }
   .has-error .lud-input-number:not([disabled]):hover,
   .has-error .lud-time-picker-input:not([disabled]):hover {
-    border-color: #d4504c; }
+    border-color: #F62D51; }
 
 .has-error .lud-mention-wrapper .lud-mention-editor, .has-error .lud-mention-wrapper .lud-mention-editor:not([disabled]):hover {
-  border-color: #d4504c; }
+  border-color: #F62D51; }
 
 .has-error .lud-mention-wrapper.active .lud-mention-editor,
 .has-error .lud-mention-wrapper .lud-mention-editor:not([disabled]):focus {
-  border-color: #dd7370;
+  border-color: #f85774;
   outline: 0;
-  box-shadow: 0 0 0 2px fade(#d4504c, 20%); }
+  box-shadow: 0 0 0 2px fade(#F62D51, 20%); }
 
 .is-validating.has-feedback:after {
   display: inline-block;

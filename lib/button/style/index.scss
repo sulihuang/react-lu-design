@@ -36,6 +36,17 @@ $btn-prefix-cls: "#{$css-prefix}btn";
     }
   }
 
+  &-second{
+    @include btn-second;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background: #DDF0FA;
+      border-color: $btn-second-border;
+    }
+  }
+
   &-ghost {
     @include btn-ghost;
   }
@@ -44,12 +55,28 @@ $btn-prefix-cls: "#{$css-prefix}btn";
     @include btn-dashed;
   }
 
-  &-success {
-    @include btn-success;
+  &-white {
+    @include btn-white;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background: $btn-white-bg;
+      color: #333;
+      border-color: $btn-white-border;
+    }
   }
 
   &-danger {
     @include btn-danger;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background: $btn-danger-bg;
+      color: $btn-danger-color;
+      border-color: $btn-danger-border;
+    }
   }
 
   &-circle,
@@ -95,6 +122,9 @@ $btn-prefix-cls: "#{$css-prefix}btn";
 
   &-group {
     @include btn-group($btn-prefix-cls);
+    .lud-btn{
+      border-color: $border-color-base;
+    }
   }
 
   &:not(.#{$btn-prefix-cls}-circle):not(.#{$btn-prefix-cls}-circle-outline).#{$btn-prefix-cls}-icon-only {

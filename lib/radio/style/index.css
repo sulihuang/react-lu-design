@@ -84,7 +84,7 @@ span.lud-radio + * {
   margin: 0;
   height: 28px;
   line-height: 26px;
-  color: #0070d2;
+  color: #404040;
   display: inline-block;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -93,7 +93,7 @@ span.lud-radio + * {
   background: #fff;
   padding: 0 16px; }
   .lud-radio-button-wrapper a {
-    color: #0070d2; }
+    color: #404040; }
   .lud-radio-button-wrapper > .lud-radio-button {
     margin-left: 0;
     display: block;
