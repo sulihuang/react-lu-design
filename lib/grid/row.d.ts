@@ -3,7 +3,7 @@ import React from 'react';
 export interface RowProps {
     className?: string;
     gutter?: number;
-    type?: 'flex';
+    flex?: boolean;
     align?: 'top' | 'middle' | 'bottom';
     justify?: 'start' | 'end' | 'center' | 'space-around' | 'space-between';
     style?: React.CSSProperties;
@@ -13,9 +13,10 @@ export default class Row extends React.Component<RowProps, any> {
     static defaultProps: {
         gutter: number;
         prefixCls: string;
+        flex: boolean;
     };
     static propTypes: {
-        type: React.Requireable<any>;
+        flex: React.Requireable<any>;
         align: React.Requireable<any>;
         justify: React.Requireable<any>;
         className: React.Requireable<any>;

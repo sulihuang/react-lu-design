@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 4
 title:
   zh-CN: 基础栅格
   en-US: Basic Grid
@@ -7,36 +7,24 @@ title:
 
 ## zh-CN
 
-从堆叠到水平排列。
-
-使用单一的一组 `Row` 和 `Col` 栅格组件，就可以创建一个基本的栅格系统，所有列（Col）必须放在 `Row` 内。
-
-## en-US
-
-From the stack to the horizontal arrangement.
-
-You can create a basic grid system by using a single set of `Row` and` Col` grid assembly, all of the columns (Col) must be placed in `Row`.
+通过设置 flex 为 false 可以启用传统的 float 布局。
 
 ````jsx
 import { Row, Col } from 'react-lu-design';
 
 ReactDOM.render(
   <div>
-    <Row>
-      <Col span={12}>col-12</Col>
-      <Col span={12}>col-12</Col>
-    </Row>
-    <Row>
+    <Row flex={false}>
       <Col span={8}>col-8</Col>
       <Col span={8}>col-8</Col>
       <Col span={8}>col-8</Col>
     </Row>
-    <Row>
-      <Col span={6}>col-6</Col>
-      <Col span={6}>col-6</Col>
-      <Col span={6}>col-6</Col>
-      <Col span={6}>col-6</Col>
-    </Row>
+        <Row flex={false}>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+        </Row>
   </div>,
   mountNode
 );

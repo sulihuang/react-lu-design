@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 0
 title:
   zh-CN: Flex 布局
   en-US: Flex Layout
@@ -7,9 +7,10 @@ title:
 
 ## zh-CN
 
-Flex 布局基础。
+从堆叠到水平排列。
+使用单一的一组 Row 和 Col 栅格组件，就可以创建一个基本的栅格系统，所有列（Col）必须放在 Row 内。
 
-使用 `row-flex` 定义 `flex` 布局，其子元素根据不同的值 `start`,`center`,`end`,`space-between`,`space-around`，分别定义其在父节点里面的排版方式。
+其子元素根据不同的值 `start`,`center`,`end`,`space-between`,`space-around`，分别定义其在父节点里面的排版方式。
 
 ## en-US
 
@@ -21,7 +22,7 @@ import { Row, Col } from 'react-lu-design';
 ReactDOM.render(
   <div>
     <p>sub-element align left</p>
-    <Row type="flex" justify="start">
+    <Row justify="start">
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
@@ -29,7 +30,7 @@ ReactDOM.render(
     </Row>
 
     <p>sub-element align center</p>
-    <Row type="flex" justify="center">
+    <Row justify="center">
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
@@ -37,7 +38,7 @@ ReactDOM.render(
     </Row>
 
     <p>sub-element align right</p>
-    <Row type="flex" justify="end">
+    <Row justify="end">
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
@@ -45,7 +46,7 @@ ReactDOM.render(
     </Row>
 
     <p>sub-element monospaced arrangement</p>
-    <Row type="flex" justify="space-between">
+    <Row justify="space-between">
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
@@ -53,7 +54,7 @@ ReactDOM.render(
     </Row>
 
     <p>sub-element align full</p>
-    <Row type="flex" justify="space-around">
+    <Row justify="space-around">
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>
       <Col span={4}>col-4</Col>

@@ -7,7 +7,7 @@ import splitObject from '../_util/splitObject';
 export interface RowProps {
   className?: string;
   gutter?: number;
-  type?: 'flex';
+  flex?: boolean;
   align?: 'top' | 'middle' | 'bottom';
   justify?: 'start' | 'end' | 'center' | 'space-around' | 'space-between';
   style?: React.CSSProperties;
@@ -18,9 +18,10 @@ export default class Row extends React.Component<RowProps, any> {
   static defaultProps = {
     gutter: 0,
     prefixCls: 'lud-row',
+    flex: true
   };
   static propTypes = {
-    type: React.PropTypes.string,
+    flex: React.PropTypes.bool,
     align: React.PropTypes.string,
     justify: React.PropTypes.string,
     className: React.PropTypes.string,
@@ -29,13 +30,13 @@ export default class Row extends React.Component<RowProps, any> {
     prefixCls: React.PropTypes.string,
   };
   render() {
-    const [{ type, justify, align, className, gutter, style, children, prefixCls }, others] = splitObject(this.props,
-      ['type', 'justify', 'align', 'className', 'gutter', 'style', 'children', 'prefixCls']);
+    const [{ flex, justify, align, className, gutter, style, children, prefixCls }, others] = splitObject(this.props,
+      ['flex', 'justify', 'align', 'className', 'gutter', 'style', 'children', 'prefixCls']);
     const classes = classNames({
-      [prefixCls]: !type,
-      [`${prefixCls}-${type}`]: type,
-      [`${prefixCls}-${type}-${justify}`]: justify,
-      [`${prefixCls}-${type}-${align}`]: align,
+      [prefixCls]: !flex,
+      [`${prefixCls}-flex`]: flex,
+      [`${prefixCls}-flex-${justify}`]: justify,
+      [`${prefixCls}-flex-${align}`]: align,
       [className]: className,
     });
     const rowStyle = gutter > 0 ? assign({}, {
