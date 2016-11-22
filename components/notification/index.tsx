@@ -49,19 +49,19 @@ function notice(args) {
   let iconType = '';
   switch (args.type) {
     case 'success':
-      iconType = 'check-circle-o';
+      iconType = 'checkcircleo';
       break;
     case 'info':
-      iconType = 'info-circle-o';
+      iconType = 'infocirlceo';
       break;
     case 'error':
-      iconType = 'cross-circle-o';
+      iconType = 'closecircleo';
       break;
     case 'warning':
-      iconType = 'exclamation-circle-o';
+      iconType = 'exclamationcircleo';
       break;
     default:
-      iconType = 'info-circle';
+      iconType = 'infocircle';
   }
 
   let iconNode;

@@ -52,7 +52,7 @@ output {
 
 label {
   position: relative; }
-  label > .anticon {
+  label > .lud-icon {
     vertical-align: top;
     font-size: 14px; }
 
@@ -248,11 +248,10 @@ form .lud-cascader-picker {
   text-align: center;
   font-size: 16px;
   animation: zoomIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  font-family: 'anticon';
+  font-family: 'ludicon';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "x"; }
+  -moz-osx-font-smoothing: grayscale; }
 
 .has-success.has-feedback:after {
   animation-name: diffZoomIn1 !important; }
@@ -268,7 +267,7 @@ form .lud-cascader-picker {
   box-shadow: none; }
 
 .has-success.has-feedback:after {
-  content: '\e630';
+  content: '\EE61';
   color: #77D042; }
 
 .has-warning .lud-form-explain,
@@ -300,7 +299,7 @@ form .lud-cascader-picker {
   color: #FFBC34; }
 
 .has-warning.has-feedback:after {
-  content: '\e62c';
+  content: '\EE5D';
   color: #FFBC34; }
 
 .has-warning .lud-select-selection {
@@ -360,7 +359,7 @@ form .lud-cascader-picker {
   color: #F62D51; }
 
 .has-error.has-feedback:after {
-  content: '\e62e';
+  content: '\EE5F';
   color: #F62D51; }
 
 .has-error .lud-select-selection {
@@ -405,7 +404,7 @@ form .lud-cascader-picker {
 .is-validating.has-feedback:after {
   display: inline-block;
   animation: loadingCircle 1s infinite linear;
-  content: "\e6ae";
+  content: "\EEE3";
   color: #999; }
 
 .lud-advanced-search-form .lud-form-item {

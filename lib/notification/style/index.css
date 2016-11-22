@@ -47,8 +47,8 @@
         color: #F62D51; }
     .lud-notification-notice-close-x:after {
       font-size: 14px;
-      content: "\e633";
-      font-family: "anticon";
+      content: "\EE64";
+      font-family: "ludicon";
       cursor: pointer; }
     .lud-notification-notice-close {
       position: absolute;

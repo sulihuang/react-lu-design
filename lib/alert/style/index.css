@@ -46,10 +46,10 @@
     line-height: 12px;
     overflow: hidden;
     cursor: pointer; }
-    .lud-alert-close-icon .anticon-cross {
+    .lud-alert-close-icon .lud-icon-cross {
       color: #999;
       transition: color .3s ease; }
-      .lud-alert-close-icon .anticon-cross:hover {
+      .lud-alert-close-icon .lud-icon-cross:hover {
         color: #404040; }
   .lud-alert-close-text {
     position: absolute;

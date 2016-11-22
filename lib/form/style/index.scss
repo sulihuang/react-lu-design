@@ -294,7 +294,7 @@ form {
     text-align: center;
     font-size: $font-size-lg;
     animation: zoomIn .3s $ease-out-back;
-    @include iconfont-font("");
+    @include iconfont-font();
   }
 }
 
@@ -323,7 +323,7 @@ form {
   }
 
   &.has-feedback:after {
-    content: '\e630';
+    content: '\EE61';
     color: $success-color;
   }
 }
@@ -332,7 +332,7 @@ form {
   @include form-control-validation($warning-color, $warning-color);
 
   &.has-feedback:after {
-    content: '\e62c';
+    content: '\EE5D';
     color: $warning-color;
   }
 
@@ -375,7 +375,7 @@ form {
   @include form-control-validation($error-color, $error-color);
 
   &.has-feedback:after {
-    content: '\e62e';
+    content: '\EE5F';
     color: $error-color;
   }
 
@@ -434,7 +434,7 @@ form {
   &.has-feedback:after {
     display: inline-block;
     animation: loadingCircle 1s infinite linear;
-    content: "\e6ae";
+    content: "\EEE3";
     color: $text-color-secondary;
   }
 }

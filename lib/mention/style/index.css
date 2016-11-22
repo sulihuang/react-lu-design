@@ -82,7 +82,7 @@
   font-size: 14px; }
   .lud-mention-dropdown-notfound.lud-mention-dropdown-item {
     color: #ccc; }
-    .lud-mention-dropdown-notfound.lud-mention-dropdown-item .anticon-loading {
+    .lud-mention-dropdown-notfound.lud-mention-dropdown-item .lud-icon-loading {
       color: #1589ee; }
   .lud-mention-dropdown-item {
     position: relative;

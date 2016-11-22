@@ -170,7 +170,8 @@ $cascader-prefix-cls: "#{$css-prefix}cascader";
     &-expand {
       position: relative;
       &:after {
-        @include iconfont-font("e61f");
+        @include iconfont-font();
+        content: '\EE50';
         @include iconfont-size-under-12px(8px);
         color: $text-color-secondary;
         position: absolute;

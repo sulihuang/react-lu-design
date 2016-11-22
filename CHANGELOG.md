@@ -5,7 +5,7 @@ toc: false
 timeline: true
 ---
 
-## 1.2.0-alpha3
+## 1.2.0-alpha4
 
 * 梳理文档
 * 栅格系统默认采用 Flex 布局。
@@ -13,6 +13,7 @@ timeline: true
 * 使用 SCSS 替代 LESS。 [#3](https://github.com/zhulux/react-lu-design/issues/3)
 * 合并 Ant Design 2.4.3: 修复 Anchor 内部 querySelector 报错，并做了一些体验优化 。
 * 优化部分样式。
+* 采用全新Icon。
 
 ## 1.1.0
 

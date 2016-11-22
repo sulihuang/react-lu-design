@@ -33,7 +33,7 @@
     font-family: tahoma;
     position: relative;
     top: -1px; }
-    .lud-progress-text .anticon {
+    .lud-progress-text .lud-icon {
       font-size: 14px; }
   .lud-progress-status-active .lud-progress-bg:before {
     content: "";
@@ -69,7 +69,7 @@
     left: 0;
     font-family: tahoma;
     margin: 0; }
-    .lud-progress-circle .lud-progress-text .anticon {
+    .lud-progress-circle .lud-progress-text .lud-icon {
       font-size: 14 / 12em; }
   .lud-progress-circle .lud-progress-status-exception .lud-progress-text {
     color: #F62D51; }

@@ -128,7 +128,7 @@ export default function createPicker(TheCalendar) {
       );
 
       const clearIcon = (!props.disabled && props.allowClear && this.state.value) ?
-        <Icon type="cross-circle"
+        <Icon type="crosscircle"
               className={`${prefixCls}-picker-clear`}
               onClick={this.clearSelection}
         /> : null;

@@ -22,7 +22,7 @@
   color: #404040;
   background-color: #f4f8f9;
   border-color: #f4f8f9; }
-  .lud-btn > .anticon {
+  .lud-btn > .lud-icon {
     line-height: 1; }
   .lud-btn, .lud-btn:active, .lud-btn:focus {
     outline: 0; }
@@ -496,14 +496,14 @@
     padding-left: 29px;
     pointer-events: none;
     position: relative; }
-    .lud-btn.lud-btn-loading .anticon {
+    .lud-btn.lud-btn-loading .lud-icon {
       margin-left: -14px;
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
     .lud-btn.lud-btn-loading:before {
       display: block; }
   .lud-btn-sm.lud-btn-loading {
     padding-left: 24px; }
-    .lud-btn-sm.lud-btn-loading .anticon {
+    .lud-btn-sm.lud-btn-loading .lud-icon {
       margin-left: -17px; }
   .lud-btn-group {
     position: relative;
@@ -521,7 +521,7 @@
       padding: 0.3rem 0.66rem;
       font-size: 14px;
       border-radius: 0.125rem; }
-      .lud-btn-group-sm > .lud-btn > .anticon {
+      .lud-btn-group-sm > .lud-btn > .lud-icon {
         font-size: 14px; }
     .lud-btn-group .lud-btn + .lud-btn,
     .lud-btn + .lud-btn-group,
@@ -553,8 +553,8 @@
   .lud-btn:not(.lud-btn-circle):not(.lud-btn-circle-outline).lud-btn-icon-only {
     padding-left: 8px;
     padding-right: 8px; }
-  .lud-btn > .anticon + span,
-  .lud-btn > span + .anticon {
+  .lud-btn > .lud-icon + span,
+  .lud-btn > span + .lud-icon {
     margin-left: 0.5em; }
   .lud-btn-clicked:after {
     content: '';

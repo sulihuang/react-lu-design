@@ -83,7 +83,7 @@ $tab-prefix-cls: "#{$css-prefix}tabs";
 
       &:before {
         display: block;
-        font-family: "anticon" !important;
+        font-family: "ludicon" !important;
       }
     }
   }
@@ -100,14 +100,14 @@ $tab-prefix-cls: "#{$css-prefix}tabs";
     right: 2px;
 
     &-icon:before {
-      content: "\e61f";
+      content: "\EE50";
     }
   }
 
   &-tab-prev {
     left: 0;
     &-icon:before {
-      content: "\e620";
+      content: "\EE51";
     }
     :root & {
       filter: none;

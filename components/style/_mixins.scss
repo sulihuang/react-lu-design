@@ -12,17 +12,16 @@
   -moz-osx-font-smoothing: grayscale;
   &:before {
     display: block;
-    font-family: "anticon" !important;
+    font-family: "ludicon" !important;
   }
 }
 
 // ref: http://stackoverflow.com/questions/21641833/how-to-use-a-single-backslash-in-string-interpolation-in-sass
-@mixin iconfont-font($content) {
-  font-family: 'anticon';
+@mixin iconfont-font {
+  font-family: 'ludicon';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: str-slice("\x",1,1) + $content;
 }
 
 // for iconfont font size

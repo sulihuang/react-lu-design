@@ -18,7 +18,7 @@ describe('Icon', function() {
   it('should render to a <i class="xxx"></i>', () => {
     expect(iconNode.tagName).toBe('I');
     expect(iconNode.className).toContain('my-icon-classname');
-    expect(iconNode.className).toContain('anticon');
-    expect(iconNode.className).toContain('anticon-appstore');
+    expect(iconNode.className).toContain('lud-icon');
+    expect(iconNode.className).toContain('lud-icon-appstore');
   });
 });

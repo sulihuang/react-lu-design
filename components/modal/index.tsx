@@ -18,7 +18,7 @@ export interface ModalFuncProps {
 Modal.info = function (props: ModalFuncProps) {
   const config = assign({}, {
     type: 'info',
-    iconType: 'info-circle',
+    iconType: 'infocirlce',
     okCancel: false,
   }, props);
   return confirm(config);
@@ -27,7 +27,7 @@ Modal.info = function (props: ModalFuncProps) {
 Modal.success = function (props: ModalFuncProps) {
   const config = assign({}, {
     type: 'success',
-    iconType: 'check-circle',
+    iconType: 'checkcircle',
     okCancel: false,
   }, props);
   return confirm(config);
@@ -36,7 +36,7 @@ Modal.success = function (props: ModalFuncProps) {
 Modal.error = function (props: ModalFuncProps) {
   const config = assign({}, {
     type: 'error',
-    iconType: 'cross-circle',
+    iconType: 'closecircle',
     okCancel: false,
   }, props);
   return confirm(config);
@@ -45,7 +45,7 @@ Modal.error = function (props: ModalFuncProps) {
 Modal.warning = Modal.warn = function (props: ModalFuncProps) {
   const config = assign({}, {
     type: 'warning',
-    iconType: 'exclamation-circle',
+    iconType: 'exclamationcircle',
     okCancel: false,
   }, props);
   return confirm(config);

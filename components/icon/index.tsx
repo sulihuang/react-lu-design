@@ -14,9 +14,9 @@ export interface IconProps {
 export default (props: IconProps) => {
   const { type, className = '', spin } = props;
   const classString = classNames({
-    anticon: true,
-    'anticon-spin': !!spin || type === 'loading',
-    [`anticon-${type}`]: true,
+    'lud-icon': true,
+    'lud-icon-spin': !!spin || type === 'loading',
+    [`lud-icon-${type}`]: true,
     [className]: true,
   });
   return <i {...omit(props, ['type', 'spin'])} className={classString} />;

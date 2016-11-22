@@ -25,10 +25,10 @@ function notice(
   type: NoticeType,
   onClose?: () => void) {
   let iconType = ({
-    info: 'info-circle',
-    success: 'check-circle',
-    error: 'cross-circle',
-    warning: 'exclamation-circle',
+    info: 'infocircle',
+    success: 'checkcircle',
+    error: 'closecircle',
+    warning: 'exclamationcircle',
     loading: 'loading',
   })[type];
 

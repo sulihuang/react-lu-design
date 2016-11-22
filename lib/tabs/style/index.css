@@ -76,7 +76,7 @@
         font-size: 12px; }
       .lud-tabs-tab-prev-icon:before, .lud-tabs-tab-next-icon:before {
         display: block;
-        font-family: "anticon" !important; }
+        font-family: "ludicon" !important; }
   .lud-tabs-tab-btn-disabled {
     cursor: not-allowed; }
     .lud-tabs-tab-btn-disabled, .lud-tabs-tab-btn-disabled:hover {
@@ -84,11 +84,11 @@
   .lud-tabs-tab-next {
     right: 2px; }
     .lud-tabs-tab-next-icon:before {
-      content: "\e61f"; }
+      content: "\EE50"; }
   .lud-tabs-tab-prev {
     left: 0; }
     .lud-tabs-tab-prev-icon:before {
-      content: "\e620"; }
+      content: "\EE51"; }
     :root .lud-tabs-tab-prev {
       filter: none; }
   .lud-tabs-nav-wrap {
@@ -128,7 +128,7 @@
         color: #44a1f1; }
       .lud-tabs-nav .lud-tabs-tab:active {
         color: #1482e2; }
-      .lud-tabs-nav .lud-tabs-tab .anticon {
+      .lud-tabs-nav .lud-tabs-tab .lud-icon {
         width: 14px;
         height: 14px;
         margin-right: 8px; }
@@ -237,7 +237,7 @@
     transform: translateZ(0); }
   .lud-tabs-card > .lud-tabs-bar .lud-tabs-nav-wrap {
     margin-bottom: 0; }
-  .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab .anticon-close {
+  .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab .lud-icon-close {
     margin-right: 0;
     color: #999;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -250,16 +250,16 @@
     text-align: right;
     vertical-align: middle;
     overflow: hidden; }
-    :root .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab .anticon-close {
+    :root .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab .lud-icon-close {
       font-size: 12px; }
-    .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab .anticon-close:hover {
+    .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab .lud-icon-close:hover {
       color: #404040;
       font-weight: bold; }
   .lud-tabs-editable-card > .lud-tabs-bar .lud-tabs-tab:not(.lud-tabs-tab-active):hover {
     padding-left: 8px;
     padding-right: 8px; }
-  .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab-active .anticon-close,
-  .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab:hover .anticon-close {
+  .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab-active .lud-icon-close,
+  .lud-tabs-card > .lud-tabs-bar .lud-tabs-tab:hover .lud-icon-close {
     width: 16px;
     transform: translateZ(0); }
   .lud-tabs-extra-content {

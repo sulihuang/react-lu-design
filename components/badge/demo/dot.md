@@ -27,7 +27,7 @@ ReactDOM.render(<div>
 ````
 
 <style>
-.ludicon-notification {
+.lud-icon-notification {
   width: 16px;
   height: 16px;
   line-height: 16px;

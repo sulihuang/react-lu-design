@@ -66,7 +66,8 @@ $timepicker-prefix-cls: "#{$css-prefix}time-picker";
     line-height: 1;
     width: 20px;
     transition: color 0.3s ease;
-    @include iconfont-font("e62e");
+    @include iconfont-font();
+    content: '\ee64';
   }
 
   &-clear-btn:hover:after {
@@ -214,8 +215,8 @@ $timepicker-prefix-cls: "#{$css-prefix}time-picker";
     top: 50%;
     margin-top: -6px;
     &:after {
-      content: "\e641";
-      font-family: "anticon";
+      content: "\EE72";
+      font-family: "ludicon";
       font-size: $font-size-base;
       color: $text-color-secondary;
       display: inline-block;

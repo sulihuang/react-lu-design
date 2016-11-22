@@ -47,7 +47,7 @@
     padding: 8px 0 16px;
     font-size: 14px;
     color: #2E486F; }
-    .lud-popover-message > .anticon {
+    .lud-popover-message > .lud-icon {
       color: #FFBC34;
       line-height: 17px;
       position: absolute; }

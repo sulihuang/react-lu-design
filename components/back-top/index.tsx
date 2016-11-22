@@ -106,7 +106,7 @@ export default class BackTop extends React.Component<BackTopProps, any> {
 
     const defaultElement = (
       <div className={`${prefixCls}-content`}>
-        <Icon className={`${prefixCls}-icon`} type="to-top" />
+        <Icon className={`${prefixCls}-icon`} type="totop" />
       </div>
     );
 

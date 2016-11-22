@@ -14,5 +14,5 @@
   .lud-breadcrumb-separator {
     margin: 0 8px;
     color: #d8dde6; }
-  .lud-breadcrumb-link > .anticon + span {
+  .lud-breadcrumb-link > .lud-icon + span {
     margin-left: 4px; }

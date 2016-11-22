@@ -22,8 +22,8 @@ const IconSlider = React.createClass({
     const min = this.props.min;
     const mid = ((max - min) / 2).toFixed(5);
     return {
-      preIconClass: this.props.value >= mid ? '' : 'anticon-highlight',
-      nextIconClass: this.props.value >= mid ? 'anticon-highlight' : '',
+      preIconClass: this.props.value >= mid ? '' : 'lud-icon-highlight',
+      nextIconClass: this.props.value >= mid ? 'lud-icon-highlight' : '',
       mid,
       sliderValue: this.props.value,
     };
@@ -31,8 +31,8 @@ const IconSlider = React.createClass({
 
   handleChange(v) {
     this.setState({
-      preIconClass: v >= this.state.mid ? '' : 'anticon-highlight',
-      nextIconClass: v >= this.state.mid ? 'anticon-highlight' : '',
+      preIconClass: v >= this.state.mid ? '' : 'lud-icon-highlight',
+      nextIconClass: v >= this.state.mid ? 'lud-icon-highlight' : '',
       sliderValue: v,
     });
   },
@@ -59,7 +59,7 @@ ReactDOM.render(
   padding: 0px 30px;
 }
 
-.iconWrapper .anticon {
+.iconWrapper .lud-icon {
   position: absolute;
   top: -3px;
   width: 16px;
@@ -69,15 +69,15 @@ ReactDOM.render(
   color: #ccc;
 }
 
-.iconWrapper .anticon:first-child {
+.iconWrapper .lud-icon:first-child {
   left: 0;
 }
 
-.iconWrapper .anticon:last-child {
+.iconWrapper .lud-icon:last-child {
   right: 0;
 }
 
-.anticon.anticon-highlight {
+.lud-icon.lud-icon-highlight {
   color: #666;
 }
 ````

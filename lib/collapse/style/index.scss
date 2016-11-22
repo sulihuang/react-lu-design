@@ -37,13 +37,13 @@ $collapse-prefix-cls: "#{$css-prefix}collapse";
         display: inline-block;
         margin-right: 8px;
         line-height: 40px;
-        content: "\e606";
+        content: "\EE37";
         vertical-align: middle;
         transition: transform 0.24s ease;
         top: 0;
         left: 16px;
         &:before {
-          content: "\e606";
+          content: "\EE37";
         }
       }
     }

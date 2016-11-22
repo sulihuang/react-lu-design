@@ -63,13 +63,13 @@
     user-select: none;
   }
   .#{$calendar-prefix-cls}-decade-panel-decade:before {
-    content: "\e61f";
-    font-family: "anticon" !important;
+    content: "\ee50";
+    font-family: "ludicon" !important;
   }
 }
 
 .#{$calendar-prefix-cls}-decade-panel-last-century-cell {
   .#{$calendar-prefix-cls}-decade-panel-decade:before {
-    content: "\e620";
+    content: "\ee51";
   }
 }

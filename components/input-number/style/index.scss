@@ -176,7 +176,7 @@ $input-number-prefix-cls: "#{$css-prefix}input-number";
       top: 1px;
       &:before {
         text-align: center;
-        content: "\e61e";
+        content: "\EE3F";
       }
     }
     &:hover {
@@ -194,7 +194,7 @@ $input-number-prefix-cls: "#{$css-prefix}input-number";
     &-inner {
       &:before {
         text-align: center;
-        content: "\e61d";
+        content: "\EE40";
       }
     }
     &:hover {

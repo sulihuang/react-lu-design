@@ -104,9 +104,9 @@ $dropdown-prefix-cls: "#{$css-prefix}dropdown";
     }
 
     &-submenu-title:after {
-      font-family: "anticon" !important;
+      font-family: "ludicon" !important;
       position: absolute;
-      content: "\e61f";
+      content: "\ee50";
       right: 16px;
       color: $text-color-secondary;
       @include iconfont-size-under-12px(9px);
@@ -169,6 +169,6 @@ $dropdown-prefix-cls: "#{$css-prefix}dropdown";
   }
 }
 
-.#{$css-prefix}btn .anticon-down {
+.#{$css-prefix}btn .lud-icon-down {
   @include iconfont-size-under-12px(9px);
 }

@@ -6266,9 +6266,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        spin = props.spin;
 	
 	    var classString = (0, _classnames2["default"])((_classNames = {
-	        anticon: true,
-	        'anticon-spin': !!spin || type === 'loading'
-	    }, (0, _defineProperty3["default"])(_classNames, 'anticon-' + type, true), (0, _defineProperty3["default"])(_classNames, className, true), _classNames));
+	        'lud-icon': true,
+	        'lud-icon-spin': !!spin || type === 'loading'
+	    }, (0, _defineProperty3["default"])(_classNames, 'lud-icon-' + type, true), (0, _defineProperty3["default"])(_classNames, className, true), _classNames));
 	    return React.createElement('i', (0, _extends3["default"])({}, (0, _omit2["default"])(props, ['type', 'spin']), { className: classString }));
 	};
 	
@@ -31942,23 +31942,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var iconType = '';
 	        switch (type) {
 	            case 'success':
-	                iconType = 'check-circle';
+	                iconType = 'checkcircle';
 	                break;
 	            case 'info':
-	                iconType = 'info-circle';
+	                iconType = 'infocirlce';
 	                break;
 	            case 'error':
-	                iconType = 'cross-circle';
+	                iconType = 'closecircle';
 	                break;
 	            case 'warning':
-	                iconType = 'exclamation-circle';
+	                iconType = 'exclamationcircle';
 	                break;
 	            default:
 	                iconType = 'default';
 	        }
 	        // use outline icon in alert with description
 	        if (!!description) {
-	            iconType += '-o';
+	            iconType += 'o';
 	        }
 	        var alertCls = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, prefixCls, true), (0, _defineProperty3["default"])(_classNames, prefixCls + '-' + type, true), (0, _defineProperty3["default"])(_classNames, prefixCls + '-close', !this.state.closing), (0, _defineProperty3["default"])(_classNames, prefixCls + '-with-description', !!description), (0, _defineProperty3["default"])(_classNames, prefixCls + '-no-icon', !showIcon), (0, _defineProperty3["default"])(_classNames, prefixCls + '-banner', !!banner), (0, _defineProperty3["default"])(_classNames, className, !!className), _classNames));
 	        // closeable when closeText is assigned
@@ -32624,7 +32624,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var defaultElement = _react2["default"].createElement(
 	            'div',
 	            { className: prefixCls + '-content' },
-	            _react2["default"].createElement(_icon2["default"], { className: prefixCls + '-icon', type: 'to-top' })
+	            _react2["default"].createElement(_icon2["default"], { className: prefixCls + '-icon', type: 'totop' })
 	        );
 	        // fix https://fb.me/react-unknown-prop
 	        var divProps = (0, _omit2["default"])(this.props, ['prefixCls', 'className', 'children', 'visibilityHeight']);
@@ -34300,7 +34300,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	        var value = state.value;
 	        var sizeCls = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, inputPrefixCls + '-lg', size === 'large'), (0, _defineProperty3["default"])(_classNames, inputPrefixCls + '-sm', size === 'small'), _classNames));
-	        var clearIcon = allowClear && !disabled && value.length > 0 || state.inputValue ? _react2["default"].createElement(_icon2["default"], { type: 'cross-circle', className: prefixCls + '-picker-clear', onClick: this.clearSelection }) : null;
+	        var clearIcon = allowClear && !disabled && value.length > 0 || state.inputValue ? _react2["default"].createElement(_icon2["default"], { type: 'crosscircle', className: prefixCls + '-picker-clear', onClick: this.clearSelection }) : null;
 	        var arrowCls = (0, _classnames2["default"])((_classNames2 = {}, (0, _defineProperty3["default"])(_classNames2, prefixCls + '-picker-arrow', true), (0, _defineProperty3["default"])(_classNames2, prefixCls + '-picker-arrow-expand', state.popupVisible), _classNames2));
 	        var pickerCls = (0, _classnames2["default"])((_classNames3 = {}, (0, _defineProperty3["default"])(_classNames3, className, !!className), (0, _defineProperty3["default"])(_classNames3, prefixCls + '-picker', true), (0, _defineProperty3["default"])(_classNames3, prefixCls + '-picker-with-value', state.inputValue), (0, _defineProperty3["default"])(_classNames3, prefixCls + '-picker-disabled', disabled), _classNames3));
 	        // Fix bug of https://github.com/facebook/react/pull/5004
@@ -34789,7 +34789,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var startPlaceholder = 'startPlaceholder' in this.props ? props.startPlaceholder : locale.lang.rangePlaceholder[0];
 	        var endPlaceholder = 'endPlaceholder' in props ? props.endPlaceholder : locale.lang.rangePlaceholder[1];
 	        var calendar = _react2["default"].createElement(_RangeCalendar2["default"], (0, _extends3["default"])({}, calendarHandler, { prefixCls: prefixCls, className: calendarClassName, timePicker: props.timePicker, disabledDate: disabledDate, disabledTime: disabledTime, dateInputPlaceholder: [startPlaceholder, endPlaceholder], locale: locale.lang, onOk: onOk, defaultValue: props.defaultPickerValue || [(0, _moment2["default"])(), (0, _moment2["default"])()] }));
-	        var clearIcon = !props.disabled && props.allowClear && state.value && (state.value[0] || state.value[1]) ? _react2["default"].createElement(_icon2["default"], { type: 'cross-circle', className: prefixCls + '-picker-clear', onClick: this.clearSelection }) : null;
+	        var clearIcon = !props.disabled && props.allowClear && state.value && (state.value[0] || state.value[1]) ? _react2["default"].createElement(_icon2["default"], { type: 'crosscircle', className: prefixCls + '-picker-clear', onClick: this.clearSelection }) : null;
 	        return _react2["default"].createElement(
 	            'span',
 	            { className: props.pickerClass, style: style },
@@ -34977,7 +34977,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                };
 	            }
 	            var calendar = _react2["default"].createElement(TheCalendar, (0, _extends3["default"])({ disabledDate: props.disabledDate, disabledTime: disabledTime, locale: locale.lang, timePicker: props.timePicker, defaultValue: props.defaultPickerValue || (0, _moment2["default"])(), dateInputPlaceholder: placeholder, prefixCls: prefixCls, className: calendarClassName, onOk: props.onOk, format: props.format }, calendarHandler));
-	            var clearIcon = !props.disabled && props.allowClear && this.state.value ? _react2["default"].createElement(_icon2["default"], { type: 'cross-circle', className: prefixCls + '-picker-clear', onClick: this.clearSelection }) : null;
+	            var clearIcon = !props.disabled && props.allowClear && this.state.value ? _react2["default"].createElement(_icon2["default"], { type: 'crosscircle', className: prefixCls + '-picker-clear', onClick: this.clearSelection }) : null;
 	            return _react2["default"].createElement(
 	                'span',
 	                { className: props.pickerClass, style: props.style },
@@ -36731,7 +36731,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	        var cls = (0, _classnames2["default"])((_classNames = {}, (0, _defineProperty3["default"])(_classNames, className, !!className), (0, _defineProperty3["default"])(_classNames, 'active', focus), _classNames));
 	        if (this.props.loading) {
-	            notFoundContent = _react2["default"].createElement('i', { className: 'anticon anticon-loading' });
+	            notFoundContent = _react2["default"].createElement('i', { className: 'lud-icon lud-icon-loading' });
 	        }
 	        return _react2["default"].createElement(_rcEditorMention2["default"], (0, _extends3["default"])({}, this.props, { className: cls, prefixCls: prefixCls, style: style, defaultValue: defaultValue, multiLines: multiLines, onSearchChange: this.onSearchChange.bind(this), onChange: this.onChange.bind(this), onFocus: function onFocus() {
 	                return _this2.setState({ focus: true });
@@ -36954,10 +36954,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var onClose = arguments[3];
 	
 	    var iconType = {
-	        info: 'info-circle',
-	        success: 'check-circle',
-	        error: 'cross-circle',
-	        warning: 'exclamation-circle',
+	        info: 'infocircle',
+	        success: 'checkcircle',
+	        error: 'closecircle',
+	        warning: 'exclamationcircle',
 	        loading: 'loading'
 	    }[type];
 	    var instance = getMessageInstance();
@@ -37164,7 +37164,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	function confirm(config) {
 	    var _classNames;
 	
-	    var props = (0, _objectAssign2["default"])({ iconType: 'question-circle' }, config);
+	    var props = (0, _objectAssign2["default"])({ iconType: 'questioncircle' }, config);
 	    var prefixCls = props.prefixCls || 'lud-confirm';
 	    var div = document.createElement('div');
 	    document.body.appendChild(div);
@@ -37270,7 +37270,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	_Modal2["default"].info = function (props) {
 	    var config = (0, _objectAssign2["default"])({}, {
 	        type: 'info',
-	        iconType: 'info-circle',
+	        iconType: 'infocirlce',
 	        okCancel: false
 	    }, props);
 	    return (0, _confirm2["default"])(config);
@@ -37278,7 +37278,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	_Modal2["default"].success = function (props) {
 	    var config = (0, _objectAssign2["default"])({}, {
 	        type: 'success',
-	        iconType: 'check-circle',
+	        iconType: 'checkcircle',
 	        okCancel: false
 	    }, props);
 	    return (0, _confirm2["default"])(config);
@@ -37286,7 +37286,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	_Modal2["default"].error = function (props) {
 	    var config = (0, _objectAssign2["default"])({}, {
 	        type: 'error',
-	        iconType: 'cross-circle',
+	        iconType: 'closecircle',
 	        okCancel: false
 	    }, props);
 	    return (0, _confirm2["default"])(config);
@@ -37294,7 +37294,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	_Modal2["default"].warning = _Modal2["default"].warn = function (props) {
 	    var config = (0, _objectAssign2["default"])({}, {
 	        type: 'warning',
-	        iconType: 'exclamation-circle',
+	        iconType: 'exclamationcircle',
 	        okCancel: false
 	    }, props);
 	    return (0, _confirm2["default"])(config);
@@ -37367,19 +37367,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var iconType = '';
 	    switch (args.type) {
 	        case 'success':
-	            iconType = 'check-circle-o';
+	            iconType = 'checkcircleo';
 	            break;
 	        case 'info':
-	            iconType = 'info-circle-o';
+	            iconType = 'infocirlceo';
 	            break;
 	        case 'error':
-	            iconType = 'cross-circle-o';
+	            iconType = 'closecircleo';
 	            break;
 	        case 'warning':
-	            iconType = 'exclamation-circle-o';
+	            iconType = 'exclamationcircleo';
 	            break;
 	        default:
-	            iconType = 'info-circle';
+	            iconType = 'infocircle';
 	    }
 	    var iconNode = void 0;
 	    if (args.icon) {
@@ -37745,7 +37745,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2["default"].createElement(
 	                    'div',
 	                    { className: prefixCls + '-message' },
-	                    _react2["default"].createElement(_icon2["default"], { type: 'exclamation-circle' }),
+	                    _react2["default"].createElement(_icon2["default"], { type: 'exclamationcircle' }),
 	                    _react2["default"].createElement(
 	                        'div',
 	                        { className: prefixCls + '-message-title' },
@@ -38361,7 +38361,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Steps.Step = _rcSteps2["default"].Step;
 	Steps.defaultProps = {
 	    prefixCls: 'lud-steps',
-	    iconPrefix: 'ant',
+	    iconPrefix: 'lud-',
 	    current: 0
 	};
 	Steps.propTypes = {

@@ -9,16 +9,16 @@
   line-height: 1.5; }
   .lud-dropdown-wrap {
     position: relative; }
-    .lud-dropdown-wrap .lud-btn > .anticon-down {
+    .lud-dropdown-wrap .lud-btn > .lud-icon-down {
       display: inline-block;
       font-size: 12px;
       font-size: "9px 	";
       transform: scale(0.75) rotate(0deg); }
-      :root .lud-dropdown-wrap .lud-btn > .anticon-down {
+      :root .lud-dropdown-wrap .lud-btn > .lud-icon-down {
         font-size: 12px; }
-    .lud-dropdown-wrap .anticon-down:before {
+    .lud-dropdown-wrap .lud-icon-down:before {
       transition: transform 0.2s ease; }
-  .lud-dropdown-wrap-open .anticon-down:before {
+  .lud-dropdown-wrap-open .lud-icon-down:before {
     transform: rotate(180deg); }
   .lud-dropdown-hidden, .lud-dropdown-menu-hidden {
     display: none; }
@@ -70,9 +70,9 @@
         background-color: #e9e9e9;
         line-height: 0; }
     .lud-dropdown-menu-submenu-title:after {
-      font-family: "anticon" !important;
+      font-family: "ludicon" !important;
       position: absolute;
-      content: "\e61f";
+      content: "\ee50";
       right: 16px;
       color: #999;
       display: inline-block;
@@ -105,29 +105,29 @@
 
 .lud-dropdown-link {
   font-size: 14px; }
-  .lud-dropdown-link .anticon-down {
+  .lud-dropdown-link .lud-icon-down {
     display: inline-block;
     font-size: 12px;
     font-size: "9px 	";
     transform: scale(0.75) rotate(0deg); }
-    :root .lud-dropdown-link .anticon-down {
+    :root .lud-dropdown-link .lud-icon-down {
       font-size: 12px; }
 
 .lud-dropdown-button.lud-btn-group > .lud-btn:last-child:not(:first-child) {
   padding-right: 7px; }
 
-.lud-dropdown-button .anticon-down {
+.lud-dropdown-button .lud-icon-down {
   display: inline-block;
   font-size: 12px;
   font-size: "9px 	";
   transform: scale(0.75) rotate(0deg); }
-  :root .lud-dropdown-button .anticon-down {
+  :root .lud-dropdown-button .lud-icon-down {
     font-size: 12px; }
 
-.lud-btn .anticon-down {
+.lud-btn .lud-icon-down {
   display: inline-block;
   font-size: 12px;
   font-size: "9px 	";
   transform: scale(0.75) rotate(0deg); }
-  :root .lud-btn .anticon-down {
+  :root .lud-btn .lud-icon-down {
     font-size: 12px; }

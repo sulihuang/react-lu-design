@@ -21,8 +21,8 @@ ReactDOM.render(
   <Steps>
     <Step status="finish" title="Login" icon="user" />
     <Step status="finish" title="Verification" icon="solution" />
-    <Step status="process" title="Pay" icon="credit-card" />
-    <Step status="wait" title="Done" icon={<Icon type="smile-o" />} />
+    <Step status="process" title="Pay" icon="creditcard" />
+    <Step status="wait" title="Done" icon={<Icon type="smileo" />} />
   </Steps>
 , mountNode);
 ````

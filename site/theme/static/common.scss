@@ -38,13 +38,6 @@ div.main-container {
 .aside-container {
   padding-bottom: 50px;
 
-  &.lud-menu-inline .lud-menu-submenu-title h4,
-  &.lud-menu-inline > .lud-menu-item,
-  &.lud-menu-inline .lud-menu-item a {
-    font-size: 14px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
 
   a[disabled] {
     color: #ccc;
@@ -52,7 +45,7 @@ div.main-container {
 }
 
 .aside-container .chinese {
-  font-size: 12px;
+  font-size: 14px;
   margin-left: 6px;
   font-weight: normal;
   opacity: .67;
@@ -64,7 +57,7 @@ div.main-container {
 
 .outside-link:after {
   content: '\e691';
-  font-family: 'anticon';
+  font-family: 'ludicon';
   margin-left: 5px;
   font-size: 12px;
   color: #aaa;

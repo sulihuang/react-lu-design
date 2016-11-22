@@ -63,9 +63,9 @@ $dialog-prefix-cls: "#{$css-prefix}modal";
       line-height: 1;
 
       &:before {
-        content: "\e633";
+        content: "\EE64";
         display: block;
-        font-family: "anticon" !important;
+        font-family: "ludicon" !important;
       }
     }
 

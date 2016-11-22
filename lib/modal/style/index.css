@@ -52,9 +52,9 @@
       font-size: 16px;
       line-height: 1; }
       .lud-modal-close-x:before {
-        content: "\e633";
+        content: "\EE64";
         display: block;
-        font-family: "anticon" !important; }
+        font-family: "ludicon" !important; }
     .lud-modal-close:focus, .lud-modal-close:hover {
       color: #444;
       text-decoration: none; }
@@ -129,7 +129,7 @@
   color: #2E486F;
   margin-top: 8px; }
 
-.lud-confirm-body > .anticon {
+.lud-confirm-body > .lud-icon {
   font-size: 24px;
   margin-right: 16px;
   padding: 0 1px;
@@ -142,15 +142,15 @@
     margin-left: 10px;
     margin-bottom: 0; }
 
-.lud-confirm-error .lud-confirm-body > .anticon {
+.lud-confirm-error .lud-confirm-body > .lud-icon {
   color: #F62D51; }
 
-.lud-confirm-warning .lud-confirm-body > .anticon,
-.lud-confirm-confirm .lud-confirm-body > .anticon {
+.lud-confirm-warning .lud-confirm-body > .lud-icon,
+.lud-confirm-confirm .lud-confirm-body > .lud-icon {
   color: #FFBC34; }
 
-.lud-confirm-info .lud-confirm-body > .anticon {
+.lud-confirm-info .lud-confirm-body > .lud-icon {
   color: #1589ee; }
 
-.lud-confirm-success .lud-confirm-body > .anticon {
+.lud-confirm-success .lud-confirm-body > .lud-icon {
   color: #77D042; }

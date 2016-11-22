@@ -125,11 +125,11 @@
     .lud-cascader-menu-item-expand {
       position: relative; }
       .lud-cascader-menu-item-expand:after {
-        font-family: 'anticon';
+        font-family: 'ludicon';
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        content: "xe61f";
+        content: '\EE50';
         display: inline-block;
         font-size: 12px;
         font-size: "8px 	";

@@ -18,16 +18,16 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     background: #fff;
     display: block; }
-  .lud-message-success .anticon {
+  .lud-message-success .lud-icon {
     color: #77D042; }
-  .lud-message-error .anticon {
+  .lud-message-error .lud-icon {
     color: #F62D51; }
-  .lud-message-warning .anticon {
+  .lud-message-warning .lud-icon {
     color: #FFBC34; }
-  .lud-message-info .anticon,
-  .lud-message-loading .anticon {
+  .lud-message-info .lud-icon,
+  .lud-message-loading .lud-icon {
     color: #1589ee; }
-  .lud-message .anticon {
+  .lud-message .lud-icon {
     margin-right: 8px;
     font-size: 16px;
     top: 1px;

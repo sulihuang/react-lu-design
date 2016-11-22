@@ -29,13 +29,13 @@
     transform: scale(0.75) rotate(0deg); }
     .lud-select-arrow:before {
       display: block;
-      font-family: "anticon" !important; }
+      font-family: "ludicon" !important; }
     :root .lud-select-arrow {
       font-size: 12px; }
     .lud-select-arrow * {
       display: none; }
     .lud-select-arrow:before {
-      content: '\e61d';
+      content: '\EE4E';
       transition: transform 0.2s ease; }
   .lud-select-selection {
     outline: none;
@@ -76,11 +76,11 @@
       transition: color 0.3s ease, opacity 0.15s ease; }
       .lud-select-selection__clear:before {
         display: block;
-        font-family: 'anticon';
+        font-family: 'ludicon';
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        content: "xe62e"; }
+        content: '/ee64'; }
       .lud-select-selection__clear:hover {
         color: #999; }
     .lud-select-selection:hover .lud-select-selection__clear {
@@ -261,7 +261,7 @@
       padding: 0 0 0 8px; }
       .lud-select-selection--multiple .lud-select-selection__choice__remove:before {
         display: block;
-        font-family: "anticon" !important; }
+        font-family: "ludicon" !important; }
       :root .lud-select-selection--multiple .lud-select-selection__choice__remove {
         font-size: 12px; }
       .lud-select-selection--multiple .lud-select-selection__choice__remove:hover {
@@ -370,11 +370,11 @@
         background-color: #e5e5e5;
         line-height: 0; }
   .lud-select-dropdown--multiple .lud-select-dropdown-menu-item:after {
-    font-family: 'anticon';
+    font-family: 'ludicon';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "xe632";
+    content: '\ee63';
     color: transparent;
     display: inline-block;
     font-size: 12px;

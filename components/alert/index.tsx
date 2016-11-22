@@ -73,16 +73,16 @@ export default class Alert extends React.Component<AlertProps, any> {
     let iconType = '';
     switch (type) {
       case 'success':
-        iconType = 'check-circle';
+        iconType = 'checkcircle';
         break;
       case 'info':
-        iconType = 'info-circle';
+        iconType = 'infocirlce';
         break;
       case 'error':
-        iconType = 'cross-circle';
+        iconType = 'closecircle';
         break;
       case 'warning':
-        iconType = 'exclamation-circle';
+        iconType = 'exclamationcircle';
         break;
       default:
         iconType = 'default';
@@ -90,7 +90,7 @@ export default class Alert extends React.Component<AlertProps, any> {
 
     // use outline icon in alert with description
     if (!!description) {
-      iconType += '-o';
+      iconType += 'o';
     }
 
     let alertCls = classNames({

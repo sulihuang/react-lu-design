@@ -20,15 +20,15 @@
     font-weight: bold;
     transition: background .3s ease;
     text-align: left; }
-    .lud-table-thead > tr > th .anticon-filter {
+    .lud-table-thead > tr > th .lud-icon-filter {
       margin-left: 4px;
       font-size: 14px;
       cursor: pointer;
       color: #aaa;
       transition: all 0.3s ease; }
-      .lud-table-thead > tr > th .anticon-filter:hover {
+      .lud-table-thead > tr > th .lud-icon-filter:hover {
         color: #2E486F; }
-    .lud-table-thead > tr > th .lud-table-filter-selected.anticon-filter {
+    .lud-table-thead > tr > th .lud-table-filter-selected.lud-icon-filter {
       color: #1589ee; }
   .lud-table-tbody > tr > td {
     border-bottom: 1px solid #e9e9e9;
@@ -136,14 +136,14 @@
       display: block;
       width: 12px;
       cursor: pointer; }
-      .lud-table-column-sorter-up:hover .anticon, .lud-table-column-sorter-down:hover .anticon {
+      .lud-table-column-sorter-up:hover .lud-icon, .lud-table-column-sorter-down:hover .lud-icon {
         color: #2E486F; }
-      .lud-table-column-sorter-up.on .anticon-caret-up,
-      .lud-table-column-sorter-up.on .anticon-caret-down, .lud-table-column-sorter-down.on .anticon-caret-up,
-      .lud-table-column-sorter-down.on .anticon-caret-down {
+      .lud-table-column-sorter-up.on .lud-icon-caret-up,
+      .lud-table-column-sorter-up.on .lud-icon-caret-down, .lud-table-column-sorter-down.on .lud-icon-caret-up,
+      .lud-table-column-sorter-down.on .lud-icon-caret-down {
         color: #1589ee; }
-    .lud-table-column-sorter .anticon-caret-up,
-    .lud-table-column-sorter .anticon-caret-down {
+    .lud-table-column-sorter .lud-icon-caret-up,
+    .lud-table-column-sorter .lud-icon-caret-down {
       display: inline-block;
       font-size: 12px;
       font-size: "7px 	";
@@ -151,11 +151,11 @@
       line-height: 6px;
       height: 6px;
       color: #aaa; }
-      :root .lud-table-column-sorter .anticon-caret-up, :root
-      .lud-table-column-sorter .anticon-caret-down {
+      :root .lud-table-column-sorter .lud-icon-caret-up, :root
+      .lud-table-column-sorter .lud-icon-caret-down {
         font-size: 12px; }
-      .lud-table-column-sorter .anticon-caret-up:before,
-      .lud-table-column-sorter .anticon-caret-down:before {
+      .lud-table-column-sorter .lud-icon-caret-up:before,
+      .lud-table-column-sorter .lud-icon-caret-down:before {
         -moz-transform-origin: 53% 50%;
         /* fix firefox position */ }
   .lud-table-bordered .lud-table-header > table,
@@ -202,7 +202,7 @@
     z-index: 2;
     font-size: 14px;
     color: #999; }
-    .lud-table-placeholder .anticon {
+    .lud-table-placeholder .lud-icon {
       margin-right: 4px; }
   .lud-table-pagination {
     margin: 16px 0;

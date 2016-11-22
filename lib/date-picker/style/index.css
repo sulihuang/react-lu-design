@@ -53,8 +53,8 @@
     top: 50%;
     margin-top: -6px; }
     .lud-calendar-picker-icon:after {
-      content: "\e6bb";
-      font-family: "anticon";
+      content: "\EEF1";
+      font-family: "ludicon";
       font-size: 14px;
       color: #999;
       display: inline-block;
@@ -259,11 +259,11 @@
     top: 7px;
     margin: 0; }
   .lud-calendar .lud-calendar-clear-btn:after {
-    font-family: 'anticon';
+    font-family: 'ludicon';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "xe62e";
+    content: '/ee64';
     font-size: 14px;
     color: #ccc;
     display: inline-block;
@@ -303,7 +303,7 @@
     position: absolute;
     bottom: 8px;
     right: 9px; }
-    .lud-calendar .lud-calendar-ok-btn > .anticon {
+    .lud-calendar .lud-calendar-ok-btn > .lud-icon {
       line-height: 1; }
     .lud-calendar .lud-calendar-ok-btn, .lud-calendar .lud-calendar-ok-btn:active, .lud-calendar .lud-calendar-ok-btn:focus {
       outline: 0; }
@@ -945,11 +945,11 @@
 
 .lud-calendar-year-panel-last-decade-cell .lud-calendar-year-panel-year:before,
 .lud-calendar-year-panel-next-decade-cell .lud-calendar-year-panel-year:before {
-  content: "\e61f";
-  font-family: "anticon" !important; }
+  content: "\ee50";
+  font-family: "ludicon" !important; }
 
 .lud-calendar-year-panel-last-decade-cell .lud-calendar-year-panel-year:before {
-  content: "\e620"; }
+  content: "\ee51"; }
 
 .lud-calendar-decade-panel {
   left: 0;
@@ -1070,11 +1070,11 @@
 
 .lud-calendar-decade-panel-last-century-cell .lud-calendar-decade-panel-decade:before,
 .lud-calendar-decade-panel-next-century-cell .lud-calendar-decade-panel-decade:before {
-  content: "\e61f";
-  font-family: "anticon" !important; }
+  content: "\ee50";
+  font-family: "ludicon" !important; }
 
 .lud-calendar-decade-panel-last-century-cell .lud-calendar-decade-panel-decade:before {
-  content: "\e620"; }
+  content: "\ee51"; }
 
 .lud-calendar-month .lud-calendar-month-panel,
 .lud-calendar-month .lud-calendar-year-panel {

@@ -27,7 +27,8 @@ $select-prefix-cls: "#{$css-prefix}select";
   transition: color 0.3s ease, opacity 0.15s ease;
   &:before {
     display: block;
-    @include iconfont-font("e62e");
+    @include iconfont-font();
+    content: '/ee64';
   }
   &:hover {
     color: $text-color-secondary;
@@ -61,7 +62,7 @@ $select-prefix-cls: "#{$css-prefix}select";
     }
 
     &:before {
-      content: '\e61d';
+      content: '\EE4E';
       transition: transform 0.2s ease;
     }
   }
@@ -490,7 +491,8 @@ $select-prefix-cls: "#{$css-prefix}select";
   &--multiple {
     .#{$select-prefix-cls}-dropdown-menu-item {
       &:after {
-        @include iconfont-font("e632");
+        @include iconfont-font();
+        content: '\ee63';
         color: transparent;
         @include iconfont-size-under-12px(10px);
         transition: all 0.2s ease;

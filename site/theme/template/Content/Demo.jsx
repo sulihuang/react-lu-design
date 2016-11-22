@@ -76,7 +76,7 @@ export default class Demo extends React.Component {
             <EditButton title={<FormattedMessage id="app.content.edit-page" />} filename={meta.filename} />
           </div>
           {introChildren}
-          <Icon type="down-circle-o" title="Show Code" className="collapse" onClick={this.handleCodeExapnd} />
+          <Icon type="downcircleo" title="Show Code" className="collapse" onClick={this.handleCodeExapnd} />
         </section>
         <section className={highlightClass}
           key="code"

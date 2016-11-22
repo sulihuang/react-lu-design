@@ -84,7 +84,7 @@ export default class Mention extends React.Component<MentionProps, MentionState>
     });
 
     if (this.props.loading) {
-      notFoundContent = <i className="anticon anticon-loading"></i>;
+      notFoundContent = <i className="lud-icon lud-icon-loading"></i>;
     }
 
     return <RcMention

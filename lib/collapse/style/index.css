@@ -33,7 +33,7 @@
         display: inline-block;
         margin-right: 8px;
         line-height: 40px;
-        content: "\e606";
+        content: "\EE37";
         vertical-align: middle;
         transition: transform 0.24s ease;
         top: 0;
@@ -42,9 +42,9 @@
           font-size: 12px; }
         .lud-collapse > .lud-collapse-item > .lud-collapse-header .arrow:before {
           display: block;
-          font-family: "anticon" !important; }
+          font-family: "ludicon" !important; }
         .lud-collapse > .lud-collapse-item > .lud-collapse-header .arrow:before {
-          content: "\e606"; }
+          content: "\EE37"; }
   .lud-collapse-anim-active {
     transition: height 0.2s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .lud-collapse-content {

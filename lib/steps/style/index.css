@@ -90,9 +90,9 @@
       line-height: 1;
       color: #1589ee;
       position: relative; }
-      .lud-steps .lud-steps-head-inner > .lud-steps-icon.anticon {
+      .lud-steps .lud-steps-head-inner > .lud-steps-icon.lud-icon {
         font-size: 14px; }
-        .lud-steps .lud-steps-head-inner > .lud-steps-icon.anticon-cross, .lud-steps .lud-steps-head-inner > .lud-steps-icon.anticon-check {
+        .lud-steps .lud-steps-head-inner > .lud-steps-icon.lud-icon-cross, .lud-steps .lud-steps-head-inner > .lud-steps-icon.lud-icon-check {
           font-weight: bold; }
   .lud-steps .lud-steps-main {
     margin-top: 2.5px; }
@@ -143,13 +143,13 @@
     border-radius: 18px;
     font-size: 14px;
     margin-right: 10px; }
-    .lud-steps.lud-steps-small .lud-steps-head-inner > .lud-steps-icon.anticon {
+    .lud-steps.lud-steps-small .lud-steps-head-inner > .lud-steps-icon.lud-icon {
       display: inline-block;
       font-size: 12px;
       font-size: "9px 	";
       transform: scale(0.75) rotate(0deg);
       top: 0; }
-      :root .lud-steps.lud-steps-small .lud-steps-head-inner > .lud-steps-icon.anticon {
+      :root .lud-steps.lud-steps-small .lud-steps-head-inner > .lud-steps-icon.lud-icon {
         font-size: 12px; }
   .lud-steps.lud-steps-small .lud-steps-main {
     margin-top: 0; }

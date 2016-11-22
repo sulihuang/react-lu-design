@@ -4,7 +4,6 @@ import DocumentTitle from 'react-document-title';
 import { getChildren } from 'jsonml.js/lib/utils';
 import { Timeline } from 'react-lu-design';
 import EditButton from './EditButton';
-import * as utils from '../utils';
 
 export default class Article extends React.Component {
   static contextTypes = {
@@ -12,21 +11,6 @@ export default class Article extends React.Component {
   }
   componentDidMount() {
     this.componentDidUpdate();
-  }
-  componentDidUpdate() {
-    const links = [...document.querySelectorAll('.outside-link.internal')];
-    if (links.length === 0) {
-      return;
-    }
-    // eslint-disable-next-line
-    const checkImgUrl = 'https://g-assets.daily.taob' + 'ao.net/seajs/seajs/2.2.0/sea.js';
-    this.pingTimer = utils.ping(checkImgUrl, (status) => {
-      if (status !== 'timeout') {
-        links.forEach(link => (link.style.display = 'block'));
-      } else {
-        links.forEach(link => link.parentNode.removeChild(link));
-      }
-    });
   }
   componentWillUnmount() {
     clearTimeout(this.pingTimer);

@@ -88,7 +88,7 @@ export default class RangePicker extends React.Component<any, any> {
 
     const clearIcon = (!props.disabled && props.allowClear && state.value && (state.value[0] || state.value[1]))
       ? <Icon
-        type="cross-circle"
+        type="crosscircle"
         className={`${prefixCls}-picker-clear`}
         onClick={this.clearSelection}
       /> : null;

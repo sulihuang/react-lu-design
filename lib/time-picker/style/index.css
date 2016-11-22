@@ -49,11 +49,11 @@
     line-height: 1;
     width: 20px;
     transition: color 0.3s ease;
-    font-family: 'anticon';
+    font-family: 'ludicon';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "xe62e"; }
+    content: '\ee64'; }
   .lud-time-picker-panel-clear-btn:hover:after {
     color: #999; }
   .lud-time-picker-panel-narrow .lud-time-picker-panel-input-wrap {
@@ -192,8 +192,8 @@
     top: 50%;
     margin-top: -6px; }
     .lud-time-picker-icon:after {
-      content: "\e641";
-      font-family: "anticon";
+      content: "\EE72";
+      font-family: "ludicon";
       font-size: 14px;
       color: #999;
       display: inline-block;

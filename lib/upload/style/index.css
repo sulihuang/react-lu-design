@@ -53,7 +53,7 @@
     .lud-upload-drag p.lud-upload-drag-icon {
       height: 60px;
       margin-bottom: 24px; }
-      .lud-upload-drag p.lud-upload-drag-icon .anticon {
+      .lud-upload-drag p.lud-upload-drag-icon .lud-icon {
         font-size: 80px;
         margin-top: -5px;
         color: #44a1f1; }
@@ -62,13 +62,13 @@
     .lud-upload-drag p.lud-upload-hint {
       font-size: 14px;
       color: #999; }
-    .lud-upload-drag .anticon-plus {
+    .lud-upload-drag .lud-icon-plus {
       font-size: 30px;
       transition: all 0.3s ease;
       color: #ccc; }
-      .lud-upload-drag .anticon-plus:hover {
+      .lud-upload-drag .lud-icon-plus:hover {
         color: #999; }
-    .lud-upload-drag:hover .anticon-plus {
+    .lud-upload-drag:hover .lud-icon-plus {
       color: #999; }
 
 .lud-upload-list {
@@ -82,11 +82,11 @@
       line-height: 22px;
       padding: 0 4px;
       transition: background-color 0.3s ease; }
-      .lud-upload-list-item-info .anticon-paper-clip {
+      .lud-upload-list-item-info .lud-icon-paper-clip {
         margin-right: 4px;
         font-size: 14px;
         color: #999; }
-      .lud-upload-list-item-info .anticon-cross {
+      .lud-upload-list-item-info .lud-icon-cross {
         display: inline-block;
         font-size: 12px;
         font-size: "10px 	";
@@ -97,18 +97,18 @@
         float: right;
         color: #999;
         line-height: 22px; }
-        :root .lud-upload-list-item-info .anticon-cross {
+        :root .lud-upload-list-item-info .lud-icon-cross {
           font-size: 12px; }
-        .lud-upload-list-item-info .anticon-cross:hover {
+        .lud-upload-list-item-info .lud-icon-cross:hover {
           color: #2E486F; }
     .lud-upload-list-item:hover .lud-upload-list-item-info {
       background-color: #e8f3fd; }
-    .lud-upload-list-item:hover .anticon-cross {
+    .lud-upload-list-item:hover .lud-icon-cross {
       opacity: 1; }
     .lud-upload-list-item-error,
-    .lud-upload-list-item-error .anticon-paper-clip {
+    .lud-upload-list-item-error .lud-icon-paper-clip {
       color: #F62D51; }
-    .lud-upload-list-item-error .anticon-cross {
+    .lud-upload-list-item-error .lud-icon-cross {
       opacity: 1; }
     .lud-upload-list-item-progress {
       padding: 0 8px 0 20px;
@@ -141,7 +141,7 @@
     width: 48px;
     height: 48px;
     display: block; }
-  .lud-upload-list-picture .lud-upload-list-item-thumbnail.anticon:before, .lud-upload-list-picture-card .lud-upload-list-item-thumbnail.anticon:before {
+  .lud-upload-list-picture .lud-upload-list-item-thumbnail.lud-icon:before, .lud-upload-list-picture-card .lud-upload-list-item-thumbnail.lud-icon:before {
     line-height: 48px;
     font-size: 24px;
     color: #999; }
@@ -162,7 +162,7 @@
   .lud-upload-list-picture .lud-upload-list-item-progress, .lud-upload-list-picture-card .lud-upload-list-item-progress {
     padding-left: 56px;
     margin-top: 0; }
-  .lud-upload-list-picture .anticon-cross, .lud-upload-list-picture-card .anticon-cross {
+  .lud-upload-list-picture .lud-icon-cross, .lud-upload-list-picture-card .lud-icon-cross {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -186,8 +186,8 @@
         opacity: 0;
         width: 100%;
         height: 100%; }
-      .lud-upload-list-picture-card .lud-upload-list-item-info .anticon-eye-o,
-      .lud-upload-list-picture-card .lud-upload-list-item-info .anticon-delete {
+      .lud-upload-list-picture-card .lud-upload-list-item-info .lud-icon-eye-o,
+      .lud-upload-list-picture-card .lud-upload-list-item-info .lud-icon-delete {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -201,16 +201,16 @@
         opacity: 0;
         margin-top: -8px;
         margin-left: -22px; }
-        .lud-upload-list-picture-card .lud-upload-list-item-info .anticon-eye-o:hover,
-        .lud-upload-list-picture-card .lud-upload-list-item-info .anticon-delete:hover {
+        .lud-upload-list-picture-card .lud-upload-list-item-info .lud-icon-eye-o:hover,
+        .lud-upload-list-picture-card .lud-upload-list-item-info .lud-icon-delete:hover {
           color: #fff; }
-      .lud-upload-list-picture-card .lud-upload-list-item-info .anticon-delete {
+      .lud-upload-list-picture-card .lud-upload-list-item-info .lud-icon-delete {
         left: 50%;
         margin-left: 6px; }
       .lud-upload-list-picture-card .lud-upload-list-item-info:hover:before {
         opacity: .8; }
-      .lud-upload-list-picture-card .lud-upload-list-item-info:hover .anticon-eye-o,
-      .lud-upload-list-picture-card .lud-upload-list-item-info:hover .anticon-delete {
+      .lud-upload-list-picture-card .lud-upload-list-item-info:hover .lud-icon-eye-o,
+      .lud-upload-list-picture-card .lud-upload-list-item-info:hover .lud-icon-delete {
         opacity: 1; }
     .lud-upload-list-picture-card .lud-upload-list-item-thumbnail,
     .lud-upload-list-picture-card .lud-upload-list-item-thumbnail img {
@@ -225,8 +225,8 @@
     .lud-upload-list-picture-card .lud-upload-list-item-uploading .lud-upload-list-item-info {
       height: auto; }
       .lud-upload-list-picture-card .lud-upload-list-item-uploading .lud-upload-list-item-info:before,
-      .lud-upload-list-picture-card .lud-upload-list-item-uploading .lud-upload-list-item-info .anticon-eye-o,
-      .lud-upload-list-picture-card .lud-upload-list-item-uploading .lud-upload-list-item-info .anticon-delete {
+      .lud-upload-list-picture-card .lud-upload-list-item-uploading .lud-upload-list-item-info .lud-icon-eye-o,
+      .lud-upload-list-picture-card .lud-upload-list-item-uploading .lud-upload-list-item-info .lud-icon-delete {
         display: none; }
     .lud-upload-list-picture-card .lud-upload-list-item-uploading-text {
       margin-top: 18px;

@@ -38,7 +38,7 @@
       bottom: 0;
       right: 0;
       content: ''; }
-  .lud-menu-item:hover > a, .lud-menu-item-active > a, .lud-menu-submenu-active > a, .lud-menu-submenu-title:hover > a {
+  .lud-menu-item:hover, .lud-menu-item:hover > a, .lud-menu-item-active, .lud-menu-item-active > a, .lud-menu-submenu-active, .lud-menu-submenu-active > a, .lud-menu-submenu-title:hover, .lud-menu-submenu-title:hover > a {
     color: #1589ee; }
   .lud-menu-horizontal .lud-menu-item,
   .lud-menu-horizontal .lud-menu-submenu {
@@ -68,7 +68,8 @@
     .lud-menu-vertical .lud-menu-sub .lud-menu-item {
       border-right: 0; }
   .lud-menu-inline .lud-menu-item {
-    border-left: .25rem solid transparent; }
+    border-left: .25rem solid transparent;
+    padding-left: 21px !important; }
   .lud-menu-inline .lud-menu-selected,
   .lud-menu-inline .lud-menu-item-selected {
     border-left: 0.25rem solid #1589ee;
@@ -103,7 +104,7 @@
       .lud-menu-item.lud-menu-item-disabled > a, .lud-menu-item.lud-menu-submenu-disabled > a, .lud-menu-submenu-title.lud-menu-item-disabled > a, .lud-menu-submenu-title.lud-menu-submenu-disabled > a {
         color: #999 !important;
         pointer-events: none; }
-    .lud-menu-item .anticon, .lud-menu-submenu-title .anticon {
+    .lud-menu-item .lud-icon, .lud-menu-submenu-title .lud-icon {
       min-width: 14px;
       margin-right: 8px; }
   .lud-menu > .lud-menu-item-divider {
@@ -119,7 +120,7 @@
       background-color: #fff;
       border-radius: 4px; }
     .lud-menu-submenu-vertical > .lud-menu-submenu-title:after {
-      font-family: "anticon" !important;
+      font-family: "ludicon" !important;
       font-style: normal;
       vertical-align: baseline;
       text-align: center;
@@ -127,11 +128,11 @@
       text-rendering: auto;
       position: absolute;
       transition: transform .3s ease;
-      content: "\e61d";
+      content: "\EE4E";
       right: 16px;
       transform: rotate(270deg) scale(0.75); }
     .lud-menu-submenu-inline > .lud-menu-submenu-title:after {
-      font-family: "anticon" !important;
+      font-family: "ludicon" !important;
       font-style: normal;
       vertical-align: baseline;
       text-align: center;
@@ -139,7 +140,7 @@
       text-rendering: auto;
       position: absolute;
       transition: transform .3s ease;
-      content: "\e61d";
+      content: "\EE4E";
       right: 16px;
       top: 0;
       display: inline-block;
@@ -193,6 +194,11 @@
     height: 42px;
     overflow: hidden;
     text-overflow: ellipsis; }
+  .lud-menu-inline > .lud-menu-submenu > .lud-menu-submenu-title h4 {
+    font-size: 15px;
+    font-weight: normal; }
+  .lud-menu-inline > .lud-menu-submenu-open > .lud-menu-submenu-title h4 {
+    color: #1589ee; }
   .lud-menu-vertical.lud-menu-sub {
     padding: 0;
     transform-origin: 0 0; }
@@ -213,7 +219,7 @@
       list-style-type: disc;
       list-style-position: inside; }
     .lud-menu-sub.lud-menu-inline .lud-menu-item-group-title {
-      padding-left: 32px; }
+      padding-left: 24px; }
 
 .lud-menu-dark,
 .lud-menu-dark .lud-menu-sub {

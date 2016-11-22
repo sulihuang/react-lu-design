@@ -91,7 +91,7 @@
     color: #999; }
     .lud-input-number-handler-up-inner:before, .lud-input-number-handler-down-inner:before {
       display: block;
-      font-family: "anticon" !important; }
+      font-family: "ludicon" !important; }
     :root .lud-input-number-handler-up-inner, :root .lud-input-number-handler-down-inner {
       font-size: 12px; }
   .lud-input-number:hover {
@@ -186,7 +186,7 @@
       top: 1px; }
       .lud-input-number-handler-up-inner:before {
         text-align: center;
-        content: "\e61e"; }
+        content: "\EE3F"; }
     .lud-input-number-handler-up:hover {
       height: 16px; }
     .lud-input-number-handler-up:hover .lud-input-number-handler-up-inner {
@@ -197,7 +197,7 @@
     cursor: pointer; }
     .lud-input-number-handler-down-inner:before {
       text-align: center;
-      content: "\e61d"; }
+      content: "\EE40"; }
     .lud-input-number-handler-down:hover {
       height: 16px;
       margin-top: -2px; }
