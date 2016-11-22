@@ -5,7 +5,7 @@ toc: false
 timeline: true
 ---
 
-## 1.2.0-alpha2
+## 1.2.0-alpha3
 
 * 梳理文档
 * 栅格系统默认采用 Flex 布局。

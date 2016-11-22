@@ -1,5 +1,5 @@
 /*!
- * react-lu-design v1.2.0-alpha1
+ * react-lu-design v1.2.0-alpha3
  * 
  * Copyright 2016, ZhuluX, Inc.
  * All rights reserved.

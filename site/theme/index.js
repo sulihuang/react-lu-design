@@ -14,7 +14,7 @@ module.exports = {
     'Data Entry': 3,
     'Data Display': 4,
     Feedback: 5,
-    Localization: 6,
+    Other: 6,
   },
   docVersions: {},
   routes: {

@@ -65,7 +65,9 @@ $menu-prefix-cls: "#{$css-prefix}menu";
   &-item-active,
   &-submenu-active,
   &-submenu-title:hover {
-    background-color: tint($primary-color, 90%);
+    & > a{
+      color: $primary-color;
+    }
   }
 
   &-horizontal &-item,
@@ -115,9 +117,14 @@ $menu-prefix-cls: "#{$css-prefix}menu";
   }
 
   &-inline {
+    .#{$menu-prefix-cls}-item{
+      border-left: .25rem solid transparent;
+    }
+
     .#{$menu-prefix-cls}-selected,
     .#{$menu-prefix-cls}-item-selected {
-      border-right: 2px solid $primary-color;
+      border-left: .25rem solid $primary-color;
+      background: tint($primary-color,90%);
       transform: translateZ(0);
     }
   }

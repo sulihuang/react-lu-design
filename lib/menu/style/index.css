@@ -38,8 +38,8 @@
       bottom: 0;
       right: 0;
       content: ''; }
-  .lud-menu-item:hover, .lud-menu-item-active, .lud-menu-submenu-active, .lud-menu-submenu-title:hover {
-    background-color: #e8f3fd; }
+  .lud-menu-item:hover > a, .lud-menu-item-active > a, .lud-menu-submenu-active > a, .lud-menu-submenu-title:hover > a {
+    color: #1589ee; }
   .lud-menu-horizontal .lud-menu-item,
   .lud-menu-horizontal .lud-menu-submenu {
     margin-top: -1px; }
@@ -67,9 +67,12 @@
     border-right: 0; }
     .lud-menu-vertical .lud-menu-sub .lud-menu-item {
       border-right: 0; }
+  .lud-menu-inline .lud-menu-item {
+    border-left: .25rem solid transparent; }
   .lud-menu-inline .lud-menu-selected,
   .lud-menu-inline .lud-menu-item-selected {
-    border-right: 2px solid #1589ee;
+    border-left: 0.25rem solid #1589ee;
+    background: #e8f3fd;
     transform: translateZ(0); }
   .lud-menu-submenu-horizontal > .lud-menu {
     top: 100%;

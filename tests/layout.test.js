@@ -15,6 +15,6 @@ describe('Grid', function() {
       <Row></Row>
     );
     const rowNode = TestUtils.findRenderedDOMComponentWithTag(row, 'DIV');
-    expect(rowNode.className).toBe('lud-row');
+    expect(rowNode.className).toBe('lud-row-flex');
   });
 });
